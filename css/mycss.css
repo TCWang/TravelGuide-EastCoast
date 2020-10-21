@@ -1,0 +1,165 @@
+body {
+    font-family: STKaiti, DFKai-SB, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Droid Sans", "Microsoft JhengHei", "Helvetica Neue", sans-serif;
+    /*
+    font-family:
+        STKaiti, DFKai-SB, Arial, // 建議字體 中文：楷體，標楷體 英文：Arial
+        -apple-system, BlinkMacSystemFont,  // 系統預設字體
+        "Segoe UI", "Roboto", "Ubuntu", "Droid Sans", "Microsoft JhengHei", // 指定已知的系統UI字體
+        "Helvetica Neue", sans-serif; //備援字體
+    */
+}
+#AlignR {
+    text-align: right;
+    margin-left: 20px;
+}
+.row {
+    margin-top: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#NoMargin {
+    margin: 0 -2px 0 -2px;
+}
+section article div {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+section article img {
+    width: 400px;
+}
+img {
+    margin: 1px 1px 0 0;
+}
+.box {
+    height: 50px;
+}
+#FloatR {
+    float: right;
+}
+
+.jumbotron-bg1 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-07.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.jumbotron-bg2 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-08.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.jumbotron-bg3 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-03.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.jumbotron-bg4 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-04.png");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.jumbotron-bg5 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-05.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.jumbotron-bg6 {
+	background-image: url("../fig/TGE-1101-EastCoastBanner-06.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
+.navbar{
+    background-color:#000066 !important;
+}
+.navbar .navbar-toggler {
+    background-color: white !important;
+}
+.navbar .collapse .navbar-nav li a{
+    color:white !important;
+}
+.navbar .collapse .navbar-nav li a:hover{
+    color: #33FFCC !important;
+    background-color:#0066FF;
+}
+.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item {
+    color:#660033 !important;
+}
+.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item:hover {
+    color:#CC0033 !important;
+    background-color:#D0D0D0 !important;
+}
+
+.navbar .navbar-brand {
+    color: yellow !important;
+}
+
+.page-footer{
+    background-color:#000066 !important;
+}
+
+#title-1 {
+    color: #0000CC;
+    font-size:1.4em;
+}
+#title-2 {
+    color: #0000CC;
+    font-size:1.2em;
+}
+h1, h2 {
+    color: #0000CC;
+    font-size:1.2em;
+}
+h3, h4 {
+    color: #0000CC;
+    font-size: 1.1em;
+}
+h5,h6 {
+    color: #0000CC;
+    font-size: 1.em;
+    font-size: 1em;
+    margin-top: 2px;
+}
+
+
+.container .bg-lighter h5 {
+    color: #FFF;
+}
+.container .bg-lighter p {
+    color: #FFF;
+}
+div.fixed {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    color: #000099;
+    background: rgba(255, 255, 255, 0.7)
+}
+.btn-circle{
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+#main_footer {
+	    background-color:#000066 !important;
+	    color: #FFF;
+}

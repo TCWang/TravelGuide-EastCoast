@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="../css/mycss.css">
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>Add Title here</title>
+  <meta name="description" content="AiCity Community WebSite 2019">
+  <!-- TemplateEndEditable -->
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">用戶登入</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-110-MyInformation.html">個人資訊</a>
+              <a class="dropdown-item" href="../TGE-120-SignIn.html">登入註冊</a>
+              <a class="dropdown-item" href="../TGE-130-Message.html">用戶留言</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="../TGE-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="../TGE-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="../TGE-240-LocalTransit.html">當地交通</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區盛會</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-310-SeasonalEvent.html">當季盛會</a>
+              <a class="dropdown-item" href="../TGE-320-YilanFestival.html">宜蘭節慶</a>
+              <a class="dropdown-item" href="../TGE-330-HualienFestival.html">花蓮節慶</a>
+              <a class="dropdown-item" href="../TGE-340-TaitungFestival.html">台東節慶</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="../TGE-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="../TGE-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="../TGE-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="../TGE-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="../TGE-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="../TGE-540-Souvenirs.html">伴手禮品</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../TGE-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="../TGE-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="../TGE-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="../TGE-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+        <div class="container">
+          <!-- TemplateBeginEditable name="jumbotron description " -->
+            <div class="bg-lighter p-1" style="width:300px">
+              <h4 class="text-white" >Insert jumbotron title here</h4>
+              <p class="lead text-white">Insert jumbotron description here</p>
+            </div>
+        <!-- TemplateEndEditable --> </div>
+    </div>
+    <!-- TemplateBeginEditable name="main_editable" -->
+    <div class="container-fluid">
+		<h1>Insert main heading here</h1>
+	  	<div class="row">
+
+		  <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+			<aside class="sidebar1">
+			  <p> Side Bar 1 </p>
+		    </aside>
+		  </div>
+		  <div class="col-12 col-sm-8 col-md-9 col-lg-10">
+			<section>
+
+			  <article>
+				<h2>Insert sub heading here</h2>
+				<p> Insert paragraph here </p>
+			  </article>
+		    </section>
+		  </div>
+
+	  	</div>
+    </div>
+
+    <!-- TemplateEndEditable -->
+    <footer id="main_footer">
+		<p id="p-footer">
+			&copy;TCW Smart Life 2020 智慧生活-花東旅遊
+		</p>
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- TemplateBeginEditable name="vue control program" -->
+    <div>
+      <!-- Vue實例的程式碼 -->
+    </div>
+    <!-- TemplateEndEditable -->
+</body>
+
+</html>
