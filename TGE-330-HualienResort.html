@@ -167,7 +167,7 @@
                   <h3>花蓮</h3>
 					  <div>
 						<h5>花蓮 景點地圖</h5>
-						<img src="fig/TGE-3301-HualienResort-01.jpg" class="img-fluid" style="width:600px">
+						<img src="fig/TGE-3301-HualienResort-01.jpg" class="img-fluid" style="width:800px">
 					  </div>
 						<h5>花蓮 景點匯總</h5>
 					  <div id="app1" class="row" v-for="posts in results">
@@ -186,7 +186,7 @@
 								<dd>電話：{{post.Tel}} </dd>
 								<dd>地址：{{post.Address}} </dd>
 								<dd>開放時間：{{post.Hours}}</dd>
-								<dd>旅遊時間：{{post.Tour}} </dd>
+
 							  </dl>
 							  <img v-bind:src="post.Figure" class="img-fluid">
 								<p>
@@ -267,7 +267,7 @@
  		<!-- Vue實例的程式碼 -->
 		<script>
 		  const posts = []
-		  const SECTIONS_HL1 = "秀林鄉"
+		  const SECTIONS_HL1 = "花蓮"
 		  const SECTIONS_HL2 = "花蓮"
 		  const SECTIONS_HL3 = "花蓮"		  
 
@@ -277,7 +277,7 @@
 			  posts,
 			  // results: [],
 			  sections: SECTIONS_HL1.split(', '),
-			  section: "秀林鄉"
+			  section: "花蓮"
 			},
 			filter: {
 			  formatted(value) {
@@ -289,8 +289,8 @@
 			  results() {
 				let posts = this.posts
 				  .slice()
-				  .filter(post => post.Area === this.section)
-				let i, j, chunkedArray = [], chunk = 20;
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 30;
 				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 				  chunkedArray[j] = posts.slice(i, i + chunk);
 				}

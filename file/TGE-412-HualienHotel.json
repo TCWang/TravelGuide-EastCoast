@@ -1,0 +1,108 @@
+﻿[
+        {
+            "No": "01",
+            "Category": "花蓮",
+            "Area": "瑞穗鄉",
+            "Name": "瑞穗天合國際觀光酒店",
+            "Star": "5",
+            "Address": "花蓮縣瑞穗鄉溫泉路二段368號",
+            "Tel": "886-2-89786688",
+            "Figure": "fig/TGE-4121-HualienHotel-01.jpeg",
+            "Link": "https://www.grandcosmos.com.tw/"
+        },
+        {
+            "No": "02",
+            "Category": "花蓮",
+            "Area": "秀林鄉",
+            "Name": "太魯閣晶英酒店",
+            "Star": "4.5",
+            "Address": "花蓮縣秀林鄉天祥路18號",
+            "Tel": "886-3-869-1160",
+            "Figure": "fig/TGE-4121-HualienHotel-02.jpeg",
+            "Link": "https://taroko.silksplace.com/tw/index"
+        },
+        {
+            "No": "03",
+            "Category": "花蓮",
+            "Area": "壽豐鄉",
+            "Name": "花蓮理想大地渡假飯店",
+            "Star": "4.5",
+            "Price": "NT$5,628 ",
+            "Address": "花蓮縣壽豐鄉理想路一號",
+            "Tel": "886-3-8656789",
+            "Figure": "fig/TGE-4121-HualienHotel-03.jpeg",
+            "Link": "https://www.plcresort.com.tw/zh_TW"
+        },
+        {
+            "No": "04",
+            "Category": "花蓮",
+            "Area": "吉安鄉",
+            "Name": "秧悦美地度假酒店",
+            "Star": "4",
+            "Price": "NT$6,972 ",
+            "Address": "花蓮縣吉安鄉干城村干城二街100號",
+            "Tel": "886-3-812-9168",
+            "Figure": "fig/TGE-4121-HualienHotel-04.jpeg",
+            "Link": "https://www.gaeavilla.com/en"
+        },
+        {
+            "No": "05",
+            "Category": "花蓮",
+            "Area": "壽豐鄉",
+            "Name": "花蓮遠雄悅來大飯店 ",
+            "Star": "4.5",
+            "Price": "NT$6,251 ",
+            "Address": "花蓮縣壽豐鄉鹽寮村山嶺18號",
+            "Tel": "886-3-8123900",
+            "Figure": "fig/TGE-4121-HualienHotel-05.jpeg",
+            "Link": "https://www.farglory-hotel.com.tw/"
+        },
+        {
+            "No": "06",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "翰品酒店花蓮 ",
+            "Star": "4.5",
+            "Price": "NT$2,395 ",
+            "Address": "花蓮市永興路2號",
+            "Tel": "86-3-823-5388",
+            "Figure": "fig/TGE-4121-HualienHotel-06.jpeg",
+            "Link": "https://hualien.chateaudechine.com/tw/index"
+        },
+        {
+            "No": "07",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "煙波大飯店 - 花蓮館",
+            "Star": "4",
+            "Price": "NT$2,177 ",
+            "Address": "花蓮市中美路142號",
+            "Tel": "886-3-8222666 ",
+            "Figure": "fig/TGE-4121-HualienHotel-07.jpeg",
+            "Link": "https://hualien.lakeshore.com.tw/"
+        },
+        {
+            "No": "08",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "福容大飯店花蓮",
+            "Star": "4",
+            "Price": "NT$3,714 ",
+            "Address": "花蓮市民生路（海岸路）51號",
+            "Tel": "886-03-823-9988",
+            "Figure": "fig/TGE-4121-HualienHotel-08.jpeg",
+            "Link": "https://www.fullon-hotels.com.tw/hl/tw/"
+        },
+        {
+            "No": "09",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "阿思瑪麗景大飯店",
+            "Star": "4",
+            "Price": "NT$2,727 ",
+            "Address": "花蓮縣花蓮市博愛街68號",
+            "Tel": "886-03-832-9555",
+            "Figure": "fig/TGE-4121-HualienHotel-09.jpeg",
+            "Link": "http://www.arsma-hotel.com/"
+        }
+    ]

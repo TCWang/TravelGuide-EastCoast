@@ -249,7 +249,7 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Island}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>房價：{{post.Price}}</dd>
@@ -282,10 +282,11 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Island}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>房價：{{post.Price}}</dd>
+											<dd>星級：{{post.Star}} </dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
 
@@ -313,7 +314,7 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Island}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>房價：{{post.Price}}</dd>
@@ -403,7 +404,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-411-YilanHotel-01.json').then((response) => {
+					axios.get('file/TGE-411-YilanHotel.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -439,7 +440,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-412-HualienHotel-01.json').then((response) => {
+					axios.get('file/TGE-412-HualienHotel.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -475,7 +476,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-413-TaitungHotel-01.json').then((response) => {
+					axios.get('file/TGE-413-TaitungHotel.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
