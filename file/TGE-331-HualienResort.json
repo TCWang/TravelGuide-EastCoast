@@ -1,4 +1,5 @@
-﻿[
+﻿{
+[
         {
             "No": "01",
             "Category": "花蓮",
@@ -7,7 +8,7 @@
             "Description": "清水斷崖，位於和平和崇德之間，是臺灣東岸的一大奇景，更是臺灣八大景之一。清水斷崖高一千多公尺，以極近90度的角度緊臨太平洋，公路綿延20多公里，蜿蜒曲折，一邊是懸崖峭壁，一邊是茫茫大海，形勢險峻，氣象萬千，令人膽戰心驚，嘆為觀止。而在蘇花公路的崇德隧道旁，有步道通往兩個觀景臺，可將太平洋及清水斷崖的山光水色盡入眼簾。途中更有北方澳、南方澳及烏石鼻等多個風景點讓你選擇。",
             "Address": "花蓮縣新城鄉",
             "Tel": "03-862-1100",
-            "Figure": "TGE-3302-HualienResort-01.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-01.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=2228"
         },
         {
@@ -18,7 +19,7 @@
             "Description": "私人農場，農場內專營：露營車、露營地、獨木舟、飛行傘、風味餐、下午茶、沙灘車、咖啡。",
             "Address": "花蓮縣秀林鄉崇德村下台地立霧溪旁",
             "Tel": "0963-708807",
-            "Figure": "TGE-3302-HualienResort-02.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-02.jpg",
             "Link": "https://taiwantour.info/hualien-ranch/"
         },
         {
@@ -29,7 +30,7 @@
             "Description": "位在秀林鄉銅門村的翡翠谷有著與慕谷慕魚相似的藍綠水色，成為夏天當地人與遊客前往戲水的純天然景點。\r\n<br><br>\r\n要進入翡翠谷前，要先穿越翡翠谷隧道，因為伸手不見五指，記得攜帶手電筒照明，經過隧道時仔細觀察，能看見隧道上方吊掛蝙蝠。",
             "Address": "花蓮縣秀林鄉銅門村榕樹路，銅門大橋旁",
             "Tel": "03-8642157",
-            "Figure": "TGE-3302-HualienResort-03.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-03.jpg",
             "Link": "http://tour-hualien.hl.gov.tw/POI/151"
         },
         {
@@ -40,7 +41,7 @@
             "Description": "太魯閣國家公園成立於民國75年（西元1986年），橫跨花蓮、南投及臺中。\r\n\r\n太魯閣國家公園以雄偉壯麗、幾近垂直的大理岩峽谷景觀聞名。沿著立霧溪的峽谷風景線而行，觸目所及皆是壁立千仞的峭壁、斷崖、峽谷、連綿曲折的山洞隧道、大理岩層和溪流等風光。\r\n<br><br>\r\n四百萬年前，菲律賓海洋板塊與歐亞大陸板塊碰撞而成臺灣，慢慢隆起的中央山脈表層岩層受到風化侵蝕作用而剝離，大理岩因而露出地表。這些大理岩受到立霧溪長期侵蝕下切作用與地殼不斷隆起上升，形成幾乎垂直的峽谷。公園內巨峰林立，從清水到南湖大山頂，落差達3,742公尺，造就了層次複雜的植物林相，並提供野生動物棲息活動的空間。\r\n<br><br>\r\n瀑布是太魯閣國家公園重要的景觀，從太魯閣口到文山間，瀑布相當多，最著名的要屬白楊瀑布、銀帶瀑布、長春瀑布、綠水瀑布等，還有許多不知名的小流瀑。\r\n<br><br>\r\n燕子口和九曲洞，是太魯閣峽谷最讓人心動的自然奇觀，也是峽谷最窄的兩段，臨溪側闢有人行步道供遊客漫步欣賞。燕子口對岸大理石峭壁上可見到許多小洞穴，每當春夏之際，常有小雨燕和洋燕在峭壁間穿梭鳴唱，或在洞穴內築巢，故而得名燕子口。而九曲洞「如腸之迴、如河之曲」的隧洞景觀，遊客可沿迴轉曲折的半明半暗路線欣賞峽谷風光。",
             "Address": "花蓮縣秀林鄉富世村富世291號",
             "Tel": "03-862-1100~6",
-            "Figure": "TGE-3302-HualienResort-04.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-04.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=R43"
         },
         {
@@ -51,7 +52,7 @@
             "Description": "位在花蓮市區東北方，位於花蓮市新城鄉的北埔村，可取道美崙工業區，由花蓮師院（現為「國立東華大學美崙校區」）前指標前行即可到達。此地海灘呈一優美的弧形海灣，海水潔淨湛藍，黑石晶瑩剔透，在此可遠眺青山蒼鬱，公路綿延。\r\n<br><br>\r\n七星潭富有詩意的名稱，據說是位於花蓮師範學院和花蓮機場一帶，早年有零星湖泊散佈，後來因建設需要而填實。現在一般稱七星潭，是指美崙工業區和花蓮機場以北的地區，有斷層形成的海峽與優美的弧形海灣，具有豐富的自然人文景觀。在七星潭，可以遠眺清水斷崖，夜間還可以欣賞新城和崇德地區的燈火，區內更有許多景點，提供休憩和知性之旅。\r\n<br><br>\r\n七星潭風景區以自行車道為動脈，從花蓮市南濱公園、經花蓮港、四八高地到七星潭風景區，長達21公里的旅程有不同的風光。花蓮縣政府更興建了石雕園區、賞星廣場、觀日樓、兒童遊樂場等休憩設施，在漁場附近還有海生態的解說牌，也利用防風林區闢建海濱植物園區，動植物生態非常豐富，來一趟知性之旅絕對不虛此行。",
             "Address": "：花蓮縣新城鄉海岸路",
             "Tel": "03-822-1592",
-            "Figure": "TGE-3302-HualienResort-05.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-05.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=9488"
         },
         {
@@ -63,7 +64,7 @@
             "Address": "花蓮縣花蓮市海岸路、華東路交界旁",
             "Tel": "03-8227171",
             "Hours": "全天24小時",
-            "Figure": "TGE-3302-HualienResort-06.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-06.jpg",
             "Link": "http://mambo.hl999.url.tw/"
         },
         {
@@ -74,7 +75,7 @@
             "Description": "位在花蓮市六期重劃區，圍繞著陽光電城的兩橫一直的夜市路徑，包括福町夜市、各省一條街、以及原住民一條街。超過四百個攤位，從2015年夏天開始，便以各式精彩的小吃、遊戲與表演陣容打響了在花蓮觀光旅遊的名氣，不論在地民眾、各地的觀光客，到花蓮，都少不了要到東大門夜市走一趟，體驗這裡的各式小吃。\r\n<br><br>\r\n從2015年年底開始，更加入了自強夜市的新區塊，數十個原本自強夜市的攤商已正式進入，形成了繼福町夜市、原住民一條街與各省一條街之外的第四個區塊。其中多家攤商，都是在花蓮地區享有極高人氣的老字號，更吸引不少饕客與忠實顧客，準時到夜市來報到，讓原本就已相當熱鬧的東大門夜市，增添更多的人氣。",
             "Address": "\r\n花蓮市中山路50號",
             "Tel": "\r\n0977-690913",
-            "Figure": "TGE-3302-HualienResort-07.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-07.jpg",
             "Link": "http://tour-hualien.hl.gov.tw/POI/205"
         },
         {
@@ -86,7 +87,7 @@
             "Address": "花蓮縣花蓮市松園街65號",
             "Tel": "03-835-6510",
             "Hours": "週一至週日09:00~18:00、每月第二個星期二以及除夕休館",
-            "Figure": "TGE-3302-HualienResort-08.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-08.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=A12-00294"
         },
         {
@@ -98,7 +99,7 @@
             "Address": "花蓮縣花蓮市中華路144號",
             "Tel": "03-831-3777#203",
             "Hours": "服務中心週一至週日09:00~21:00",
-            "Figure": "TGE-3302-HualienResort-09.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-09.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=A12-00295"
         },
         {
@@ -110,7 +111,7 @@
             "Address": "花蓮縣吉安鄉南濱路一段 505 號",
             "Tel": "03-8420014",
             "Hours": "週一至週六 09:00-18:00，週日與國定假日除外",
-            "Figure": "TGE-3302-HualienResort-10.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-10.jpg",
             "Link": "https://www.starbucks.com.tw/stores/special/stores_special_hualienbay.jspx"
         },
         {
@@ -122,7 +123,7 @@
             "Address": "花蓮縣吉安鄉吉安村中興路345-1號",
             "Tel": "03-853-5479",
             "Hours": "週二至週日08:30~17:00",
-            "Figure": "TGE-3302-HualienResort-11.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-11.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=A12-00292"
         },
         {
@@ -133,7 +134,7 @@
             "Description": "臺灣首創海洋生態互動式主題樂園，在占地10公頃的主題樂園區部分，目前計有入口廣場、海洋村、海遊館、鯊魚館、海獅生態公園、海豚生態公園、海豚同遊池、海獅餵養池、嘉年華大街、水上樂園、機械樂園、兒童王國、夢幻水晶城堡等遊樂設施，園區並有空中纜車及電扶梯戴送遊客，整個園區整體建築以19世紀英國碼頭及海岸嘉年華風格為主，並融合先進的水族館設計概念，將生態環境與海洋展示結合。\r\n<br><br>\r\n在占地19公頃的自然景觀公園區部分，遊客可從主題樂園徒步或搭空中纜車遊覽，整個園區位於主體樂園與渡假酒店之間，海拔約100公尺至200公尺，全區規劃有鳥園、Green House、結婚廣場、棕櫚園區、熱帶雨林區、沙漠植物園區及溫帶常綠園區。遊客除了海洋公園之外，可以結合鄰近的遠來飯店、理想大地渡假村、花東縱谷、太魯閣等觀光景點，進行更豐富的東海岸之旅。",
             "Address": "花蓮縣壽豐鄉鹽寮村福德189號",
             "Tel": "03-812-3100",
-            "Figure": "TGE-3302-HualienResort-12.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-12.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=9687"
         },
         {
@@ -145,7 +146,7 @@
             "Address": "花蓮縣壽豐鄉池南村環潭北路100號",
             "Tel": "03-864-1691",
             "Hours": "遊客中心週一至週日08:30~17:30",
-            "Figure": "TGE-3302-HualienResort-13.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-13.jpg",
             "Link": "https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=3"
         },
         {
@@ -156,7 +157,7 @@
             "Description": "花蓮理想大地渡假飯店以「理想的渡假是停留，不是奔波，是散步，不是趕路」定位，創新規劃運河式渡假村，入選全球旅館業矚目的國際專刊《100 Hotels + Resorts》，被美譽為提升心靈之地，亞洲區共入選Grand Hyatt Bali、Hilton Sanya Resort等29間頂級飯店，理想大地則是台灣唯一獲選。\r\n<br><br>\r\n由世界排名第一的國際建築設計團隊W.A.T.&G.打造，獨創全球飯店最長的2.2公里人工運河，貫穿園區，沿途經過7座碼頭、16座風情橋樑及22棟別墅景觀建築。一棟棟西班牙低樓層城堡沿著河岸而築，以西班牙傳奇建築師「高第」的建築理念為基礎，結合拜占庭和摩爾式風格，為建築添加柔和曲線與童話氣息，成功與當地自然風景相互交融，創造全球獨家的原創建築風格。旅客可搭遊艇在運河上欣賞兩旁景色、蟲鳴鳥叫，以及16座橋的特色風光。",
             "Address": "花蓮縣壽豐鄉共和村1鄰理想路1號",
             "Tel": "03-8656789",
-            "Figure": "TGE-3302-HualienResort-14.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-14.jpg",
             "Link": "https://www.erv-nsa.gov.tw/zh-tw/accommodation/detail/4034"
         },
         {
@@ -167,7 +168,7 @@
             "Description": "雲山水生態園區為私人土地，夢幻湖也是由人工開鑿而成，如詩如畫的美景雖讓這裡成為觀光勝地，目開也開放讓民眾參觀，但園區內還是有許多私人住宅及土地是不對外開放的，前來享受美景的同時，別忘了輕聲細語及尊重當地居民的隱私，園區車輛禁止進入。\r\n<br><br>\r\n雲山水自然生態農莊位於花蓮壽豐鄉，花東縱谷中央山脈及海岸山脈之間，占地約24公頃，其中夢幻湖面積大約4公頃，清澈可見裡面的小魚，自然而然的也吸引到許多候鳥、鳥群到這裡來覓食、定居，園區的生態系統就變得更加多元、縝密；此外，園區四周種植了多種棕櫚科樹木，以及依照季節性開花的植物、闊葉林等等，故一年四季的景色都不大相同，每個季節都有特別迷人的地方，這裡同時也是許多攝影愛好者，爭相取景的地方呢！",
             "Address": "\r\n花蓮縣壽豐鄉豐坪路二段2巷201弄18號",
             "Tel": "\r\n03-8656060",
-            "Figure": "TGE-3302-HualienResort-15.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-15.jpg",
             "Link": "https://tour-hualien.hl.gov.tw/POI/150"
         },
         {
@@ -178,7 +179,7 @@
             "Description": "東華大學西依巍峨的中央山脈，東臨連綿不絕的海岸山脈，諾大的校區擁有青青草地、歐式風格的建築與三座絕美的湖畔──小華湖、華湖及東湖，其中以東湖最富盛名，波光瀲灩的湖景搭配歐風建築和遠方蒼綠的山巒，宛若明信片上的風景，成為旅人或新人拍婚紗照的經典拍攝地，而遼闊的草地更是毛小孩追逐嬉戲的天堂。",
             "Address": "花蓮縣壽豐鄉大學路二段一號",
             "Tel": "03-8903000",
-            "Figure": "TGE-3302-HualienResort-16.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-16.jpg",
             "Link": "https://www.erv-nsa.gov.tw/zh-tw/attractions/detail/210"
         },
         {
@@ -190,7 +191,7 @@
             "Address": "花蓮縣壽豐鄉共和村魚池路45號",
             "Tel": "03-8651333",
             "Hours": "08:30 – 19:00",
-            "Figure": "TGE-3302-HualienResort-17.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-17.jpg",
             "Link": "http://www.lichuan.tw/enjoy.html"
         },
         {
@@ -202,7 +203,7 @@
             "Address": "花蓮縣壽豐鄉57號 ",
             "Tel": "0963 034 304",
             "Hours": "09:30 - 17:00",
-            "Figure": "TGE-3302-HualienResort-18.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-18.jpg",
             "Link": "https://www.facebook.com/mountain059"
         },
         {
@@ -213,7 +214,7 @@
             "Description": "海崖谷 HAYAKU\r\n花蓮孩子建造的秘密基地, 東海岸與中央山脈的平行處\r\n日文中的Hayaku意味著早點、快一點, 快帶著家人朋友來到後山，體驗放鬆自在的露營\r\n在海崖谷讓我們一起放下快節奏的生活、享受慢遊",
             "Address": "花蓮縣壽豐鄉鹽寮村大坑51-5號",
             "Tel": "03-8671314",
-            "Figure": "TGE-3302-HualienResort-19.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-19.jpg",
             "Link": "https://hayaku.com.tw/"
         },
         {
@@ -225,7 +226,7 @@
             "Address": "花蓮縣壽豐鄉樹湖村樹湖20號",
             "Tel": "03-8656-518",
             "Hours": "11:00－17:00（週四公休）",
-            "Figure": "TGE-3302-HualienResort-20.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-20.jpg",
             "Link": "https://www.facebook.com/mr.sam970/"
         },
         {
@@ -236,7 +237,7 @@
             "Description": "花蓮觀光糖廠早期為東部重要的製糖工廠，民國91年停工後轉型成為觀光糖廠，近年積極經營園區觀光特色，結合導覽解說活動、日式木屋、風味餐、糖廠冰品、台糖農特產品、地方特色商品等，提供遊客住、食、遊、玩的豐富體驗。\r\n\r\n花蓮觀光糖廠位於觀光資源豐富的花蓮縣光復鄉內，在花東縱谷的環繞下，周遭富含多處著名好玩的景點如太巴塱部落、馬太鞍休閒農業區、豐年祭、大農大富森林園區螢火蟲季、富源森林遊樂區、瑞穗泛舟、瑞穗牧場、赤柯山金針花海等，一年四季到訪皆有不同感受，是大人小孩全家遊玩的最佳地點!!",
             "Address": "花蓮縣光復鄉大進村糖廠街19號",
             "Tel": "03-8705881",
-            "Figure": "TGE-3302-HualienResort-21.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-21.jpg",
             "Link": "http://www.hualiensugar.com.tw/"
         },
         {
@@ -248,7 +249,7 @@
             "Address": "花蓮縣瑞穗鄉舞鶴村6鄰157號",
             "Tel": "03-8876611",
             "Hours": "08:00 – 18:00",
-            "Figure": "TGE-3302-HualienResort-22.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-22.jpg",
             "Link": "https://www.erv-nsa.gov.tw/zh-tw/attractions/detail/48"
         },
         {
@@ -260,7 +261,7 @@
             "Address": "花蓮縣瑞穗鄉中山路三段230號",
             "Tel": "03-8875588",
             "Hours": "08:00 – 17:30",
-            "Figure": "TGE-3302-HualienResort-23.jpg",
+            "Figure": "fig/TGE-3302-HualienResort-23.jpg",
             "Link": "https://www.erv-nsa.gov.tw/zh-tw/attractions/detail/204"
         },
         {
