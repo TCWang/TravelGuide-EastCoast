@@ -18,8 +18,8 @@
   <!-- My CSS file -->
   <link rel="stylesheet" href="css/mycss.css">
   <!-- InstanceBeginEditable name="doctitle" -->
-  <title>花東旅遊 - 旅遊資訊</title>
-  <meta name="description" content="Travel Information">
+  <title>花東旅遊 - 美食推薦</title>
+  <meta name="description" content="Hotel Recommendation">
   <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -124,11 +124,11 @@
     <!-- Jumbotron-->
 
           <!-- InstanceBeginEditable name="jumbotron description " -->
-        <div class="jumbotron jumbotron-fluid jumbotron-bg3 d-flex align-items-end">
+        <div class="jumbotron jumbotron-fluid jumbotron-bg5 d-flex align-items-end">
         	<div class="container">        
 				<div class="bg-lighter p-1" style="width:300px">
-				  <h4 class="text-white" >花東旅遊</h4>
-				  <p class="lead text-white">完整的旅遊資訊</p>
+				  <h4 class="text-white" >美食推薦</h4>
+				  <p class="lead text-white">尋求花東美食</p>
 				</div>
 			</div>
 		</div>
@@ -137,133 +137,184 @@
 
 	<!-- Web Page Title -->
 	<!-- InstanceBeginEditable name="main_heading" -->
-	<h2 id="main_heading">花東旅遊 - 旅遊資訊</h2>
+	<h2 id="main_heading"> 花東旅遊 美食推薦 </h2>
 	<!-- InstanceEndEditable -->
 	  
 	<!-- Vue實例的掛載點 -->
     <!-- InstanceBeginEditable name="main_content" -->
+
 	<main>
-        <div class="row">
-          <div class="col-md-3 col-lg-2">
-            <aside class="sidebar1">
-              	<h3>地區分類</h3>
+		<div class="row">
+			<div class="col-md-3 col-lg-2">
+				<aside class="sidebar1">
+					<h5>城市類別</h5>
 
-				<div class="list-group" id="MenuList" role="tablist">
-				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">匯總</a>
-				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">宜蘭</a>
-				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">花蓮</a>
-				  <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">台東</a>
+
+					<div class="list-group" id="MenuList" role="tablist">
+						<a href="#Article-01" class="list-group-item list-group-item-action active"
+							data-toggle="list">美食匯總</a>
+						<a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">宜蘭</a>
+						<a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">花蓮</a>
+						<a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">台東</a>
+					</div>
+
+				</aside>
+			</div>
+			<div class="col-md-9 col-lg-10">
+				<div class="tab-content">
+
+					<!-- Articla 01-->
+					<div class="tab-pane active" id="Article-01" role="tabpanel">
+						<article>
+							<h3>美食匯總</h3>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+									<h5>美食推薦資訊</h5>
+									宜蘭<br>
+									
+									花蓮
+									<ul>
+										<li>
+										Yoti生活：花蓮美食 - 2020 必吃推薦懶人包  <a href="https://yoti.life/hualien-food-menu/">36+排隊美食小吃攻略指南</a>
+										</li>
+										<li>
+										Ken & Alice 玩樂誌：花蓮美食  <a href="https://kenalice.tw/blog/post/39856633" >60 佳必吃餐廳懶人包</a>
+										</li>
+										<li>
+										FunTime: 花蓮美食 <a href="https://www.funtime.com.tw/blog/funtime/%E3%80%90%E5%8F%B0%E7%81%A3%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6%E3%80%91%E8%8A%B1%E8%93%AE%E5%A5%BD%E5%90%83%E5%88%B0%E7%88%86%E7%9A%8410%E5%A4%A7%E7%BE%8E%E9%A3%9F">好吃到爆的10大美食</a>
+										</li>
+										<li>
+										TISS-玩味食尚: 花蓮美食 <a href="https://tisshuang.tw/blog/post/hualienfoods">20間在地人也愛吃的花蓮美食</a>
+										</li>
+										<li>
+										瑪格。圖寫生活: 花蓮美食 <a href="https://margaret.tw/hualien-food/">75家食記</a>
+										</li>
+									</ul>
+									台東
+									
+								</div>
+
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+									<h5>美食地圖查詢</h5>
+
+
+								</div>
+
+							</div>
+
+						</article>
+					</div>
+
+					<!-- Articla 02-->
+					<div class="tab-pane" id="Article-02" role="tabpanel">
+
+						<h3>宜蘭美食</h3>
+						<!-- Vue實例的掛載點 -->
+
+						<div id='app1' class="row" v-for="posts in results">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+								<div class="card">
+									<div class="card-header">
+										<a v-bind:href="post.Link">
+											{{ post.Name }}
+										</a>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+										<dl>
+											<dd>地區：{{post.Area}}</dd>
+											<dd>地址：{{post.Address}} </dd>
+											<dd>電話：{{post.Tel}}</dd>
+											<dd>房價：{{post.Price}}</dd>
+										</dl>
+										<img v-bind:src="post.Figure" class="img-fluid">
+
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Articla 03-->
+					<div class="tab-pane " id="Article-03" role="tabpanel">
+
+						<h3>花蓮美食</h3>
+						<!-- Vue實例的掛載點 -->
+
+						<div id='app2' class="row" v-for="posts in results">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+								<div class="card">
+									<div class="card-header">
+										<a v-bind:href="post.Link">
+											{{ post.Name }}
+										</a>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+										<dl>
+											<dd>地區：{{post.Area}}</dd>
+											<dd>地址：{{post.Address}} </dd>
+											<dd>電話：{{post.Tel}}</dd>
+											<dd>房價：{{post.Price}}</dd>
+											<dd>星級：{{post.Star}} </dd>
+										</dl>
+										<img v-bind:src="post.Figure" class="img-fluid">
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Articla 04-->
+					<div class="tab-pane " id="Article-04" role="tabpanel">
+						<h3>台東美食</h3>
+						<!-- Vue實例的掛載點 -->
+
+						<div id='app3' class="row" v-for="posts in results">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+								<div class="card">
+									<div class="card-header">
+										<a v-bind:href="post.Link">
+											{{ post.Name }}
+										</a>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+										<dl>
+											<dd>地區：{{post.Area}}</dd>
+											<dd>地址：{{post.Address}} </dd>
+											<dd>電話：{{post.Tel}}</dd>
+											<dd>房價：{{post.Price}}</dd>
+
+										</dl>
+										<img v-bind:src="post.Figure" class="img-fluid">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Next Aritical -->
+
 				</div>
-			</aside>
-          </div>
-          <div class="col-md-9 col-lg-10">
-            <div class="tab-content">
 
-            <!-- Articla 01-->
-              <div class="tab-pane active" id="Article-01" role="tabpanel">
-                <article>
-                  <h3>匯總</h3>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-							<h5>觀光旅遊 官網</h5>
-							<ul>
-								<li>
-									<a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016">交通部觀光局：觀光景點</a>
-								</li>
-								<li>
-									<a href="https://travel.yilan.tw/zh-tw">宜蘭勁好玩</a>
-								</li>
-								<li>
-									<a href="http://tour-hualien.hl.gov.tw/">花蓮觀光資訊網</a>
-								</li>
-								<li>
-									<a href="https://tour.taitung.gov.tw/zh-tw">台東觀光旅遊網</a>
-								</li>
-							</ul>
-							
-						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-							<h5>旅遊資訊網</h5>
-							宜蘭<br>
-							花蓮
-							<ul>
-								<li>
-									AsiaYo <a href="https://asiayo.com/event/hualien_twfit.html">2020 花蓮旅遊攻略：Top 44 花蓮景點</a>
-								</li>
-								<li>
-									玩全台灣 <a href="https://okgo.tw/buty/hualien.html">花蓮景點整理</a>
-								</li>
-								<li>
-									Funtime 旅遊比價 <a href="https://www.funtime.com.tw/localtour/city.php?target=CN_HL">在地一日遊</a>
-								</li>
-							</ul>
-							台東<br>
-							
-						</div>						
-					</div>
-					
-                </article>
-              </div>
 
-              <!-- Articla 02-->
-              <div class="tab-pane" id="Article-02" role="tabpanel">
-                <article>
-                  <h5>宜蘭</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-	
-						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+			</div>
 
-							
-						</div>						
-					</div>
-					
-				</article>
-              </div>
+		</div>
 
-              <!-- Articla 03-->
-              <div class="tab-pane " id="Article-03" role="tabpanel">
-                <article>
-                  <h5>花蓮</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+	</main>		
+	  
 
-						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-
-												
-						</div>						
-					</div>
-
-                </article>
-              </div>
-
-              <!-- Articla 04-->
-              <div class="tab-pane " id="Article-04" role="tabpanel">
-                <article>
-                  <h5>台東</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-							
-						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-						
-						
-						</div>						
-					</div>
-
-                </article>
-              </div>				
-				
-	          <!-- Next Aritical -->	
-				
-            </div>
-          </div>
-
-        </div>
-    </main>
-	
+</div>
     <!-- InstanceEndEditable -->
 	
 	<footer id="main_footer">
@@ -290,7 +341,123 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- InstanceBeginEditable name="vue control program" -->
     <div>
-      <!-- Vue實例的程式碼 -->
+		<!-- Vue實例的程式碼 -->
+		<script>
+			const posts = []
+
+			const SECTIONS_YL = "宜蘭"
+			const SECTIONS_HL = "花蓮"
+			const SECTIONS_TT = "台東"
+
+			new Vue({
+				el: '#app1',
+				data: {
+					posts,
+					// results: [],
+					sections: SECTIONS_YL.split(', '),
+					section: '宜蘭'
+				},
+				filter: {
+					formatted(value) {
+						return ' 以下是 ${value} 類別的貼文 '
+					}
+				},
+
+				computed: {
+					results() {
+						let posts = this.posts
+							.slice()
+							.filter(post => post.Category === this.section)
+						let i, j, chunkedArray = [], chunk = 20;
+						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+							chunkedArray[j] = posts.slice(i, i + chunk);
+						}
+						return chunkedArray
+					}
+				},
+
+				mounted() {
+					axios.get('file/TGE-511-YilanFood.json').then((response) => {
+						this.posts = response.data;
+						this.getPostsByCategory(this.section)
+					}).catch(error => { console.log(error); });
+				},
+
+			});
+
+			new Vue({
+				el: '#app2',
+				data: {
+					posts,
+					// results: [],
+					sections: SECTIONS_HL.split(', '),
+					section: '花蓮'
+				},
+				filter: {
+					formatted(value) {
+						return ' 以下是 ${value} 類別的貼文 '
+					}
+				},
+
+				computed: {
+					results() {
+						let posts = this.posts
+							.slice()
+							.filter(post => post.Category === this.section)
+						let i, j, chunkedArray = [], chunk = 20;
+						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+							chunkedArray[j] = posts.slice(i, i + chunk);
+						}
+						return chunkedArray
+					}
+				},
+
+				mounted() {
+					axios.get('file/TGE-512-HualienFood.json').then((response) => {
+						this.posts = response.data;
+						this.getPostsByCategory(this.section)
+					}).catch(error => { console.log(error); });
+				},
+
+			});
+
+			new Vue({
+				el: '#app3',
+				data: {
+					posts,
+					// results: [],
+					sections: SECTIONS_TT.split(', '),
+					section: '台東'
+				},
+				filter: {
+					formatted(value) {
+						return ' 以下是 ${value} 類別的貼文 '
+					}
+				},
+
+				computed: {
+					results() {
+						let posts = this.posts
+							.slice()
+							.filter(post => post.Category === this.section)
+						let i, j, chunkedArray = [], chunk = 20;
+						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+							chunkedArray[j] = posts.slice(i, i + chunk);
+						}
+						return chunkedArray
+					}
+				},
+
+				mounted() {
+					axios.get('file/TGE-513-TaitungFood.json').then((response) => {
+						this.posts = response.data;
+						this.getPostsByCategory(this.section)
+					}).catch(error => { console.log(error); });
+				},
+
+			});
+
+		</script>
     </div>
     <!-- InstanceEndEditable -->
 </body>
