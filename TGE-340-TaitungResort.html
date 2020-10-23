@@ -18,8 +18,8 @@
   <!-- My CSS file -->
   <link rel="stylesheet" href="css/mycss.css">
   <!-- InstanceBeginEditable name="doctitle" -->
-  <title>Add Title here</title>
-  <meta name="description" content="AiCity Community WebSite 2019">
+  <title>花東旅遊 - 台東景點</title>
+  <meta name="description" content="Taitung Resort">
   <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -137,15 +137,106 @@
 
 	<!-- Web Page Title -->
 	<!-- InstanceBeginEditable name="main_heading" -->
-	<h2 id="main_heading"> Insert main heading here </h2>
+	<h2 id="main_heading">台東旅遊景點</h2>
 	<!-- InstanceEndEditable -->
 	  
 	<!-- Vue實例的掛載點 -->
     <!-- InstanceBeginEditable name="main_content" -->
-    <article> Instert content here 
-	  
-	</article>  
-</div>
+	<main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              	<h5>類別</h5>
+
+
+				<div class="list-group" id="MenuList" role="tablist">
+				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">景點匯總</a>
+				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">旅遊路線</a>
+				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">旅遊秘境</a>
+				</div>
+				<br>
+				
+			</aside>
+          </div>
+          <div class="col-md-9 col-lg-10">
+            <div class="tab-content">
+
+            <!-- Articla 01-->
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  <h3>台東</h3>
+					  <div>
+						<h5>台東 景點地圖</h5>
+						<img src="fig/TGE-3401-TaitungResort-01.jpg" class="img-fluid" style="width:600px">
+					  </div>
+						<h5>台東 景點匯總</h5>
+					  <div id="app1" class="row" v-for="posts in results">
+						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+						  <div class="card">
+							<div class="card-header">
+							  <a v-bind:href="post.Link">
+								{{ post.Name }}
+							  </a>
+							</div>
+							<div class="card-body">
+							  <p class="card-text">
+							  <dl>
+
+								<dd>鄉鎮：{{post.Area}}</dd>
+								<dd>電話：{{post.Tel}} </dd>
+								<dd>地址：{{post.Address}} </dd>
+								<dd>開放時間：{{post.Hours}}</dd>
+
+							  </dl>
+							  <img v-bind:src="post.Figure" class="img-fluid">
+								<p>
+									<br>
+									{{post.Description}}
+								</p>
+
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>         			
+					
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane" id="Article-02" role="tabpanel">
+                <article>
+                  <h3>台東 旅遊路線</h3>
+				  <div>
+				    Insert Kinmen here
+			 	  </div>
+					
+				</article>
+              </div>
+
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+                  <h3>台東 旅遊秘境</h3>
+				  <div>
+					  Insert Mazu here
+				  </div>
+
+                </article>
+              </div>
+
+				
+				
+	          <!-- Next Aritical -->	
+				
+            </div>
+
+
+          </div>
+
+        </div>
+
+    </main>
     <!-- InstanceEndEditable -->
 	
 	<footer id="main_footer">
@@ -172,7 +263,122 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- InstanceBeginEditable name="vue control program" -->
     <div>
-      <!-- Vue實例的程式碼 -->
+ 		<!-- Vue實例的程式碼 -->
+		<script>
+		  const posts = []
+		  const SECTIONS_TT1 = "台東"
+		  const SECTIONS_TT2 = "台東"
+		  const SECTIONS_TT3 = "台東"		  
+
+		  new Vue({
+			el: '#app1',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_TT1.split(', '),
+			  section: "台東"
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 30;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/TGE-341-TaitungResort.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });		  
+		  
+		  new Vue({
+			el: '#app2',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_TT2.split(', '),
+			  section: '台東'
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 20;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/TGE-342-TaitungResort.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });
+			
+		  new Vue({
+			el: '#app3',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_TT3.split(', '),
+			  section: '台東'
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 20;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/TGE-343-TaitungResort.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });				
+			
+		</script>	
     </div>
     <!-- InstanceEndEditable -->
 </body>
