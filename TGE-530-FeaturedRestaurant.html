@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/TGE-01-Template03.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>花東旅遊 - 特色餐廳</title>
+  <meta name="description" content="Featured Restaurant">
+  <!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">用戶登入</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">個人資訊</a>
+              <a class="dropdown-item" href="TGE-120-SignIn.html">登入註冊</a>
+              <a class="dropdown-item" href="TGE-130-Message.html">用戶留言</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="TGE-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="TGE-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="TGE-240-LocalTransit.html">當地交通</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區景點</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-310-SeasonalEvent.html">旅遊資訊</a>
+              <a class="dropdown-item" href="TGE-320-YilanResort.html">宜蘭景點</a>
+              <a class="dropdown-item" href="TGE-330-HualienResort.html">花蓮景點</a>
+              <a class="dropdown-item" href="TGE-340-TaitungResort.html">台東景點</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="TGE-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="TGE-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="TGE-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="TGE-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="TGE-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="TGE-540-Souvenirs.html">伴手禮品</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="TGE-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="TGE-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="TGE-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron-->
+
+          <!-- InstanceBeginEditable name="jumbotron description " -->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg5 d-flex align-items-end">
+        	<div class="container">        
+				<div class="bg-lighter p-1" style="width:300px">
+				  <h4 class="text-white" >花東特色餐廳</h4>
+				  <p class="lead text-white">尋求台灣後花園中的特色美食</p>
+				</div>
+			</div>
+		</div>
+        <!-- InstanceEndEditable --> </div>
+
+
+	<!-- Web Page Title -->
+	<!-- InstanceBeginEditable name="main_heading" -->
+	<h2 id="main_heading">花東特色美食</h2>
+	<!-- InstanceEndEditable -->
+	  
+	<!-- Vue實例的掛載點 -->
+    <!-- InstanceBeginEditable name="main_content" -->
+	<main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              	<h5>地區</h5>
+
+				<div class="list-group" id="MenuList" role="tablist">
+				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">匯總</a>
+				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">宜蘭</a>
+				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">花蓮</a>
+				  <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">台東</a>
+				</div>
+			</aside>
+          </div>
+          <div class="col-md-9 col-lg-10">
+            <div class="tab-content">
+
+            <!-- Articla 01-->
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  	<h3>美食匯總</h3>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						
+						</div>						
+					</div>
+					
+         
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane" id="Article-02" role="tabpanel">
+                <article>
+				  <h3>宜蘭特色餐廳</h3>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						
+						</div>						
+					</div>
+					
+				</article>
+              </div>
+
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+					<h3>花蓮特色餐廳</h3>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>「陶甕、百合、春天」餐廳</h5>
+							<ul>
+								<li>
+									地址：豐濱鄉靜浦村138號
+								</li>
+								<li>
+									電話：03-8781683
+								</li>
+								<li>
+									<a href="https://www.facebook.com/CanglahRestaurant/">Facebook</a>
+								</li>
+								<li>
+									微笑台灣 
+									
+									<a href="https://smiletaiwan.cw.com.tw/article/949">2013/07/30 報導</a>
+									 : 總裁的七星級口袋名單，到靜浦部落才吃得到
+								</li>
+							</ul>	
+							<br>
+							無菜單料理
+							<div id="carouselExampleIndicators-1" class="carousel slide img-fluid"
+								data-ride="carousel" style="width:600px">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>							<li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="17"></li>				
+
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-01.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-02.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-03.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-04.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-05.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-06.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-08.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-09.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-10.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-11.jpg"
+											class="d-block w-100" alt="...">
+									</div>	
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-12.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-13.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-14.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-15.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-16.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-17.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5301-HualienFeaturedRestaurant-18.jpg"
+											class="d-block w-100" alt="...">
+									</div>									
+
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicators-1"
+									role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon"
+										aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators-1"
+									role="button" data-slide="next">
+									<span class="carousel-control-next-icon"
+										aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>							
+							<br><br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						微笑台灣 報導摘錄：<br>
+							「陶甕、百合、春天」餐廳主廚陳耀忠，是亞都麗緻飯店前總裁嚴長壽眼中的七星級主廚，二〇一二年底，更接受華航諾富特飯店主廚魯志忠邀請，將靜浦部落的滋味帶進國門飯店。<br>
+							<br><br>
+							生活在海岸山脈與太平洋間，豐濱靜浦部落的阿美族，養出了山海通吃的好胃口與好手藝。上山採集、下海捕魚是陳耀忠部落生活的常態，也是他創造美味的秘訣，「親手採集才知道季節和食材的變化，」一身古銅膚色的陳耀忠笑著說，大海和山野是不用插電的冰箱，隨季節與植物生長狀態擷取最佳食材：「菜單要問老天爺才準！」流行於坊間的「無菜單」餐點，早就是他的經營常態。
+							<br><br>
+							門前橘紅陶甕造型的麵包窯，在一片湛藍的海岸部落裏，很是顯眼，順著水藍波浪壁畫來到餐廳二樓，落地窗外，秀姑巒溪水欣喜地奔回海洋，窗內，饕客們則興奮地等待主廚揭曉今日最佳食材
+							<br><br>
+							燻飛魚XO醬鑲山苦瓜，打開炎炎六月的胃；鮮嫩刺蔥鹽烤赤，解偏好海味者的饞；甜美枇杷蟹，是昨夜陳耀忠與岸間潮水搏鬥的生猛戰利品；鮮甜又充滿濃濃蕈菇香的雞肉絲菇，是春雨後，乾燥木堆裏長出來，可遇不可求的野生極品！
+							
+						</div>						
+					</div>
+
+                </article>
+              </div>
+
+              <!-- Articla 04-->
+              <div class="tab-pane " id="Article-04" role="tabpanel">
+                <article>
+					<h3>台東特色餐廳</h3>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>Sinasera 24 法式餐廳</h5>
+							<ul>
+								<li>
+									地址：台東縣長濱鄉南竹湖26-3號
+								</li>
+								<li>
+									電話：089-832-558
+								</li>
+								<li>
+									<a href="https://www.facebook.com/SINASERA24/">Facebook</a>
+								</li>
+								<li>
+									網址：
+								</li>
+								<li>
+									Wallace 
+									<a href="">2020/03/06 報導 </a>: Sinasera 24｜無菜單料理向太平洋致敬，隱身台東長濱南竹湖部落的法式饗宴
+									
+								</li>
+							</ul>
+							法式料理
+							<div id="carouselExampleIndicators-2" class="carousel slide img-fluid"
+								data-ride="carousel" style="width:600px">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>			
+
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-01.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-02.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-03.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-04.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-05.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-06.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-08.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-09.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-10.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-11.jpg"
+											class="d-block w-100" alt="...">
+									</div>	
+									<div class="carousel-item">
+										<img src="fig/TGE-5302-HualienFeaturedRestaurant-12.jpg"
+											class="d-block w-100" alt="...">
+									</div>
+								
+
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicators-2"
+									role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon"
+										aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators-2"
+									role="button" data-slide="next">
+									<span class="carousel-control-next-icon"
+										aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+							<br><br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							Wallace 報導摘錄：<br>
+							台東長濱南竹湖部落的無菜單料理Sinasera 24，東海岸食材入饌，搭配24節氣主題變換，幻化一道道精緻菜色上桌的純正法式料理饗宴。Sinasera 24一直是心願清單，卻苦無機會走這一趟。BUT！好DER（人生就是充滿轉折），因著引起地球人混怒的Made in China武漢肺炎（aka 新冠肺炎）全球肆虐，不適合出國，我們也就順理成章將228連假目的地，從東京改成台東，來一趟向太平洋致敬的Fine Dining體驗之旅。
+							<br><br>
+							Sinasera 24主廚楊柏偉（Nick Yang），曾經在長濱國中擔任教育服務役（我替代役我驕傲），退伍到法國習藝，先後在普羅旺斯、馬賽的米其林一星、三星餐廳歷練，還成為三星餐廳Le Petit Nice的首位華人領班。某日，長濱畫日風尚（Dawn Resort）老闆跑去法國，把楊柏偉邀請回到台東長濱擔任主廚（有沒有三顧茅廬我不知道）。楊柏偉因著深愛這片土地與太平洋（故事都這樣的），決定回台灣築夢啦。
+							<br><br>
+							Sinasera一詞源自阿美族語「大地」，Sinasera 24意指餐廳以大地為靈感，搭配24節氣變化。某食材產季過去了，就尋找類似口感的時令食材入菜更換。看到這裡，是不是覺得法式料理食材觀念跟日本的懷石料理根本一模一樣？這也難怪，日本的米其林餐廳多到嚇人。
+						
+						</div>						
+					</div>
+					
+                </article>
+              </div>				
+				
+	          <!-- Next Aritical -->	
+				
+            </div>
+
+          </div>
+
+        </div>
+
+    </main>
+    <!-- InstanceEndEditable -->
+	
+	<footer id="main_footer">
+		<p id="p-footer">
+				&copy;TCW Smart Life 2020 智慧生活-花東旅遊
+		</p>
+
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- InstanceBeginEditable name="vue control program" -->
+    <div>
+      <!-- Vue實例的程式碼 -->
+    </div>
+    <!-- InstanceEndEditable -->
+</body>
+
+<!-- InstanceEnd --></html>
