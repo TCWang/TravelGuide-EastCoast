@@ -18,8 +18,8 @@
   <!-- My CSS file -->
   <link rel="stylesheet" href="css/mycss.css">
   <!-- InstanceBeginEditable name="doctitle" -->
-  <title>花東旅遊 - 旅館推薦</title>
-  <meta name="description" content="Hotel Recommendation">
+  <title>花東旅遊 - 民宿推薦</title>
+  <meta name="description" content="B&B Recommendation">
   <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -127,8 +127,8 @@
         <div class="jumbotron jumbotron-fluid jumbotron-bg4 d-flex align-items-end">
         	<div class="container">        
 				<div class="bg-lighter p-1" style="width:300px">
-				  <h4 class="text-white" >旅館推薦</h4>
-				  <p class="lead text-white">尋求最好的旅遊住宿</p>
+				  <h4 class="text-white" >民宿推薦</h4>
+				  <p class="lead text-white">尋求意想不到的民間住宿</p>
 				</div>
 			</div>
 		</div>
@@ -137,7 +137,7 @@
 
 	<!-- Web Page Title -->
 	<!-- InstanceBeginEditable name="main_heading" -->
-	<h2 id="main_heading"> 花東旅遊 旅館推薦 </h2>
+	<h2 id="main_heading"> 花東旅遊 民宿推薦 </h2>
 	<!-- InstanceEndEditable -->
 	  
 	<!-- Vue實例的掛載點 -->
@@ -166,7 +166,7 @@
 					<!-- Articla 01-->
 					<div class="tab-pane active" id="Article-01" role="tabpanel">
 						<article>
-							<h5>旅館匯總</h5>
+							<h5>民宿匯總</h5>
 							<div class="row">
 								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
 
@@ -194,7 +194,7 @@
 										</li>
 										<li>
 											AsiaYo.com <a
-												href="https://asiayo.com/zh-tw/list/tw/matsu/?aff_id=271&utm_source=google_adwords&utm_campaign=54289937515&utm_medium=cpc&utm_term=&gclid=CjwKCAjwiOv7BRBREiwAXHbv3JmKZygn7Z-A9H0lyNJqmY67nUEADbSsym-lueEB89mvM13VyTi10RoCRYcQAvD_BwE">AsiaYo</a>
+												href="https://asiayo.com/zh-tw/list/tw/hualien-county/">AsiaYo</a>
 										</li>
 										<li>
 											ezTravel.com <a
@@ -224,6 +224,13 @@
 												href="https://www.google.com.tw/travel/hotels/%E5%8F%B0%E6%9D%B1?g2lb=2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4371335%2C4401769%2C4419364%2C4425458%2C4433754%2C4444000%2C4447566%2C4448316%2C4452531%2C4270859%2C4284970%2C4291517%2C4412693&hl=zh-TW&gl=tw&un=1&ap=SAEwAGgA&rp=ogEJ6YeR6ZaA57ijQABIAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDVFdEKhYKBwjkDxALGAsSBwjkDxALGAwYASgAsAEAWAFoAZoBLxIG5Y-w5p2xGiUweDM0NmZiOGQyYTUyYTA0MDE6MHhjZjY4NzFlNDc1YjNmMmZmogEWCgkvbS8wMjVjNzASCeiKseiTrue4ow">旅館地圖</a>
 										</li>
 									</ul>
+									<br><br>
+									民宿推薦：
+									<ul>
+										<li>
+											<a href=""></a>
+										</li>
+									</ul>
 
 								</div>
 
@@ -235,7 +242,7 @@
 					<!-- Articla 02-->
 					<div class="tab-pane" id="Article-02" role="tabpanel">
 
-						<h5>宜蘭住宿選擇</h5>
+						<h5>宜蘭民宿選擇</h5>
 						<!-- Vue實例的掛載點 -->
 
 						<div id='app1' class="row" v-for="posts in results">
@@ -269,7 +276,7 @@
 					<!-- Articla 03-->
 					<div class="tab-pane " id="Article-03" role="tabpanel">
 
-						<h5>花蓮住宿選擇</h5>
+						<h5>花蓮民宿選擇</h5>
 						<!-- Vue實例的掛載點 -->
 
 						<div id='app2' class="row" v-for="posts in results">
@@ -287,7 +294,7 @@
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>房價：{{post.Price}}</dd>
-											<dd>星級：{{post.Star}} </dd>
+											<dd>型態：{{post.Type}} </dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
 
@@ -301,7 +308,7 @@
 
 					<!-- Articla 04-->
 					<div class="tab-pane " id="Article-04" role="tabpanel">
-						<h5>台東住宿選擇</h5>
+						<h5>台東民宿選擇</h5>
 						<!-- Vue實例的掛載點 -->
 
 						<div id='app3' class="row" v-for="posts in results">
@@ -396,7 +403,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
@@ -405,7 +412,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-411-YilanHotel.json').then((response) => {
+					axios.get('file/TGE-421-YilanBandB.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -432,7 +439,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
@@ -441,7 +448,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-412-HualienHotel.json').then((response) => {
+					axios.get('file/TGE-422-HualienBandB.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -468,7 +475,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
@@ -477,7 +484,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-413-TaitungHotel.json').then((response) => {
+					axios.get('file/TGE-423-TaitungBandB.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
