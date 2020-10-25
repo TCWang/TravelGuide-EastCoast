@@ -1,0 +1,98 @@
+﻿[
+        {
+            "No": "01",
+            "Category": "台東",
+            "Area": "台東市",
+            "Name": "THE GAYA HOTEL 渡假酒店 ",
+            "Star": "4",
+            "Price": "4,811",
+            "Address": "台東縣台東市新生路169號",
+            "Tel": "089-611888 ",
+            "Figure": "fig/TGE-4131-TaitungHotel-01.jpg",
+            "Link": "https://www.gaya-hotels.com/"
+        },
+        {
+            "No": "02",
+            "Category": "台東",
+            "Area": "台東市",
+            "Name": "台東桂田喜來登酒店",
+            "Star": "4.5",
+            "Price": "4,374",
+            "Address": "台東縣台東市正氣路316號 ",
+            "Tel": "089-328-858 ",
+            "Figure": "fig/TGE-4131-TaitungHotel-02.jpg",
+            "Link": "https://www.sheraton-taitung.com/"
+        },
+        {
+            "No": "03",
+            "Category": "台東",
+            "Area": "台東市",
+            "Name": "台東娜路彎大酒店 ",
+            "Star": "4.5",
+            "Price": "3,895",
+            "Address": "台東市連航路66號",
+            "Tel": "089-239666",
+            "Figure": "fig/TGE-4131-TaitungHotel-03.jpg",
+            "Link": "https://www.naruwan-hotel.com.tw/news/news.html"
+        },
+        {
+            "No": "04",
+            "Category": "台東",
+            "Area": "台東市",
+            "Name": "娜路彎銀河酒店",
+            "Star": "4",
+            "Price": "2,800",
+            "Address": "台東市豐興路66號",
+            "Tel": "089-382666",
+            "Figure": "fig/TGE-4131-TaitungHotel-04.jpg",
+            "Link": "https://www.naruwan-galaxy.com.tw/"
+        },
+        {
+            "No": "05",
+            "Category": "台東",
+            "Area": "卑南鄉",
+            "Name": "知本老爺酒店",
+            "Star": "4.5",
+            "Price": "10,785",
+            "Address": "台東縣卑南鄉溫泉村龍泉路113巷23號",
+            "Tel": "886-89-510-666",
+            "Figure": "fig/TGE-4131-TaitungHotel-05.jpg",
+            "Link": "https://www.hotelroyal.com.tw/chihpen/"
+        },
+        {
+            "No": "06",
+            "Category": "台東",
+            "Area": "卑南鄉",
+            "Name": "知本金聯世紀酒店",
+            "Star": "4.5",
+            "Price": "5,384",
+            "Address": "台東縣卑南鄉龍泉路30號",
+            "Tel": "089-515-688",
+            "Figure": "fig/TGE-4131-TaitungHotel-06.jpg",
+            "Link": "https://centuryhotel.com.tw/zh/"
+        },
+        {
+            "No": "07",
+            "Category": "台東",
+            "Area": "鹿野鄉",
+            "Name": "鹿鳴溫泉酒店",
+            "Star": "4",
+            "Price": "3,462",
+            "Address": "台東縣鹿野鄉中華路一段200號",
+            "Tel": "089-550-888",
+            "Figure": "fig/TGE-4131-TaitungHotel-07.jpg",
+            "Link": "http://www.lmresort.com.tw/"
+        },
+        {
+            "No": "08",
+            "Category": "台東",
+            "Area": "鹿野鄉",
+            "Name": "台東綺麗渡假村 ",
+            "Star": "4",
+            "Price": "2,571",
+            "Address": "\r\n台東縣鹿野鄉中華路一段260號",
+            "Tel": "089-551-556",
+            "Figure": "fig/TGE-4131-TaitungHotel-08.jpg",
+            "Link": "https://www.cltaiwan.com/"
+        }
+    ]
