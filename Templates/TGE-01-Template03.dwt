@@ -44,12 +44,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user">用戶登入</i>
+              <i class="fas fa-user">旅遊準備</i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../index.html">個人資訊</a>
-              <a class="dropdown-item" href="../TGE-120-SignIn.html">登入註冊</a>
-              <a class="dropdown-item" href="../TGE-130-Message.html">用戶留言</a>
+              <a class="dropdown-item" href="../index.html">相關網站</a>
+              <a class="dropdown-item" href="../TGT-120-Equipment.html">旅遊裝備</a>
+              <a class="dropdown-item" href="../TGT-130-Insurance.html">旅遊保險</a>
             </div>
           </li>
           <li class="nav-item dropdown">
