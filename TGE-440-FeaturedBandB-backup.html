@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/TGE-01-Template03.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>花東民宿推薦</title>
+  <meta name="description" content="花東民宿推薦">
+  <!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">旅遊準備</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">相關網站</a>
+              <a class="dropdown-item" href="TGT-120-Equipment.html">旅遊裝備</a>
+              <a class="dropdown-item" href="TGT-130-Insurance.html">旅遊保險</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="TGE-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="TGE-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="TGE-240-LocalTransit.html">當地交通</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區景點</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-310-SeasonalEvent.html">旅遊資訊</a>
+              <a class="dropdown-item" href="TGE-320-YilanResort.html">宜蘭景點</a>
+              <a class="dropdown-item" href="TGE-330-HualienResort.html">花蓮景點</a>
+              <a class="dropdown-item" href="TGE-340-TaitungResort.html">台東景點</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="TGE-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="TGE-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="TGE-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="TGE-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="TGE-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="TGE-540-Souvenirs.html">伴手禮品</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="TGE-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="TGE-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="TGE-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron-->
+
+          <!-- InstanceBeginEditable name="jumbotron description " -->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg4 d-flex align-items-end">
+        	<div class="container">        
+				<div class="bg-lighter p-1" style="width:300px">
+				  <h4 class="text-white" >花東民宿</h4>
+				  <p class="lead text-white">協助旅客找到最適當的旅遊民宿</p>
+				</div>
+			</div>
+		</div>
+        <!-- InstanceEndEditable --> </div>
+
+
+	<!-- Web Page Title -->
+	<!-- InstanceBeginEditable name="main_heading" -->
+	<h2 id="main_heading">花東民宿特別推薦</h2>
+	<!-- InstanceEndEditable -->
+	  
+	<!-- Vue實例的掛載點 -->
+    <!-- InstanceBeginEditable name="main_content" -->
+	<main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              	<h5>類別</h5>
+
+				<div class="list-group" id="MenuList" role="tablist">
+				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">民宿推薦</a>
+				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">李宿</a>
+				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">x</a>
+				  <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">y</a>
+				</div>
+			</aside>
+          </div>
+          <div class="col-md-9 col-lg-10">
+            <div class="tab-content">
+
+            <!-- Articla 01-->
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  	<h3>民宿推薦</h3>
+					<section>
+						<div id='app1' class="row" v-for="posts in results">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+								<div class="card">
+									<div class="card-header">
+										<a v-bind:href="post.Link">
+											{{ post.Name }}
+										</a>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+										<dl>
+											<dd>地區：{{post.Area}}</dd>
+											<dd>地址：{{post.Address}} </dd>
+											<dd>電話：{{post.Tel}}</dd>
+											<dd>開放時間：{{post.Hours}}</dd>
+											<dd>收費：{{post.Price}} </dd>											
+										</dl>
+										<img v-bind:src="post.Figure" class="img-fluid">
+
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+         
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane" id="Article-02" role="tabpanel">
+                <article>
+				  <h3>李宿</h3>
+					<section>
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+								<h5>李宿 etiquette </h5>: 是旅人的家，我們以禮相待。
+								<ul>
+									<li>官網：<a href="https://www.facebook.com/etiquettebnb/">Facebook 李宿</a></li>
+									<li>地址: 花蓮縣花蓮市主權里16鄰德安六街72之5號</li>
+									<li>電話： 0920-199600</li>
+									<li>價格：
+										<table class="table table-striped table-sm" style="width:90%">
+											<tr>
+												<th>人數</th>
+												<th>春節</th>
+												<th>連假</th>
+												<th>寒暑假</th>
+												<th>平日</th>
+											</tr>
+											<tr>
+												<td>一房兩人包棟</td>
+												<td>12,000</td>
+												<td>9,600</td>
+												<td>4,800</td>
+												<td>3,600</td>
+											</tr>
+											<tr>
+												<td>兩房四人包棟</td>
+												<td>12,000</td>
+												<td>9,600</td>
+												<td>6,000</td>
+												<td>4,800</td>
+											</tr>
+											<tr>
+												<td>三房六人包棟</td>
+												<td>12,000</td>
+												<td>9,600</td>
+												<td>7,800</td>
+												<td>6,000</td>
+											</tr>
+											<tr>
+												<td>四房八人包棟</td>
+												<td>12,000</td>
+												<td>9,600</td>
+												<td>9,600</td>
+												<td>7,200</td>
+											</tr>											
+										</table>
+									
+									</li>
+									
+									<li>住房原則包棟：
+										<ul>
+											<li>李宿採包棟形式經營,一次只接待一組客人。即使是一個人一間房,其餘的客房就不開放他人入住。</li>
+											<li>旅客可以安心的享受已預訂的客房及客廳廚房等開放空間,不用擔心陌生人的干擾,讓旅途更自在,更愉快。</li>
+										</ul>
+									</li>
+									<li>
+										入退房時間:
+										<ul>
+											<li>進房時間:當日下午15:00以後。</li>
+											<li>退房時間:隔日上午11:00以前。</li>
+										</ul>
+									</li>
+									<li>
+										注意事項:
+										<ul>
+											<li>為維護住宿品質及遵行菸害防治法,室內嚴禁吸菸酗酒吸毒。</li>
+											<li>若旅客在客房內吸菸將酌收清潔費$3000元。</li>
+											<li>因人力環境等因素,不開放寵物入住。</li>
+											<li>為求住宿品質,李宿謝絕入住人數不實之行為,如發現李宿有拒絕該貴賓入住之權利,或收取2倍房費價差。</li>
+											<li>入住期間若不慎損毀物品應主動告知。惡意破壞環境或物品李宿有權要求照價賠償或復原。</li>
+										</ul>
+									</li>
+									<li>
+										更改或取消訂房:
+										<ul>
+											<li>訂房後若要延期或取消訂房,請於入住前二週來電告知。</li>
+											<li>如遇天災(颱風、地震)等不可抗力因素影響交通,將依照主管機關公告為主,可改期或全額退費。</li>
+											<li>退費工作天數需5~10天,訂金扣除銀行匯款手續費後,餘額全額退還。不便之處尚祈見諒!</li>
+											<li>取消訂房:局定型化契約標準,依取消日期離住宿日期的遠近(天數)退還一定比例訂金(訂金為全額房價的50%)
+										</ul>
+									</li>
+
+								</ul>
+								訂房日曆：注意 - 尚未被預訂之日期才能訂房
+								
+								<iframe src="https://calendar.google.com/calendar/embed?src=o3451kol3f3i6sb9tkeu2vbnjs%40group.calendar.google.com&ctz=Asia%2FTaipei" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<h5>住房照片</h5>
+								李宿<br>
+								<img src="fig/TGE-4401-Etiquette-01.jpg" class="img-fluid" style="width:600px"><br><br>
+															
+							
+									<div id="carouselExampleIndicators-1" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="0"
+												class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>												
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>											
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="fig/TGE-4401-Etiquette-03.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-04.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-05.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-06.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-07.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-08.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-09.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-10.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-11.jpg" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/TGE-4401-Etiquette-12.jpg" class="d-block w-100"
+													alt="...">
+											</div>										
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-1"
+											role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-1"
+											role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>								
+									<br>
+							</div>							
+						</div>
+
+					</section>
+
+				</article>
+              </div>
+
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+					<h3>x</h3>
+					<section>
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+							
+							</div>
+							<div class="col-md-12 col-lg-6">
+							
+							</div>							
+						</div>
+					</section>
+
+                </article>
+              </div>
+
+              <!-- Articla 04-->
+              <div class="tab-pane " id="Article-04" role="tabpanel">
+                <article>
+					<h3>y</h3>
+					<section>
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+							
+							</div>
+							<div class="col-md-12 col-lg-6">
+							
+							</div>							
+						</div>
+
+					</section>
+
+                </article>
+              </div>				
+				
+	          <!-- Next Aritical -->	
+				
+            </div>
+
+          </div>
+
+        </div>
+
+    </main>
+    <!-- InstanceEndEditable -->
+	
+	<footer id="main_footer">
+		<p id="p-footer">
+				&copy;TCW Smart Life 2020 智慧生活-花東旅遊
+		</p>
+
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- InstanceBeginEditable name="vue control program" -->
+    <div>
+		<!-- Vue實例的程式碼 -->
+		<script>
+			const posts = []
+
+			const SECTIONS_Group = "宜蘭，花蓮，台東，花東"
+
+
+			new Vue({
+				el: '#app1',
+				data: {
+					posts,
+					// results: [],
+					sections: SECTIONS_Group.split(', '),
+					section: '花東'
+				},
+				filter: {
+					formatted(value) {
+						return ' 以下是 ${value} 類別的貼文 '
+					}
+				},
+
+				computed: {
+					results() {
+						let posts = this.posts
+							.slice()
+							.filter(post => post.Category === this.section)
+						let i, j, chunkedArray = [], chunk = 30;
+						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+							chunkedArray[j] = posts.slice(i, i + chunk);
+						}
+						return chunkedArray
+					}
+				},
+
+				mounted() {
+					axios.get('file/TGT-441-FeaturedBandB.json').then((response) => {
+						this.posts = response.data;
+						this.getPostsByCategory(this.section)
+					}).catch(error => { console.log(error); });
+				},
+
+			});
+
+		</script>
+    </div>
+    <!-- InstanceEndEditable -->
+</body>
+
+<!-- InstanceEnd --></html>
