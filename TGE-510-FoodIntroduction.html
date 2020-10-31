@@ -179,7 +179,7 @@
 										</li>
 										<li>
 										Ken & Alice 玩樂誌：花蓮美食  <a href="https://kenalice.tw/blog/post/39856633" >60 佳必吃餐廳懶人包</a>
-										</li>
+				¬						</li>
 										<li>
 										FunTime: 花蓮美食 <a href="https://www.funtime.com.tw/blog/funtime/%E3%80%90%E5%8F%B0%E7%81%A3%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6%E3%80%91%E8%8A%B1%E8%93%AE%E5%A5%BD%E5%90%83%E5%88%B0%E7%88%86%E7%9A%8410%E5%A4%A7%E7%BE%8E%E9%A3%9F">好吃到爆的10大美食</a>
 										</li>
@@ -210,6 +210,7 @@
 
 						<h3>宜蘭美食</h3>
 						<!-- Vue實例的掛載點 -->
+						
 
 						<div id='app1' class="row" v-for="posts in results">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
@@ -222,13 +223,14 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Area}}</dd>
+											<dd>地區：{{post.Type}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
-											<dd>房價：{{post.Price}}</dd>
+											<dd>房價：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
-
+										
+										{{post.Description}}
 
 										</p>
 									</div>
@@ -243,6 +245,7 @@
 
 						<h3>花蓮美食</h3>
 						<!-- Vue實例的掛載點 -->
+						摘錄： Yoti 生活：<a href="https://yoti.life/hualien-food-menu/">花蓮美食</a>2020 必吃推薦懶人包！36+ 排隊美食小吃攻略指南
 
 						<div id='app2' class="row" v-for="posts in results">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
@@ -255,13 +258,14 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Area}}</dd>
+											<dd>地區：{{post.Type}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
-											<dd>房價：{{post.Price}}</dd>
-											<dd>星級：{{post.Star}} </dd>
+											<dd>房價：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
+										
+										{{post.Description}}
 
 										</p>
 									</div>
@@ -287,13 +291,15 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Area}}</dd>
+											<dd>地區：{{post.Type}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
-											<dd>房價：{{post.Price}}</dd>
-
+											<dd>房價：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
+										
+										{{post.Description}}
+
 										</p>
 									</div>
 								</div>
@@ -368,7 +374,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
@@ -404,7 +410,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
@@ -440,7 +446,7 @@
 						let posts = this.posts
 							.slice()
 							.filter(post => post.Category === this.section)
-						let i, j, chunkedArray = [], chunk = 20;
+						let i, j, chunkedArray = [], chunk = 30;
 						for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 							chunkedArray[j] = posts.slice(i, i + chunk);
 						}
