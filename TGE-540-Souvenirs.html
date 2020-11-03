@@ -171,10 +171,18 @@
 								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
 									<h5>伴手禮推薦資訊</h5>
 									宜蘭
-
-									<br><br>									
+									<ul>
+										<li>
+											宜蘭伴手禮有哪些？ <a href="https://dailyview.tw/popular/detail/7614">盤點5間必踩老店</a>
+										</li>
+									</ul>								
 									花蓮
-									<br><br>
+									<ul>
+										<li>
+											花蓮 2020 必買伴手禮 <a href="https://fairylolita.com/souvenir/">這7家紅到外國</a>
+										</li>
+									</ul>
+									
 									台東
 
 									<br><br>
@@ -210,13 +218,13 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Type}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>營業時間：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
-										
+										<br><br>
 										{{post.Description}}
 
 										</p>
@@ -244,13 +252,13 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>類別：{{post.Type}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>營業時間：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
-										
+										<br><br>
 										{{post.Description}}
 
 										</p>
@@ -277,13 +285,13 @@
 									<div class="card-body">
 										<p class="card-text">
 										<dl>
-											<dd>地區：{{post.Type}}</dd>
+											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
 											<dd>營業時間：{{post.Hours}}</dd>
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
-										
+										<br><br>
 										{{post.Description}}
 
 										</p>
@@ -369,7 +377,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-521-YilanRestaurant.json').then((response) => {
+					axios.get('file/TGE-541-YilanSouvenirs.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -405,7 +413,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-522-HualienRestaurant.json').then((response) => {
+					axios.get('file/TGE-542-HualienSouvenirs.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
@@ -441,7 +449,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGE-523-TaitungRestaurant.json').then((response) => {
+					axios.get('file/TGE-543-TaitungSouvenirs.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
