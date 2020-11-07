@@ -130,5 +130,53 @@
             "Hours": "周一～周五：11:00～14:00、17:00～20:00\r\n\r\n週六、日：11:00～20:00",
             "Figure": "fig/TGE-5202-HualienRestaurant-11.jpg",
             "Link": "https://www.facebook.com/pages/category/Diner/%E9%AF%89%E9%AD%9A%E6%BD%AD%E6%A8%B9%E5%B1%8B%E9%A4%90%E5%BB%B3Cikasuan-1173545155995464/"
+        },
+        {
+            "NO": "012",
+            "Name": "達基力風味餐廳",
+            "Category": "花蓮",
+            "Type": "秀林鄉",
+            "Description": "太魯閣族的老闆及老闆娘，從近二十年前開始在部落裡打造自己的夢想廚房。老闆娘專攻在太魯閣族傳統美食創意料理 ；而老闆則是致力於藝術創作。也因此這裡帶著自然的藝術風格，算是在崇德這裡別具一格的用餐場所\r\n除了太魯閣族的風味餐(還是無菜單料理～隨時會有菜色變動) 餐廳內還有許多原創藝術雕刻藝術、檜木精油手工皂工作室、舞鎷咖啡館、編織教室及藝術展間。當然，這裡也提供原住民文化體驗活動(需事先預約)",
+            "Address": "花蓮縣秀林鄉崇德村96號",
+            "Tel": "03 862 1033",
+            "Hours": "11:30 - 15:00",
+            "Figure": "fig/TGE-5202-HualienRestaurant-12.jpg",
+            "Link": "https://www.facebook.com/dageeli180.5/"
+        },
+        {
+            "NO": "013",
+            "Name": "葛瑪蘭餐廳",
+            "Category": "花蓮",
+            "Type": "豐濱鄉",
+            "Description": "這家海鮮餐廳幾乎是我每次走花蓮台11線的必吃，菜色與服務沒有一次讓我失望，帶不同朋友前往，更是人人讚不絕口。清蒸龍蝦必點，涼拌海菜、鹹蛋透抽、綜合時蔬、鮮魚料理，更是不點可惜。\r\n",
+            "Address": "花蓮縣豐濱鄉新社42號",
+            "Tel": "03 871 1339",
+            "Hours": "10:00-15:00丨16:30-20:00",
+            "Figure": "fig/TGE-5202-HualienRestaurant-13.jpg",
+            "Link": "https://www.facebook.com/groups/113098648721660/"
+        },
+        {
+            "NO": "014",
+            "Name": "闔家歡",
+            "Category": "花蓮",
+            "Type": "花蓮市",
+            "Description": "30年前從麵食館起家的「闔家歡」至今已是花蓮首屈一指的合菜餐廳，Google評價破千且高達4.3分相當厲害。餐廳約有30張圓桌的規模，假日還總是客滿，必須兩輪接單。\r\n",
+            "Address": "花蓮市花蓮縣中和街228號",
+            "Tel": "03 833 4450",
+            "Hours": "11:00 - 14:00 、 17:00 - 20:30",
+            "Figure": "fig/TGE-5202-HualienRestaurant-14.jpg",
+            "Link": "https://www.facebook.com/pages/%E8%8A%B1%E8%93%AE%E9%97%94%E5%AE%B6%E6%AD%A1/130997417085460"
+        },
+        {
+            "NO": "015",
+            "Name": "不捨咖啡",
+            "Category": "花蓮",
+            "Type": "壽豐鄉",
+            "Description": "位於花蓮縣壽豐鄉鹽寮村大坑5-1號(觀海樓）的11不捨海景咖啡餐廳(No.11 Café及海鮮餐廳- 餐廳)，是個適合喝咖啡、用餐、看海景的一個好地方，有著絕美好景，來到這看著海吹著風，絕對讓你好好放鬆一番！",
+            "Address": "花蓮縣壽豐鄉鹽寮村大坑５-１號(觀海樓）",
+            "Tel": "03 867 1169",
+            "Hours": "10:00 - 17:00",
+            "Figure": "fig/TGE-5202-HualienRestaurant-15.jpg",
+            "Link": "https://www.facebook.com/No.11restaurant/"
         }
     ]

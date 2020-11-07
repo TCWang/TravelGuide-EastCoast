@@ -296,7 +296,7 @@
 				let posts = this.posts
 				  .slice()
 				  .filter(post => post.Category === this.section)
-				let i, j, chunkedArray = [], chunk = 30;
+				let i, j, chunkedArray = [], chunk = 40;
 				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
 				  chunkedArray[j] = posts.slice(i, i + chunk);
 				}
