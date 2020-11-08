@@ -1,0 +1,26 @@
+﻿[
+        {
+            "No": "01",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "李宿",
+            "Type": "市區",
+            "Price": "3,600",
+            "Address": "花蓮縣花蓮市主權里16鄰德安六街72之5號",
+            "Tel": "0920 199 600",
+            "Figure": "fig/TGE-4402-FeaturedBandB-01.jpg",
+            "Link": "https://www.facebook.com/etiquettebnb/"
+        },
+        {
+            "No": "02",
+            "Category": "花蓮",
+            "Area": "花蓮市",
+            "Name": "遠慮園",
+            "Type": "山景",
+            "Price": "1,900",
+            "Address": "花蓮市濟慈路668號",
+            "Tel": "0988 345 800",
+            "Figure": "fig/TGE-4402-FeaturedBandB-02.jpg",
+            "Link": "http://www.bbmountainview.com/index.html#"
+        }
+    ]

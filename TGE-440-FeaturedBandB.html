@@ -178,7 +178,6 @@
 											<dd>地區：{{post.Area}}</dd>
 											<dd>地址：{{post.Address}} </dd>
 											<dd>電話：{{post.Tel}}</dd>
-											<dd>開放時間：{{post.Hours}}</dd>
 											<dd>收費：{{post.Price}} </dd>											
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
@@ -583,7 +582,7 @@
 					posts,
 					// results: [],
 					sections: SECTIONS_Group.split(', '),
-					section: '花東'
+					section: '花蓮'
 				},
 				filter: {
 					formatted(value) {
@@ -605,7 +604,7 @@
 				},
 
 				mounted() {
-					axios.get('file/TGT-441-FeaturedBandB.json').then((response) => {
+					axios.get('file/TGE-441-FeaturedBandB.json').then((response) => {
 						this.posts = response.data;
 						this.getPostsByCategory(this.section)
 					}).catch(error => { console.log(error); });
