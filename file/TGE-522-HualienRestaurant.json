@@ -178,5 +178,17 @@
             "Hours": "10:00 - 17:00",
             "Figure": "fig/TGE-5202-HualienRestaurant-15.jpg",
             "Link": "https://www.facebook.com/No.11restaurant/"
+        },
+        {
+            "NO": "016",
+            "Name": "賀松家料理",
+            "Category": "花蓮",
+            "Type": "花蓮市",
+            "Description": "花蓮無菜單合菜料理松賀家，廚娘每日採買新鮮食材，不油炸、不微波、不燒烤、只燉煮，提供原味自然健康有層次的餐點、不留隔夜菜，皆是廚娘堅持的原則，所以也只能提供晚餐時段，只出一輪餐，不超收客人，美味佳餚真的值得一訪再訪。目前皆採預訂方式，四人以上可預約",
+            "Address": "花蓮縣花蓮市中美路301－3號",
+            "Tel": "03 852 8688",
+            "Hours": "18:00 - 21:30 (週一，週二公休）",
+            "Figure": "fig/TGE-5202-HualienRestaurant-16.jpg",
+            "Link": "https://www.facebook.com/%E6%9D%BE%E8%B3%80%E5%AE%B6%E6%96%99%E7%90%86-114203882021748/"
         }
     ]
