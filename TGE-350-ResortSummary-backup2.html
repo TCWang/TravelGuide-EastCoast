@@ -1,0 +1,3301 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/TGE-01-Template03.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>花東導遊 - 景點匯總</title>
+  <meta name="description" content="AiCity Community WebSite 2019">
+  <!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	<p style="color:white"> 花東導遊 </p>
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">旅遊準備</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">相關網站</a>
+              <a class="dropdown-item" href="TGT-120-Equipment.html">旅遊裝備</a>
+              <a class="dropdown-item" href="TGT-130-Insurance.html">旅遊保險</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="TGE-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="TGE-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="TGE-240-LocalTransit.html">當地交通</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區景點</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-310-SeasonalEvent.html">旅遊資訊</a>
+              <a class="dropdown-item" href="TGE-320-YilanResort.html">宜蘭景點</a>
+              <a class="dropdown-item" href="TGE-330-HualienResort.html">花蓮景點</a>
+              <a class="dropdown-item" href="TGE-340-TaitungResort.html">台東景點</a>
+              <a class="dropdown-item" href="TGE-350-ResortSummary.html">景點匯總</a>				
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="TGE-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="TGE-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="TGE-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="TGE-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="TGE-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="TGE-540-Souvenirs.html">伴手禮品</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="TGE-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="TGE-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="TGE-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron-->
+
+          <!-- InstanceBeginEditable name="jumbotron description " -->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg3 d-flex align-items-end">
+        	<div class="container">        
+				<div class="bg-lighter p-1" style="width:300px">
+				  <h4 class="text-white" >台灣後花園</h4>
+				  <p class="lead text-white">景點收集</p>
+				</div>
+			</div>
+		</div>
+        <!-- InstanceEndEditable --> </div>
+
+
+	<!-- Web Page Title -->
+	<!-- InstanceBeginEditable name="main_heading" -->
+	<h2 id="main_heading">花東旅遊 景點匯總</h2>
+	<!-- InstanceEndEditable -->
+	  
+	<!-- Vue實例的掛載點 -->
+    <!-- InstanceBeginEditable name="main_content" -->
+	<main>
+				
+			<div class="row">
+			  <div class="col-md-3 col-lg-2">
+				<aside class="sidebar1">
+				  <h5>分類</h5>
+
+				  <div class="list-group" id="MenuList" role="tablist">
+					<a href="#Article-001" class="list-group-item list-group-item-action active" data-toggle="list">景點匯總</a>
+					<a href="#Article-111" class="list-group-item list-group-item-action" data-toggle="list">燕子口</a>
+					<a href="#Article-112" class="list-group-item list-group-item-action" data-toggle="list">九曲洞</a>
+					<a href="#Article-113" class="list-group-item list-group-item-action" data-toggle="list">山月吊橋</a>
+					<a href="#Article-114" class="list-group-item list-group-item-action" data-toggle="list">砂卡礑步道</a>
+					<a href="#Article-115" class="list-group-item list-group-item-action" data-toggle="list">白楊步道</a>
+					<a href="#Article-116" class="list-group-item list-group-item-action" data-toggle="list">錐麓古道</a>
+					<a href="#Article-120" class="list-group-item list-group-item-action" data-toggle="list">清水斷崖</a>
+					<a href="#Article-130" class="list-group-item list-group-item-action" data-toggle="list">慕谷慕魚</a>
+					<a href="#Article-140" class="list-group-item list-group-item-action" data-toggle="list">翡翠谷</a>
+					<a href="#Article-210" class="list-group-item list-group-item-action" data-toggle="list">七星潭</a>
+					<a href="#Article-220" class="list-group-item list-group-item-action" data-toggle="list">四八高地</a>
+					<a href="#Article-310" class="list-group-item list-group-item-action" data-toggle="list">東大門夜市</a>
+					<a href="#Article-320" class="list-group-item list-group-item-action" data-toggle="list">松園別館</a>	
+					<a href="#Article-410" class="list-group-item list-group-item-action" data-toggle="list">慶修院</a>
+					<a href="#Article-420" class="list-group-item list-group-item-action" data-toggle="list">貨櫃星巴克</a>
+					<a href="#Article-430" class="list-group-item list-group-item-action" data-toggle="list">台開心農場</a>
+					<a href="#Article-510" class="list-group-item list-group-item-action" data-toggle="list">鯉魚潭</a>
+					<a href="#Article-520" class="list-group-item list-group-item-action" data-toggle="list">遠雄海洋公園</a>
+					<a href="#Article-530" class="list-group-item list-group-item-action" data-toggle="list">七七高地</a>	
+					<a href="#Article-540" class="list-group-item list-group-item-action" data-toggle="list">雲山水溼地生態園區,雲山水</a>
+					<a href="#Article-550" class="list-group-item list-group-item-action" data-toggle="list">牛山呼庭</a>
+					<a href="#Article-560" class="list-group-item list-group-item-action" data-toggle="list">東華大學</a>	
+					<a href="#Article-570" class="list-group-item list-group-item-action" data-toggle="list">山度空間</a>					  
+					<a href="#Article-610" class="list-group-item list-group-item-action" data-toggle="list">親不知子天空步道</a>
+					<a href="#Article-620" class="list-group-item list-group-item-action" data-toggle="list">石梯坪</a>	
+					<a href="#Article-630" class="list-group-item list-group-item-action" data-toggle="list">新社梯田</a>
+					<a href="#Article-710" class="list-group-item list-group-item-action" data-toggle="list">秀姑巒溪泛舟</a>	
+					<a href="#Article-810" class="list-group-item list-group-item-action" data-toggle="list">赤柯山</a>			
+					<a href="#Article-910" class="list-group-item list-group-item-action" data-toggle="list">六十石山</a>	
+					<a href="#Article-1010" class="list-group-item list-group-item-action" data-toggle="list">拉索埃湧泉生態園區</a>						  
+				  </div>
+				  <br>
+				</aside>
+			  </div>
+			  <div class="col-md-9 col-lg-10">
+				<div class="tab-content">
+
+				  <!-- Articla 01-->
+				  <div class="tab-pane active" id="Article-001" role="tabpanel">
+					<article>
+						<h3>景點匯總</h3>
+						<div class="row">
+							<div class="col-md-12 col-lg-4">
+								<img src="fig/ECH-03-HualienMap-03.jpg" style="width:218px height:300px margin: auto; margin: 2px 0 2px 2px;" class=" img-fluid" >			
+							</div>
+							<div class="col-md-12 col-lg-8">
+								<h3>網路參考資料</h3>
+								<div class="row">
+									<ul style="list-style-type:none">
+										<li>官網
+											<ul id="il">
+												<li>
+													<a href="https://www.taiwan.net.tw">交通部觀光局, </a>
+												</li>
+												<li>
+													<a href="http://tour-hualien.hl.gov.tw">花蓮觀光資訊網, </a>
+												</li>
+												<li>
+													<a href="https://www.taroko.gov.tw">太魯閣國家公園, </a>
+												</li>
+												<li>
+													<a href="https://www.eastcoast-nsa.gov.tw/zh-tw">東部海岸國家風景區, </a>
+												</li>
+												<li>
+													<a href="https://twrolla.blogspot.com">必去景點</a>
+												</li>
+											</ul>
+										</li>
+										<li>部落格
+											<ul id="il">
+												<li>
+													<a href="https://twrolla.blogspot.com">旅行途中</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<h3>花蓮地區 推薦必去景點 2020年更新 </h3> 
+								</div>
+								<div class="row">	
+									<p>
+										
+										<ul style="list-style-type:none">
+											<li>1.秀林鄉
+												<ul id="il">
+													<li>1.太魯閣國家公園, 
+														<ul id="il">
+															<li>1.<a href="#Article-111">燕子口</a>, </li>
+															<li>2.<a href="#Article-112">九曲洞</a>, </li>
+															<li>3.山月吊橋, </li>
+															<li>4.砂卡礑步道, </li>
+															<li>5.白楊步道, </li>
+															<li>6.錐麓古道</li>
+														</ul>
+													</li>
+													<li>2.清水斷崖, </li>	
+													<li>3.慕谷慕魚, </li>
+													<li>4.翡翠谷, </li>
+													<li>5.崇德瑩農場</li>
+												</ul>
+											</li>
+											<li>2.新城鄉
+												<ul id="il">
+													<li>1.七星潭, </li>
+													<li>2.四八高地, </li>
+													<li>3.曼波海灘</li>
+												</ul>
+											</li>
+											<li>3.花蓮市
+												<ul id="il">
+													<li>1.東大門夜市, </li>
+													<li>2.松園別館, </li>
+													<li>3.花蓮文創園區, </li>
+													<li>4.撒固兒步道</li>
+												</ul>
+											</li>
+											<li>4.吉安鄉
+												<ul id="il">
+													<li>1.慶修院, </li>
+													<li>2.貨櫃屋星巴克/新天堂樂園, </li>
+													<li>3.台開心農場, </li>
+													<li>4.楓林步道</li>
+												</ul>
+											</li>
+											<li>5.壽豐鄉
+												<ul id="il">
+													<li>1.鯉魚潭, </li>
+													<li>2.遠雄海洋公園, </li>
+													<li>3.七七高地, </li>
+													<li>4.雲山水 生態溼地園區,夢幻湖, </li>
+													<li>5.牛山呼庭, </li>
+													<li>6.東華大學, </li>
+													<li>7.山度空間, </li>
+													<li>8.理想大地, </li>
+													<li>9.立川漁場, </li>
+													<li>10.海崖谷, </li>
+													<li>11.山姆先生咖啡館</li>
+												</ul>
+											</li>
+											<li>6.豐濱鄉
+												<ul id="il">
+													<li>1.親不知子天空步道, </li>
+													<li>2.石梯坪, </li>
+													<li>3.新社梯田, </li>
+													<li>4.石門班哨所, </li>
+													<Li>5.石門麻糬洞</Li>
+												</ul>
+											</li>
+											<li>7.瑞穗鄉
+												<ul id="il">
+													<li>1.秀姑巒溪泛舟, </li>
+													<li>2.瑞穗牧場, </li>
+													<li>3.吉蒸牧場</li>
+												</ul>
+											</li>
+											<li>8.玉里鄉
+												<ul id="il">
+													<li>1.赤柯山</li>					
+												</ul>
+											</li>											
+											<li>9.富里鄉
+												<ul id="il">
+													<li>1.六十石山</li>				
+												</ul>
+											</li>	
+											<li>10.光復鄉
+												<ul id="il">
+													<li>1.拉索埃湧泉生態園區, </li>
+													<li>2.光復糖廠, </li>
+													<li>3.大農大富平地森林園區, </li>
+													<li>4.吉利潭遊憩區</li>
+												</ul>
+											</li>
+												
+										</ul>											
+									</p>
+								
+								</div>
+
+							</div>
+
+						</div>						
+
+					</article>
+				  </div>
+					
+
+				  <!-- Articla 111-->
+				  <div class="tab-pane" id="Article-111" role="tabpanel">
+					<article> 
+					  <h3>燕子口</h3>	
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>太魯閣國家公園 - 遊客中心</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-862-1100 ~ 6</li>
+								<li>傳真: 03-8621263</li>
+								<li>地址: 花蓮縣秀林鄉富世村富世291號</li>
+								<li>開放時間: 遊客中心 8:30～17:00 星期一、每月第二週休館</li>
+								<li>旅遊時間: 1.5～2.0</li>						
+							</ul>
+						
+							<p>
+								太魯閣國家公園成立於1986年，是台灣的第四座國家公園。範圍非常大，橫跨花蓮縣、南投縣、台中市，遊客經常會到的地方是屬於花蓮縣秀林鄉的範圍。太魯閣國家公園可以說是花蓮的代表性景點，也是來到花蓮絕對必訪的景點之一。<br><br>
+
+								太魯閣國家公園最大的特色就是奇特的大自然景觀。處處可見雄偉壯麗、大理石峽谷和斷崖，是立霧溪經年累月長久切割成的峽谷景觀，連綿曲折的山洞隧道、峭壁、峽谷吸引了國內外觀光客前來一睹風采。
+
+								公園中的代表性景點非常多，知名的燕子口、九曲洞、砂卡礑步道、錐麓古道、白楊步道、水濂洞、長春祠等。<br><br>
+
+								瀑布是太魯閣國家公園重要的景觀，從太魯閣口到文山間，瀑布相當多，最著名的要屬白楊瀑布、銀帶瀑布、長春瀑布、綠水瀑布等，還有許多不知名的小流瀑。
+
+								 燕子口和九曲洞，是太魯閣峽谷最讓人心動的自然奇觀，也是峽谷最窄的兩段，臨溪側闢有人行步道供遊客漫步欣賞。燕子口對岸大理石峭壁上可見到許多小洞穴，每當春夏之際，常有小雨燕和洋燕在峭壁間穿梭鳴唱，或在洞穴內築巢，故而得名燕子口。<br>								
+							</p>
+
+							<p>
+								值得一提的是九曲洞，2019年6月24日試營運重新開放。在此之前已經封閉六年。九曲洞步道全長700公尺，須原路折返，和燕子口步道都是太魯閣峽谷地形精華的路段。立霧溪水切穿厚層大理岩，雕鑿出溪谷狹窄、兩岸山壁垂直陡峭的峽谷地形，是當前遊客最喜歡造訪的景點。								
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1111" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>						  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-02.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-03.jpg" class="d-block w-100" alt="...">
+								</div>						  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1111" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1111" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>
+							<br>		
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+					
+				  <!-- Articla 112-->
+				  <div class="tab-pane" id="Article-112" role="tabpanel">
+					<article>
+					  <h3><a href="A112">九曲洞</a></h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>九曲洞 - 布洛灣管理站</h5>  
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-8612528（布洛灣管理站）</li>
+								<li>傳真: 03-8621263</li>
+								<li>地址：花蓮縣秀林鄉富世村富世291號（太魯閣國家公園管理處） </li>
+								<li>開放時間：8:30～17:00</li>
+								<li>旅遊時間：全長700公尺，單程20-30分鐘。</li>						
+							</ul>	
+							
+							<p>
+								九曲洞是太魯閣峽谷最精華的路段之一，步道全長700公尺，須原路折返。步道緊倚著高山深壑，向下俯瞰則是急湍的立霧溪水，兩岸山壁緊峙，鬼斧神工與險峻的地勢令人讚嘆震懾。
+								除了峽谷之外，大理岩壁上的斷層、節理、褶皺等地形，以及在峭壁上絕地逢生的岩生植物，都是值得觀察的重點。九曲洞步道路面寬闊平緩是一條大眾化的遊憩步道，和戶外地質教室。<br><br>
+
+								九曲洞步道入口<br>
+								位於九曲洞隧道西端出口處，是人車分道的起點。新設景觀明隧道從九曲洞隧道延伸出來，提供往來車輛、行人完善之落石防護，兼顧安全及賞景之需求。公車站牌、公廁等設施均設在此。
+								<br><br>
+								第二站 水景步道<br>
+								行至步道里程200公尺處，有一段更靠近溪谷的水景步道，帶領遊人從較低的位置更親近峽谷，在這裡聆聽立霧溪急流震耳的水聲，不難感受到立霧溪強大的侵蝕力。
+								<br><br>
+								 第三站 魚躍龍門（科蘭溪）<br>
+								九曲洞對岸有一條小溪注入立霧溪，陡急的溪水沖蝕大理石壁，在山壁上跳躍翻滾，而大理石山壁也被水切出一道彎曲而狹窄的峽谷，從外觀上看來，有一巨大的大理石佇立在一旁，狀似越過急流的大魚，因此有人將此地取名為「魚躍龍門」。科蘭溪切過大理石壁，儼然已成為一個小型的太魯閣峽谷，從這裡可以看出太魯閣峽谷形成過程中的樣貌，若溪水長年不歇，在久遠的歲月之後，將形成另一個大理石峽谷。
+								<br><br>
+								第四站 九曲蟠龍<br>
+								九曲洞步道中途山壁上所刻有梁寒操先生所提「九曲蟠龍」四個行書大字，此處正好位於兩隧道相接的透空處，透過臨溪的洞口可欣賞西側的峽谷景觀，向東則緊鄰峽谷最窄的一線天，兩岸岩壁逼近，幾乎讓人有伸手可抵對岸的錯覺，而也正因這樣的地形，在此也可明顯感受到上升氣流的現象。
+								九曲洞步道上除「九曲蟠龍」壁刻之外，另有黃杰將軍所題「如腸之迴，如河之曲，人定勝天，開此其局。」
+								<br><br>
+								第五站 步道終點（折返點）<br>
+								里程700公尺的步道終點，遊客需在此回頭循原路折返。
+								<br>
+								擁有鬼斧神工的天然景緻，一直是觀光客首選的熱門景點，但過去經常傳出落石砸傷遊客，所以自2013年起封閉整建，2019年6月24日起試營運開放。目前是遊客的首選。							
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+
+							<div id="carouselExampleIndicators-1121" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="04" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="16"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="19"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-04.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-05.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-07.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-09.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-10.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-12.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-13.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-14.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-15.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-16.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-17.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-18.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1101-Taroko-19.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1121" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1121" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>		
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+
+				  <!-- Articla 113-->
+				  <div class="tab-pane " id="Article-113" role="tabpanel">
+					<article>
+					  <h3>山月吊橋</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>山月吊橋 - 布洛灣管理站</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-8612528（布洛灣管理站）</li>
+								<li>傳真: 03-8621263</li>
+								<li>地址：花蓮縣秀林鄉232號</li>
+								<li>開放時間: 2020年8月12日下午13:30開放。每日9:00~16:30（每個月第1週、第3週的週一為設備養護日不開放，如遇國定假日則順延1天）。</li>
+								<li>申請：山月吊橋須先預約才能進入參觀，預約請至山月吊橋解說預約系統。</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								從布洛灣伊達斯廳旁邊的步道走進去，可以來到山月吊橋。橋長196公尺，橋面寬2.5公尺，距離溪谷約152公尺，從布洛灣臺地邊緣跨越立霧溪谷，是太魯閣國家公園跨距最長、距離溪谷落差最大的吊橋，從橋上俯瞰，立霧溪蜿蜒曲折，而兩岸山勢陡峻，層層相疊，視覺可以從溪谷向上延伸至遠山。往東眺望是溪畔一帶的立霧溪谷，往西則可以欣賞燕子口險峻的峽谷地形，氣勢磅薄。
+								從伊達斯廳至吊橋北岸平臺地步道全長500公尺，均為無障礙步道，輪椅及嬰兒車都可暢行無阻。							
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1131" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>					  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-02.jpg" class="d-block w-100" alt="...">
+								</div>						  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1131" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1131" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+				  
+				  
+				  <!-- Articla 114-->
+				  <div class="tab-pane " id="Article-114" role="tabpanel">
+					<article>
+					  <h3>砂卡礑步道</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>砂卡礑步道 - 蘇花管理站</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-8621100分機321、322（蘇花管理站）</li>
+								<li>傳真:</li>
+								<li>地址：花蓮縣秀林鄉富世村富世291號（太魯閣國家公園管理處） </li>
+								<li>開放時間：24小時</li>
+								<li>旅遊時間：全長4,100公尺，4-6小時， 可視體力，於中點「五間屋」折返， 往返約1小時。  步道平坦，屬一般健行步道。</li>						
+							</ul>									
+							<br>
+							
+							<p>
+								砂卡礑步道，欣賞沿途美麗的大理石峽谷與清澈迷人的溪潭。從入口處到三間屋全長約4.1公里，倚傍著砂卡礑溪而行。砂卡礑溪16公里的流路中，砂卡礑溪沿岸形成峻秀的峽谷，清澈的溪水、美麗的岩石褶皺及蓊鬱的森林；砂卡礑溪溪床上鋪滿了壘石，以大理石與片麻岩最多，褶皺在兩岸山壁和溪中岩石上形成一幅幅抽象壁畫。
+								<br>
+								砂卡礑步道是日治末期所建，主要是為了發展立霧溪的水力發電，維修水壩和大水管而建的。太魯閣國家公園成立後，將這條路規劃為景觀步道，加強沿線安全設施、增設休憩平台與解說設施。
+								<br><br>
+
+								第一站 步道起點
+								砂卡礑步道入口位於砂卡礑隧道西洞口外，從入口循著迴旋梯直下即可到達步道起點。從這裡向南望去，可看到砂卡礑溪水注入立霧溪中，就在步道對岸匯流口附近也形成河階地形，曾是太魯閣族人的部落。
+								<br>
+							</p>
+							
+							<div id="carouselExampleIndicators-1141" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1141" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1141" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>								
+								<br><br>							
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+						  	<p>
+								第二站 白肉榕
+								陡直的山壁，有一棵白肉榕斜長在岩壁上方，它卻從上而下伸出密密麻麻粗細不一的根，牢牢的抓住岩壁，令人撼動。這是榕樹的纏勒現象，而有水土保持的功能，使山壁不至於崩落。
+								<br><br>
+								第三站 蕨類石壁
+								在垂直的大石壁上，仔細觀察可以發現，除了苔蘚類外，也有種類相當多的蕨類，包括伏石蕨、石葦、腎蕨、海金沙、卷柏等，適合作蕨類觀察。
+								<br>
+								<figure>
+									<img src="fig/ECH-F11/ECH-1102-ShanyueBridge-13.jpg" style="width:300px">
+									<figcaption>圖13. 蕨類植物(伏石蕨) </figcaption>
+									<img src="fig/ECH-F11/ECH-1102-ShanyueBridge-14.jpg" style="width:400px">
+									<figcaption>圖14. 蕨類植物(地錢)</figcaption>
+								</figure>
+
+								
+								<br><br>
+								第四站 油桐花廊
+								步道旁有幾株高大的油桐樹，但每年四月底到五月初盛開滿樹雪白的花朵，落花鋪滿這段步道，頗富詩情畫意。
+								<br><br>
+								圖〇油桐花廊
+								<br><br>
+								第五站 大褶皺
+								在此仰頭上望，可以看到對岸裸露的山壁上有許多柔美的線條，像千層糕一般，層層分明地堆疊著，這種地形稱為「褶皺」。山壁除了褶皺之外，還可看到山壁上有許多凹凸不平的表面與洞穴，此特殊的景觀是砂卡礑溪的傑作，在溪水切割的過程中，水侵蝕岩層較鬆軟的部分，而留下較硬的部分所致。
+								<br>
+								圖15大褶皺
+
+								圖〇青綠可愛的莫式樹蛙
+								<br><br>
+								第六站 斯維奇
+								太魯閣語「斯維奇」（swiji）是指大型葉片的榕樹，由於此地榕樹族群數量相當多，因此太魯閣族人也以「斯維奇」為地名。此處為平坦的河階地形，至今仍有太魯閣族人在此農耕，以種植山蘇等作物為生，過去因有五間房舍，也稱為「五間屋」。
+								<br>
+								圖〇斯維奇
+								<br><br>
+								第七站 大水管
+								橫跨砂卡礑溪谷的綠色大水管，是立霧發電廠引立霧溪水發電的輸水管，水管下方的溪床開關，形成2-3個大水潭，水色是翠綠或碧藍，平靜的潭面下，除了堆積的卵石之外，也常有許多鰕虎平貼在石頭上或啃食石頭上的青苔，適合觀察水生魚類。
+								<br><br>
+								第八站 攔砂壩
+								攔砂壩為放流式水壩，將砂卡礑溪水用全長879公尺的水道引至立霧發電廠，供發電機組冷卻及人員飲用。水量豐沛時，溢流水會順著溪谷流到下游；但水量較少時，溪水幾乎被水壩完全攔截，水壩下游則幾近枯竭。攔砂壩不僅影響到砂卡礑溪的水流，對於溪流生物而言，更是一道難以跨越的高牆。
+								<br>
+								圖〇
+								<br><br>
+								第九站 三間屋
+								砂卡礑步道走道盡頭是「三間屋」，這裡曾是太魯閣族人的聚落，因過去有三間屋舍而稱「三間屋」，但太魯閣族人卻稱這裡為「柏拉耀」（brayaw），是「姑婆芋」的意思，仔細觀察這裡，陽光並不充足，陰濕的環境正是適合姑婆芋的生長，過去應是長滿姑婆芋而得名。
+								圖〇		
+								<br>
+							</p>
+							
+							
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+
+
+				  <!-- Articla 115-->
+				  <div class="tab-pane " id="Article-115" role="tabpanel">
+					<article>
+					  <h3>白楊步道</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>白楊步道 - 天祥管理站</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：秀林鄉</li>
+								<li>電話：03-8691162（天祥管理站）</li>
+								<li>傳真: </li>
+								<li>地址： : 花蓮縣秀林鄉富世村富世291號。</li>
+								<li>開放時間：備註：遊客入園前請先電詢步道狀況或查詢網頁步道開放情形，以維安全。上本處網站查詢各步道開放封閉最新資訊，請連結 步道開放情形。</li>
+								<li>旅遊時間：2-3小時</li>						
+							</ul>
+							
+							<p>
+								從入口到水濂洞，短短2.1公里的路程就有七個隧道。為建水壩而開的白楊步道。整條步道沿溪而行，前段遇見的是立霧溪的支流瓦黑爾溪，後段所見則是立霧溪上游的塔次基里溪。一路極景不斷，可賞峽谷溪流，可觀山壁苔流，還有隧道中小似雨滴、大至水濂樣的大水在黑暗中傾洩而下。<br><br>
+								貼心盯矃 ：安全帽要戴上 ，手電筒、雨衣必備 ，裡面無廁所。
+								<br><br>
+								第一站 入口隧道<br>
+								白楊步道的入口是一條長達380公尺的隧道，隧道筆直，從此端就可看到彼端出口的亮光。沿途可以欣賞陡峭的山壁、溪水，聽見蟲鳴鳥叫的聲
+								<br>
+								圖〇
+								<br><br>
+								第二站 瓦黑爾溪
+								迎面而來的是一個平坦的階地，瓦黑爾溪直切而下，在此有九十度的大轉彎。階地上設有解說站，介紹整個白楊步道的概況與資源特色，另一側則有大型觀景平台，可在此小憩賞景。
+								<br>
+								圖〇
+								<br><br>
+								第三站 觀景平台
+								進第二隧道前，瓦黑爾溪迎面而來，並在附近注入塔次基里溪，是以管理處於此設置了觀景平台與解說站，供民眾欣賞峽谷之美。第二隧道與第三隧道之間僅相隔約十餘公尺，但地形不穩，有落石之虞，提醒須小心快速通過。
+								<br>
+								圖〇
+								<br><br>
+								第四站 大崩壁
+								白楊步道進入第四隧道前不遠處有一片裸露的岩壁，地質以黑色片岩和綠色片岩為主，屬於順向坡，岩層破碎不穩定，遇大雨，上方岩石容易滑落，是步道全段較危險的路段，通過此路段時要特別注意安全。
+								<br>
+								圖〇
+								<br><br>
+								第五站 白楊瀑布
+								白楊瀑布位於三棧溪切入立霧溪的河口處，由於立霧溪的侵蝕度遠大過三棧溪，河床間形成明顯落差，造就了太魯閣國家公園已知最大最壯觀的瀑布，太魯閣族人稱它為「達歐拉斯瀑布」，意思是斷崖瀑布，訴說著三棧溪被斷崖截斷的故事。太魯閣國家公園著名的瀑布景觀。
+								<br>
+								圖〇
+								<br><br>
+								第六站水濂洞
+								從白楊瀑布續向前行，穿過兩座隧道，約三百公尺就可到達水濂洞。水濂洞是地下湧泉從隧道頂端傾洩而下，形成一幕水濂的特殊景觀。
+								<br>
+								水簾洞主要成因為進行立霧溪水力發電計畫時，於修築此段隧道不慎挖破地下水脈，於是地下水循著岩石裂隙流出不曾間斷。正因如此，地質學家研判，隧道內的岩層有可能受到地下水強烈沖蝕後的路段岩層而鬆動掉落，有潛在倒塌的危險。
+								<br>
+								圖〇			
+								<br><br>								
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							需更換照片！！！！
+							<div id="carouselExampleIndicators-1151" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1151" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1151" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>					  
+
+				  				  
+				  <!-- Articla 116-->
+				  <div class="tab-pane " id="Article-116" role="tabpanel">
+					<article>
+					  <h3>錐麓古道</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>錐麓古道</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-862-1100</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣秀林鄉燕子口隧道</li>
+								<li>開放時間：7:00-10:00 如欲前往，請辦理太管處入園申請,  申請專線: (03)-8621576</li>
+								<li>旅遊時間：</li>
+								<li>門票： 民國106年3月16日起實施收費，全票為新台幣200元，半票為100元</li>
+							</ul>
+							
+							<p>
+								太魯閣國家公園境內唯一的史蹟保存區。錐麓古道為合歡越嶺古道殘存遺跡。錐麓與福磯斷崖隔溪對峙，長約1.2公里，高約600公尺，幾乎全由大理岩構成，是太魯閣峽谷最壯麗的景觀。
+								<br><br>
+								有一段很長的斷崖稱為錐麓大斷崖，是錐麓古道上最精華、最聞名的一段，又被稱為台灣的天空步道。站在古道上，俯瞰底端的立霧溪谷，落差達500公尺以上，峽谷險峻美景撼動靈魂。
+								<br><br>
+								錐麓與福磯斷崖隔溪對峙，長約1.2公里，幾乎全由大理岩構成，是太魯閣峽谷最壯麗的景觀。
+								為太魯閣國家公園內唯一的史蹟保存區。由於地理環境及法令與安全因素，該路線封閉多年。
+								<br><br>
+								「錐麓古道」位於三角錐山的山腹間，是合歡古道主線保留最完整的路段，於1915 年完工，「錐麓」意即三角錐山山麓之意，海拔 765 公尺，昔日行經該路段「人人均捫壁蟹行，自始至終不敢交談」，驚險之情可以想見。（原本只有 30 公分，目前已拓寬為 90 公分）
+								<br><br>
+								近年來管理處為配合生態旅遊之推展並兼顧史蹟之保存工作，完成由錐麓吊橋進入，經巴達崗、大斷崖至紀念碑(斷崖駐在所舊址)路段之修復工作，總長3.1公里，並依入山入園申請之方式，提供山友之進入申請。
+								<br><br>
+								考量該路線環境特殊，須有承載量管制之措施，故需事先申請入山及入園許可，平日96人，例假日增加至156人。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1161" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1161" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1161" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>
+				  <!-- Articla 120-->
+				  <div class="tab-pane " id="Article-120" role="tabpanel">
+					<article>
+					  <h3>清水斷崖</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>清水斷崖 - 蘇花管理站</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：秀林鄉</li>
+								<li>電話：03-8621100分機321、322（蘇花管理站）</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣秀林鄉富世村富世291號</li>
+								<li>開放時間：24小時開放</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								清水斷崖是位於台灣花蓮縣秀林鄉的海岸斷崖，是蘇花公路和仁至崇德路段著名的旅遊景點。被列為台灣八景之一，東台灣最美的海岸風光。
+								<br><br>
+								清水斷崖位於清水山東側，自蘇花公路和平至崇德之間，綿延21公里 。其中清水山東南大斷崖尤其險峻，絕壁臨海面長達5公里，非常壯觀。當行車在山壁斷崖與無垠汪海之間，好像騰雲凌空，在這裡還可以欣賞太平洋海天一色，山海對峙，以及海岸呈現多層次的藍色驚艷。
+								<br><br>
+								匯徳景觀道路(步道)，開放終端臨海路段徒步區，設有｢臺灣十景—清水斷崖｣石碑及觀景臺，為絕佳清水斷崖眺景點。可將太平洋及清水斷崖的山光水色盡入眼簾。途中更有北方澳、南方澳及烏石鼻等多個風景點讓你選擇。
+								<br><br>
+								崇德步道一樣有個「清水斷崖石碑」，可沒有「台灣十景」字樣，清水斷崖拍攝角度也明顯沒有匯德步道美。崇德步道往旁邊向下走有階梯，走路約10分鐘可以到達終點，路程平穩好走，只是要特別留意毒蛇、昆蟲。沿途中有不少樹蔭遮蔽，路程平坦好走。
+								<br><br>
+								崇德，一個人口千餘人的小村落，隸屬於花蓮縣秀林鄉。得天獨厚的地理位置，卻有著無與倫比的視野與景觀，是台灣最壯麗清水斷崖的玄關。
+								崇德原名「達給黎」（TKijig），南起立霧溪，北抵清水斷崖崇德隧道。不論搭火車、自己開車，當我們從北邊前來，在穿越蘇花公路或鐵路間崇山峻嶺，出了崇德隧道後，印入眼簾的就是山海相伴的崇德，再往前過了立霧溪就是花蓮大平原。從立霧溪口延伸至清水斷崖前，這段5-6公里長的狹長地帶，一邊是山，一邊則是海。月形的崇德海灘，比鄰著直衝天際的大山，而陪襯的景緻就是台灣最壯麗的清水斷崖。		
+								<br><br>								
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-08.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1201-QingshuiCliff-10.jpg" class="d-block w-100" alt="...">
+								</div>										  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>		
+				  
+				  
+				  <!-- Articla 130-->
+				  <div class="tab-pane " id="Article-130" role="tabpanel">
+					<article>
+					  <h3>慕谷慕魚</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>慕谷慕魚</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：秀林鄉</li>
+								<li>電話：03-8642157</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣秀林鄉榕樹1鄰2號。</li>
+								<li>開放時間：景點目前已関閉</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								慕谷慕魚位於花蓮縣秀林鄉銅門村，面積涵蓋木瓜溪及其支流清水溪，源自能高山的清水溪又稱能高清水溪。溪長40公里，由大理石組成的河床為其特色，清水溪溪水呈翠綠色，此處又有翡翠谷的原始山林美景，故有著名「小天祥」的美稱。多年前原先居住南投春陽溫泉的八個太魯閣家族，翻過奇萊峰及能高山先後抵達今日的銅門社區及榕樹部落，被渾然天成的美景吸引，便著手開墾定居，當時則以第一個踏上此地的家族名稱「Mukumugi」(音譯：慕谷慕魚)命名，後因慕谷慕魚有著特殊礦產「銅」且因其位居交通隘口，遂改名「銅門」，但慕谷慕魚這美麗的太魯閣族語音譯名稱仍舊流傳在這片美景中。
+
+								<br><br>
+								慕谷慕魚生態廊道─遊客服務中心
+								政府為避免遭人為破壞的清水溪美，2005年4月規劃部分路段為「慕谷慕魚生態廊道」並解除該路段封溪禁漁之限制，供旅客探訪美景。並於2004年7月開幕啟用的遊客服務中心，提供遊覽慕谷慕魚的資訊及導覽服務，成為生態廊道遊程的起始站。
+								<br><br>
+								慕谷慕魚生態廊道─銅門派出所、銅門鐵馬驛站
+								基於生態保育及維護交通安全之考量，慕谷慕魚自2007年1月起實施入山總量管制，每日受理上午、下午各300人次的入山數量限制，並需於銅門派出所辦理乙種入山證，在現場核發入山許可證後始可進入。另設「銅門鐵馬驛站」，提供自行車輪胎打氣、維修工具、洗手間之借用以及飲用水、短暫休息等。
+								<br><br>
+								慕谷慕魚生態廊道─銅門發電廠、銅門檢查哨
+								銅門發電廠前吊橋旁之銅門檢查哨即為進入慕谷慕魚生態廊道前的檢查哨，憑入山許可證即可進入一探幽谷美景。
+								<br><br>
+								慕谷慕魚生態廊道─揚清橋、清流橋、賞魚
+								建議下車採步行方式遊覽，用雙腳體會、並親近慕谷幕魚的生態之美。遊覽慕谷慕魚生態廊道美景，還可參考導覽地圖前往廊道規劃的賞魚區及戲水區，踏入沁涼溪水中消暑或親近魚群。
+								<br>					
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							照片需要更換！！！
+							<div id="carouselExampleIndicators-1301" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1301" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1301" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+				  
+				  <!-- Articla 140-->
+				  <div class="tab-pane " id="Article-140" role="tabpanel">
+					<article>
+					  <h3>翡翠谷</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>翡翠谷</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：秀林鄉</li>
+								<li>電話：03-8642157</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣秀林鄉銅門村榕樹路，銅門大橋旁。</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								位在秀林鄉銅門村的翡翠谷有著與慕谷慕魚相似的藍綠水色，成為夏天當地人與遊客前往戲水的純天然景點。
+								<br><br>
+								進入翡翠谷前，須先穿越翡翠谷隧道，經過隧道時仔細觀察，能看見隧道上方吊掛蝙蝠。（伸手不見五指，記得攜帶手電筒照明。）
+								<br><br>
+								穿越隧道約再走20分鐘的路程，能看見傾洩而下的天然瀑布，這片瀑布有許多名字：「門簾瀑布」、「琉璃瀑布」等，溪水下能看見小魚、溪蟹悠遊自在，來訪的客人可以脫下鞋襪，在沁涼的溪水中泡腳，或是在秀麗的瀑布前，拍照留下美麗的身影。若往瀑布上游走，穿梭林間與溪石，則能看見與瀑布不同的景色，巨大溪石散落在藍綠色澤的湍急溪水，石頭上有著天然的紋理，坐在岩石上欣賞山谷美景，感嘆大自然的鬼斧神工。
+								<br><br>
+								翡翠谷還是李安電影「臥虎藏龍」的取景地喔！						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1401" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-1401-EmeraldValley-09.jpg" class="d-block w-100" alt="...">
+								</div>										  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1401" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1401" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+				  <!-- Articla 210-->
+				  <div class="tab-pane " id="Article-210" role="tabpanel">
+					<article>
+					  <h3>七星潭風景區</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>七星潭</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：新城鄕</li>
+								<li>電話：03-8230751</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣新城鄉七星街旁</li>
+								<li>時間：24 小時開放</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								七星潭，又稱月牙灣，位於臺灣花蓮縣新城鄉大漢村、花蓮市北郊、空軍花蓮基地東側。七星潭是花蓮縣唯一的縣級風景區，連接太魯閣國家公園、東海岸和花東縱谷國家風景區。此地海灘呈一優美的弧形海灣，海水潔淨湛藍，黑石晶瑩剔透，在此可遠眺青山蒼鬱，公路綿延。
+								<br><br>
+								七星潭，是指美崙工業區和花蓮機場以北的地區，有斷層形成的海峽與優美的弧形海灣，具有豐富的自然人文景觀。在七星潭，可以遠眺清水斷崖，夜間還可以欣賞新城和崇德地區的燈火，區內更有許多景點，提供休憩和知性之旅。七星潭風景區以自行車道為動脈，可租自行車，從花蓮市南濱公園、經花蓮港、四八高地到七星潭風景區，長達21公里的旅程有不同的風光。
+								<br><br>
+								七星潭的地質地形、濱海植物、定置漁場、海洋魚類等都與其他海域不同，而其中的定置漁網，更是七星潭最著名的捕魚方式。						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-2101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-2101-Qixingtan-10.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-2101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-2101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+				  
+				  <!-- Articla 220-->
+				  <div class="tab-pane " id="Article-220" role="tabpanel">
+					<article>
+					  <h3>四八髙地</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>四八髙地</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 新城鄉</li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								四八高地位於七星潭南方，因海拔標高 48 公尺而得名，是一片在板塊運動推擠作用下所產生的平坦高地，舊名「美崙鼻」，過去曾是軍事用地，現規劃為自行車道及環保公園；站在四八高地上可以居高臨下、視野極佳，擁有 180 度無遮蔽的環景視角，將七星潭月牙灣的海岸線和太平洋一望無際的湛藍盡收眼底。和身邊最重要的人一起疊石許願，留下浪漫情感和祈願誠心，再把花蓮的美烙印腦海帶回家收藏。						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-2201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>							  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-2201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-2201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>					  
+				  
+				  
+				  <!-- Articla 310-->
+				  <div class="tab-pane " id="Article-310" role="tabpanel">
+					<article>
+					  <h3>東大門夜市</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>東大門夜市</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：花蓮市</li>
+								<li>電話：0977-690-913</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣花蓮市中山路50</li>
+								<li>開放時間：17:30-23:30</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								花蓮東大門國際觀光夜市，簡稱「東大門夜市」，以原有南濱夜市、福町夜市、自強夜市、彩虹夜市遷移整併而來。它是台灣花蓮縣花蓮市重慶路及中山路口的一個夜市，橫跨花蓮市第二聯合里的民主里、民族里及民治里。可分成福町夜市、自強夜市、原住民一條街及大陸各省一條街四大區域，占地約9公頃。
+								<br><br>
+								東大門夜市集結超過四百個攤位，吃喝玩樂一應俱全。旅客來到花蓮市區旅遊的夜晚最佳去處。特別推薦東大門夜市不可錯過的烤玉米、檸檬汁、馬告炒麵刈包、烤麻糬、酸梅湯、滷豆干、百元燒烤快炒、陶燒蛤蠣等，都是人氣強強滾的排隊美食。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-3101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								 </div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>						  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-3101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-3101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>			
+				  
+				  
+				  <!-- Articla 320-->
+				  <div class="tab-pane " id="Article-320" role="tabpanel">
+					<article>
+					  <h3>松園別館、臥松園區</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>松園別館</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：花蓮市</li>
+								<li>電話：03-835-6510</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣花蓮市松園街65號</li>
+								<li>開放時間：週一至週日09:00~18:00 每月第二個星期二以及除夕休館</li>
+								<li>旅遊時間：</li>			
+								<li>門票：60元可折抵消費30元（一般民眾） 40元可折抵消費20元</li>
+							</ul>
+							
+							<p>
+								松園別館舊名為花蓮港陸軍兵事部，建於西元1943年，當時為日軍在花蓮最高軍事指揮中心，又因園內松樹繁茂，環境十分清幽，且地勢居高臨下，同時可遠眺花蓮港及太平洋，成為當時高級軍官的休憩場所。2003年開園至今，呈現另一種與市民共享的歷史風貌，規劃觀海平臺、木棧步道、藝文空間，並邀請藝術家進駐，定期辦理松園主題活動，成為具備生態、藝術、人文歷史的多元空間。
+								<br><br>
+								松園別館的前方有個「臥松園區」，是個以有棵「全台唯一臥松」而聞名的景點。同時，這裡還有藝術家的戶外木雕作品。進到臥松園區參觀並不收費用。在前往松園別館前，也值得順道一訪。		
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-3201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-08.jpg" class="d-block w-100" alt="...">
+								 </div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-3201-PineGarden-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+					  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-3201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-3201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>					  
+				  
+				  
+				  <!-- Articla 410-->
+				  <div class="tab-pane " id="Article-410" role="tabpanel">
+					<article>
+					  <h3>慶修院</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>慶修院</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：吉安鄉</li>
+								<li>電話：03-8535479</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣花蓮市中興路345-1號</li>
+								<li>開放時間： 星期二—星期日 08:30–17:00（星期一 休息）</li>
+								<li>旅遊時間：</li>
+								<li>門票：新台幣30元。</li>
+							</ul>
+							
+							<p>
+								慶修院是位在臺灣花蓮縣吉安鄉的寺院古蹟。花蓮縣定三級古蹟。目前臺灣保存最完整的日式寺院。清淨口舌與身心的手水舍、古意質樸的佛堂、莊嚴肅穆的八十八尊石佛，以及充滿禪意的枯山水，讓人彷彿走入日本佛寺般，不禁沉浸在寧靜安詳的氛圍中，這裡是吉安慶修院，為日治時期川端滿二為了撫慰移民而建設的佈道所，是一座花蓮縣定三級古蹟，也是現今台灣保存最完整的日式寺院。
+								<br><br>
+								慶修院原為真言宗吉野布教所，為真言宗高野山金剛峯寺的海外別院。本尊弘法大師、脇佛不動明王和毘沙門天、創立者為川端滿二。通稱「吉安慶修院」。二戰後改為祭祀釋迦牟尼佛和觀音菩薩。1997年政府指定為古蹟並收歸國有但仍未失去其實際宗教功能，現為觀光景點。 境內有四國八十八箇所靈場之石佛。			<br>			
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-4101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-4101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-4101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>								  
+				  
+				  
+				  <!-- Articla 420-->
+				  <div class="tab-pane " id="Article-420" role="tabpanel">
+					<article>
+					  <h3>星巴克洄瀾門市</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>貨櫃星巴克</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：吉安鄉</li>
+								<li>電話：03-842-0014</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣吉安郷南濱路一段505號</li>
+								<li>開放時間： 星期二—星期日 08:30–17:00（星期一 休息）</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								星巴克「洄瀾門市」於2018年開幕。由29個貨櫃屋組成，以「貨櫃」為建築素材話題性十足，難得的是為綠建築標準打造。特別邀請到日本知名建築設計師「隈研吾」設計。以曾駐足過紐約、巴爾的摩、馬賽、巴塞隆納等世界各大城市碼頭的 29 個貨櫃為主體堆疊打造出倒金字塔型的四層建築，賦予貨櫃新生命。
+								<br><br>
+								貨櫃交疊的鏤空處以大面積的採光天窗，讓日光層層灑落，有如陽光穿透樹林般，在徜徉自然中啜飲咖啡，呼應了花蓮作為大自然特別眷顧的地方特色，享受獨一無二的星巴克體驗。
+								洄瀾門市
+								<br><br>
+								門市外牆更將每個貨櫃都標記了獨特的符碼，記載著過往航行全球的承攬運送故事，是每個貨櫃的專屬履歷，在品味咖啡的同時彷彿跟著貨櫃進行了一趟獨特的旅程。
+								<br><br>
+								洄瀾門市亦為花蓮第一間車道型 (DRIVE THROUGH) 門市，除了可以在室內享用咖啡，也能夠直接開車點餐，並快速將咖啡帶著走，無論是在地人或是途經此地的消費者都能夠隨時隨地享用星巴克的美味咖
+								<br><br>
+								星巴克咖啡成為花蓮的地標，也是旅客來到花蓮必要到訪的地方，來杯星巴咖啡成𤔡花蓮行難忘的回憶！	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-4201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>											  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-4201-Starbucks-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+							  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-4201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-4201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+					
+				  
+				  <!-- Articla 430-->
+				  <div class="tab-pane " id="Article-430" role="tabpanel">
+					<article>
+					  <h3>台開心農場</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>台開心農場</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: </li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-4301" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-4301" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-4301" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+					
+				  
+				  <!-- Articla 510-->
+				  <div class="tab-pane " id="Article-510" role="tabpanel">
+					<article>
+					  <h3>鯉魚潭風景區</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>鯉魚潭</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：03-8641691</li>
+								<li>傳真：03-8641703</li>
+								<li>地址：花蓮縣壽豐鄉池南村環潭北路100號</li>
+								<li>開放時間：星期一—星期日 08:30–17:30</li>
+								<li>旅遊時間: 騎車環潭-約30分鐘, 健行環潭-約1至1.5小時</li>						
+							</ul>
+							
+							<p>
+								鯉魚潭位於台灣花蓮縣壽豐鄉，地處花東縱谷國家風景區的最北端。鯉魚潭為木瓜溪支流銅文蘭溪之上游與花蓮溪支流荖溪之間河川襲奪所形成的堰塞湖，湖面呈南北長東西窄的橢圓形，面積約104公頃左右，湖水來自於地底湧泉，所以終年清澈，水最深處達15公尺。 
+								<br><br>
+								鯉魚潭位於壽豐鄉池南村鯉魚山腳下，東傍鯉魚山而被命名為鯉魚潭。鯉魚潭可分潭南、潭北，潭北附近有銅門慕谷慕魚、翡翠谷，潭南則鄰近池南森林遊樂園區等景點均為花蓮熱門的風景區。園區內有著環潭步道、森林步道等多元化遊憩活動。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5101-Liyutan-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+				  
+				  <!-- Articla 520-->
+				  <div class="tab-pane " id="Article-520" role="tabpanel">
+					<article>
+					  <h3>遠雄海洋公園</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>遠雄海洋公園</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：03-8123100</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄕鹽寮村福德189號</li>
+								<li>開放時間：連結海洋公園網址節目</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								臺灣首創海洋生態互動式主題樂園，在占地10公頃的主題樂園區部分，目前計有入口廣場、海洋村、海遊館、鯊魚館、海獅生態公園、海豚生態公園、海豚同遊池、海獅餵養池、嘉年華大街、水上樂園、機械樂園、兒童王國、夢幻水晶城堡等遊樂設施，園區並有空中纜車及電扶梯戴送遊客，整個園區整體建築以19世紀英國碼頭及海岸嘉年華風格為主，並融合先進的水族館設計概念，將生態環境與海洋展示結合。
+								<br><br>
+								在占地19公頃的自然景觀公園區部分，遊客可從主題樂園徒步或搭空中纜車遊覽，整個園區位於主體樂園與渡假酒店之間，海拔約100公尺至200公尺，全區規劃有鳥園、Green House、結婚廣場、棕櫚園區、熱帶雨林區、沙漠植物園區及溫帶常綠園區。遊客除了海洋公園之外，可以結合鄰近的遠來飯店、理想大地渡假村、花東縱谷、太魯閣等觀光景點，進行更豐富的東海岸之	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+														  
+				  
+				  <!-- Articla 530-->
+				  <div class="tab-pane " id="Article-530" role="tabpanel">
+					<article>
+					  <h3>七七高地</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>七七高地</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：03-8227171</li>
+								<li>傳真: </li>
+								<li>地址：</li>
+								<li>地址：花蓮縣壽豐鄉台11線6.5公里處產業道路上開往花蓮大橋後左轉，沿台11線看到紅綠燈附近，有一路口被樹林覆蓋即是七七高地入口，約在台11線6.5公里處。</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								七七高地是一處能夠在高地有360度視野環景觀看的景點。這塊區域因海拔高度77公尺，又被稱為七七高地。在此之前曾經是駐軍的管制區。現由林務局管理。步行約10幾分鐘就可到達頂端，就能俯瞰太平洋海景、花東縱谷及花蓮溪出海口。
+								<br><br>
+								進入的道路僅有狹小的戰備道，兩旁有雜草，門口汽車進出不方便，可以將車停至入口處。 沿著道路進入約數百公尺，便會來到一處廢棄的砲陣地，再往前行數十公尺，便能抵達最北端的制高點，這有一處廢棄的營舍，走上二樓平臺，立即感受到視野遼闊，展望見四周風景。可俯瞰花蓮溪出海口，因為海流的關係又被大家稱之為洄瀾灣。這裡也是海岸山脈的最北端。往東方可遠眺海與天空連成一線的太平洋，西邊則可鳥瞰花蓮大橋及壯麗花東縱谷，南方還有一座座海岸山脈，看到台11線蜿蜒在其上，北邊可發現花蓮溪出海口及濕地，360度視野十分遼闊。
+								<br><br>
+								提醒游客此地有許多小黑蚊，須著長䄂或噴防蚊液。
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5301" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5301-QiqiHeights-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5301" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5301" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+				  
+				  <!-- Articla 540-->
+				  <div class="tab-pane " id="Article-540" role="tabpanel">
+					<article>
+					  <h3>雲山水 生態溼地園區,夢幻湖</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>雲山水 生態溼地園區</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄕</li>
+								<li>電話：03-8656060</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄉豐坪路二段2巷201弄18號</li>
+								<li>開放時間：24小時</li>
+								<li>旅遊時間：1小時30分鐘</li>	
+								<li>門票：免費</li>
+							</ul>
+							
+							<p>
+								雲山水自然生態農莊及夢幻湖如詩如畫的美景，讓來自各地的遊客到訪這裡成為觀光勝地。雲山水位於花蓮壽豐鄉，花東縱谷中央山脈及海岸山脈之間，占地約24公頃，其中夢幻湖面積約4公頃，清澈可見裡面的小魚，也吸引了許多候鳥、鳥群到這裡來覓食、定居。湛藍的夢幻湖水來自中央山脈，水質清澈，在陽光照射下產生動人景致，加上兩旁雲山水美景倒映在湖面上，如夢似幻的美景，有「夢幻湖」之稱。此外，園區四周種植了多種棕櫚科樹木，以及依照季節性開花的植物、闊葉林等。四季的景色多變，每個季節都有其迷人的地方。也是許多攝影愛好者，爭相取景的地方。貼心提醒，此地區屬於私人土地，夢幻湖是由人工開鑿而成，雖然對外開放讓民眾參觀，但園區內還是有許多私人住宅及土地是不對外開放的，園區車輛禁止進入。	
+								<br>
+							</p>
+							<br>
+
+							<div id="carouselExampleIndicators-5401" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-12.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5401-Yunshanshui-13.jpg" class="d-block w-100" alt="...">
+								</div>										  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5401" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5401" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>									
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>雲山水植物農場</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐郷</li>
+								<li>電話：886-9-07612703</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄉豐坪路二段2巷201弄88號</li>
+								<li>開放時間: 星期日～星期六  08:30 – 17:00</li>
+								<li>旅遊時間：</li>	
+								<li>門票： 入園清潔費100元</li>
+							</ul>
+							
+							<p>
+								翠綠的落羽松林倒映在水中，隨著陽光灑落而呈現夢幻的光影變化，有著絕美宛如歐洲明信片上的風景。
+								<br><br>
+								春分時刻，栽種於夢幻湖畔的鳶尾花紛紛綻放，柔和的紫色花朵隨風在水岸旁蕩漾；秋分時節，走在小水壩上的石磚步道，聽著潺潺流水聲，欣賞眼前由綠轉黃而變得繽紛多彩的落羽松林，讓人情不自禁地沉浸在這水中森林的風景中。
+								欣賞落羽松最佳時刻為12月至明年1月；欣賞鳶尾花最佳時刻為約3月至4月。	
+								<br>
+							</p>
+							<br>							
+						
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+
+				  
+				  <!-- Articla 550-->
+				  <div class="tab-pane " id="Article-550" role="tabpanel">
+					<article>
+					  <h3>牛山呼庭</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>牛山呼庭</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：03-8601400</li>
+								<li>傳真: </li>
+								<li>地址：花蓮壽豐鄉牛山39-5號</li>
+								<li>開放時間：10:00-18:00</li>
+								<li>旅遊時間：</li>	
+								<li>門票：每人50元可折抵園區消費。</li>
+							</ul>
+							
+							<p>
+								「牛山呼庭」名字的來由，源取自於鄰近的牛山，指的就是牧牛耕種之地，阿美族稱為呼庭(Huting)。近年來豐濱鄉已不再靠牛來耕種了，
+								依稀可見的是野放在山上優遊自在玩耍的牛群 ，於是「呼庭」在阿美族人的心裡，有了另一個意義，指的是一個自由自在、無憂無慮的所在地，這也就是牛山呼庭的由來。
+								<br><br>
+								牛山呼庭位於花蓮壽豐鄉，座落在水璉南方海灘的牛山旁。這裡是以漂流木藝術為主題的特色民宿。但大多數的遊客主要是到此走走，在海灘踏浪、大草坪休息、或走到眺望台遠眺依山傍水的美景，享受悠閒的時光。
+								<br><br>
+								牛山，當你在不同季節來訪時，會呈現給你不一樣的美。春天三月有荊桐花開，為大地點綴一片鮮紅；四月百合盛開，在山坡望海，清香綻放﹔五月來，一起去看飛魚﹔七月來，舞一場生命的豐年祭。
+								<br><br>
+								從園區望向海岸線，映入眼中是延伸到湛藍海中的海灣岬角。水璉沿岸的海流，每年和入海的河川上演拉鋸卡位戰。海灘會隨氣候而展現不同風情的變化，不同季節、時間，依序被礫卵石、細砂、漂流木等覆蓋，因此又被稱為「換膚沙灘」。
+								<br><br>
+								牛山位於水璉、番薯寮坑至磯崎之間，為花東沿海五處自然保護區之一，牛山鼻的曲折紋理更是優良的地質教室之一。水璉因水源豐富因此「水蛭」很多，阿美族人稱「Ciwdiyan」，即「盛產水蛭」之涵意，漢人取諧音為「水璉」。蒼翠的山丘環抱著寬廣的河谷盆地，水璉溪蜿蜒而過，是多種族群融合的社區，區內擁有豐富的自然資源及特殊的地質景觀，以及動植物生態和原住民文化等珍貴的觀光資產。
+								<br><br>
+								牛山呼庭還是好萊塢電影『沉默』的拍攝場景呢。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5501" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-10.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5501-NiushanHuting-11.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5501" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5501" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+									  
+				  
+				  <!-- Articla 560-->
+				  <div class="tab-pane " id="Article-560" role="tabpanel">
+					<article>
+					  <h3>東華大學</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>東華大學</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 壽豐鄉</li>
+								<li>電話: 03-863-5000</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄉志學村大學路二段1號</li>
+								<li>開放時間: 8:00~17:00</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								花東為台灣的後山，以景色優美聞名。沿著山線來到了最美大學東華大學。映入眼簾的是湖畔美景。「東華大學」共佔地251公頃，偌大的校園中擁有東湖、華湖和小華湖三個湖泊，其中又以東湖最為有名。校內多數建築物座落於湖畔，景色優美，宛若歐式莊園。湖上有著橫跨湖面的觀景橋，為觀看東華美景的好地方。
+								<br><br>
+								在藍天白雲晴空萬里下，有許多學生在東湖划著獨木舟。形成更美的一幅圖畫。每逢星期三下午，東湖湖畔的獨木舟課程，就不時吸引同學們和觀光客的目光。旅程中經訪岸邊同學稱：他們是在上體育課的獨木舟訓練課程。特別留下深刻印象。
+								<br><br>
+								跨越東湖的景觀橋，站在橋上高點望出去的景色，像置身在歐洲湖畔。 跨過景觀橋，就是大片的草皮，坐在湖畔旁，可以悠閒的眺望遠景。
+								鳳凰木搭配湛藍天空 。校區內有蠻多公共藝術。
+								<br><br>
+
+								東華大學是遊客來花蓮，必選的行程之一。無論是想拍照或是看風景；都會滿足視覺的感受。
+								學校開放進入參觀，免收停車費，但需換證進入
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5601" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="02" class="active"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-10.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-11.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-5601-DonghuaUniversity-12.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5601" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5601" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+									  
+				  
+				  <!-- Articla 570-->
+				  <div class="tab-pane " id="Article-570" role="tabpanel">
+					<article>
+					  <h3>山度空間</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>山度空間</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 壽豐鄉</li>
+								<li>電話：0963-034-304</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄉57號</li>
+								<li>開放時間: 09:30–17:00</li>
+								<li>旅遊時間：</li>	
+								<li>門票：星期一～四免入園費， 週五、六日50元(可折抵飲料費用)</li>
+							</ul>
+							
+							<p>
+								花蓮看海最美視野秘境「山度空間」。在IG打卡非常夯的照片中，可以看到很多具有風格呈現的照片。天空與海結合而成，有天空之鏡的效果。
+								遊客可以窩在球形玻璃鞦韆裡，望著大海與晴空，看著花蓮美麗海岸線。一個又一個三角木帳篷，大家在此留下倩影，超有渡假FU。也是青年男女的浪漫約會景點。山度空間整個地方不大，但是有許多拍照點，如好拍的綠意鞦韆、三角木帳蓬等設施。接下來就是山度空間的最大賣點，
+								絕美的透明玻璃漂浮鞦韆，可以從青山一路遠眺到藍天大海，幾乎每個來的男女老少都要拍一下，還有期間限定的天空之鏡，會有專人幫你拍出夢幻鏡面鞦韆。						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-5701" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-5701" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-5701" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+									  
+				  
+				  <!-- Articla 610-->
+				  <div class="tab-pane " id="Article-610" role="tabpanel">
+					<article>
+					  <h3>親不知子天空步道</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>親不知子天空步道</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 豐濱鄉</li>
+								<li>電話：03-8791350</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣豐濱鄉台11線新豐隧道外</li>
+								<li>開放時間：9:00-17:00 (周一至周日</li>
+								<li>旅遊時間：</li>
+								<li>門票：40元</li>
+							</ul>
+							
+							<p>
+								親不知子天空步道位於花蓮東海岸豐濱新社部落，早年係懸空於斷崖絕壁上的古道。大約在1971年，已荒廢沒有使用，近年來在豐濱鄉公所的努力下，重新採用透明強化玻璃打造成天空步道。其最大特殊點係建立在海邊的峭壁上，乃成為全臺首建的天空步道。
+								<br><br>
+								天空步道於2017年7月l日起開始試營運。近年來花蓮最夯的熱門新景點之一。幾乎每個人到花蓮都要到此遊覽。想挑戰斷崖峭壁間行走玻璃棧道上，一邊漫步在懸掛於崖邊的玻璃棧道，一邊眺望湛藍大海與晴空。
+								<br><br>
+								親不知子天空步道，相傳是以在地原住民的傳說而命名。一名原住民婦人背著小孩走過斷崖，行走時因過度緊張，攀援過崖後，才驚然發覺小孩已不見蹤影，因此命名為「親不知子斷崖」，意指斷崖的驚險，即使親如父子、母女走上此路，都得自己照顧自己，無法互相照顧。		
+								<br><br>
+							</p>
+							<p>
+								親不知子天空步道，號稱是「全台最驚險天空步道」，位於花蓮縣豐濱鄉台11線新豐隧道外的「親不知子斷崖」峭壁上。步道全長150公尺，距離海面約50公尺。古道分成二段，一段是原有古道透過水泥加固及拓寬，另一段(20公尺)垂直懸空的懸崖則以鋼骨跟強化玻璃興建，可讓民眾將昔日古道風光及無敵海景一覽無遺，刺激的是腳底踩
+								著透明的強化玻璃，體驗高懸在空中的驚險感覺。
+								<br><br>
+								親不知子天空步道，是以在地原住民傳說而命名。係相傳一名原住民婦人背著小孩走過斷崖，行走時因過度緊張，攀援過崖後，才驚然發覺小孩已不見蹤影，便稱此為「親不知子斷崖」，意指斷崖的驚險，即使親如父子、母女走上此路，都得自己照顧自己，無法互相照顧，因此得名。2017年7月1日起試營運以來，成為知名的花蓮景點。大家爭先趕來體驗此在空中步道觀海的樂趣。
+								<br>
+							</p>
+							<br>
+						
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-6101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>											  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-6101-Skywalk-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-6101-Skywalk-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-6101-Skywalk-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-6101-Skywalk-04.jpg" class="d-block w-100" alt="...">
+								</div>												  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-6101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-6101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+				  
+				  <!-- Articla 620-->
+				  <div class="tab-pane " id="Article-620" role="tabpanel">
+					<article>
+					  <h3>石梯坪遊憩風景區</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>石梯坪</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：豐濱鄉</li>
+								<li>電話：03-8781452</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣豐濱鄉石梯坪52號</li>
+								<li>開放時間：24小時開放</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								石梯坪位於石梯漁港的東南側，於1983年經內政部劃定為花東沿海保護區內的自然保護區。東部海岸國家風景區設立之後，將此地劃設為石梯坪遊憩區。因本區海岸階地平坦寬廣，故將區內主要通道臨海側規劃成露營區，並鋪設臨海步道通往各主要景點。石梯坪特殊的地質地形景點多分佈在沿海保護區、遊憩區內，以多層階梯狀的隆起岩海階而得名，上面佈滿壺穴、珊瑚礁。沿著石板步道，可深入觀察海蝕溝、海蝕崖、海蝕平臺、隆起珊瑚礁地形地質景觀，此地也是潛水者及海釣者十分熱門的去處。 
+								<br><br>
+								石梯坪遊憩區以特殊的地質聞名，整個地質剖面約100公尺，底部有約30公尺厚的安山岩熔岩，具有柱狀節理。上方被白色的凝灰岩和火山礫岩所覆蓋，而剖面的頂部為岩性疏鬆的白色中酸凝灰岩，可見得為陸上火山噴發的產物。
+								世界級的戶外地質教室
+								<br><br>
+								石梯坪位在花蓮縣豐濱鄉石梯灣的南側尾端，整個區域是一個面積極大的海岸階地，海蝕地形十分發達，海蝕平台、隆起珊瑚礁、海蝕溝、海蝕崖等舉目皆是，尤其是壺穴景觀堪稱台灣第一。
+								<br><br>
+								石梯坪也是個充滿生命力的港口，漁船每日捕撈新鮮的漁獲上岸外，這裡也是台灣賞鯨的發源地，每年夏天鯨豚們總現身外海，吸引遊人們搭上賞鯨船追逐牠們優雅的身影，不妨搭上船一同來個生態賞鯨之旅吧！	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-6201" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-6201" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-6201" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+				  
+				  <!-- Articla 630-->
+				  <div class="tab-pane " id="Article-630" role="tabpanel">
+					<article>
+					  <h3>新社梯田</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>新社梯田</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：豐濱鄉</li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣豐濱鄉台11線44k處 豐濱鄉新社42號          </li>
+								<li>開放時間：24H (周一至周日) 24小時開放</li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								新社部落位於花蓮縣豐濱鄉新社村，是全球唯一噶瑪蘭族最大的聚集地。而它也是溪水流經上游的土地聚落後，從海岸山脈流向大海的出口。
+								是全台唯一臨海稻米梯田。「隨著「東海岸大地藝術節」發展，這片空地上展出的作品越來越精彩，多出了相當有藝術氣息的編織作品與鞦韆，背景是太平洋與梯田襯托，呈現出花東特有的風景。
+								<br><br>
+								新社有「新造之社區的意思」，在噶瑪蘭語中指的是「萬物養生之地」。宜蘭噶瑪蘭族往南遷居到這裡，因想念蘭陽平原大片稻田的風景與米食，便在此地開墾，將臨海的台地打造成梯田，眼前的風光，與海相鄰，更是全台唯一的海梯田，稻田與海岸連成一線的畫面，是最精典的風景。
+								<br><br>
+								全台最大的階梯式梯田 。海天一線無邊際的稻浪與太平洋的蔚藍海岸 。稻田隨風飄看的藍色海岸像是一幅美麗的風景畫，傑克與魔豆童話造型盪鞦韆，另外裝置藝術，有三間不同大小，且材質有變的地景，形塑的是聚落家屋。表達著這裡的噶瑪蘭族人、阿美族人，在這裡落地生根，和自然和諧共處。都是網友在IG上打卡最夯的照片。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-6301" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-6301" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-6301" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+									  
+				  
+				  <!-- Articla 710-->
+				  <div class="tab-pane " id="Article-710" role="tabpanel">
+					<article>
+					  <h3>秀姑巒溪泛舟</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>秀姑巒溪泛舟</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：瑞穗鄉</li>
+								<li>電話：03-887-5400</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣瑞穗鄉中山路三段215號</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+								秀姑巒溪位於台灣東南部，屬於中央管河川，以泛舟活動知名。 秀姑巒溪本身發源於花蓮與台東兩縣之間的崙天山南側，但整個水系的最遠源流則為其最長支流樂樂溪 的支流馬霍拉斯溪，發源於中央山脈的馬博拉斯山東側。
+								<br><br>
+								秀姑巒溪發源於秀姑巒山，全長103公里，全年河水豐沛，為臺灣東部最大的河川。河道迂迴，流經瑞穗切穿海岸山脈，形成峽谷與曲流；每年五月到十月豐水期，可讓遊客體驗泛舟活動的刺激與快感。秀姑巒溪泛舟以奇美為中心，大致可分成二段，前段的航程水流平穩，是培養默契及訓練技術最佳航段。後段水流非常湍急，漩渦、險灘不斷，不必划槳就能前行，但要小心控制方向，否則容易翻船。 
+								<br><br>
+								由瑞穗大橋到長虹橋出海口，整個航程約3~4小時，長22公里的河段中，由於河床達65公尺的落差，間有二十餘處險灘、激流，有長有短，泛舟其間刺激無比，是本島最佳的泛舟勝地。出長虹橋後溪面豁然開闊，皓白的石塊羅列水面，有「秀姑漱玉」之稱。每年6-7月所舉行的秀姑巒溪泛舟觀光季，已成為最重要的泛舟活動，如果你不畏危險，有冒險犯難的精神，可來此享受另類刺激體驗。	
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-7101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-7101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-7101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+				
+				  
+				  <!-- Articla 810-->
+				  <div class="tab-pane " id="Article-810" role="tabpanel">
+					<article>
+					  <h3>赤科山</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>赤科山</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：玉里鄉</li>
+								<li>電話：03-887-5306</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣富里鄉竹田村台九缐293K東側轉入</li>
+								<li>開放時間：星期一-星期日 24小時開放。</li>
+								<li>旅遊時：1-1.5小時</li>						
+							</ul>
+							
+							<p>
+								赤柯山與六十石山齊名，並以「赤科三景」與金針花海聞名。每逢8月至9月的金針花季，整片山丘開滿了黃澄澄的金針花海，萬花齊開的壯闊景致，讓來訪的遊客驚呼之餘，還能看見農民穿梭在金針花田，忙著採收含苞待放的金針人文景致。赤柯山名氣雖不如六十石山，但金針花海夢幻程度可不亞於六十石山；提醒您必看五景點為小瑞士農場、汪家古厝、千噸石龜、赤科三巨石、金針大道。
+								<br><br>
+								花蓮赤柯山小瑞士農場，位在海拔1000公尺處，
+								整個農場四周，宛如鋪上金黃地毯耀眼至極，此處是赤科山金針花景點必訪一級重地。赤柯山景點千頓石龜，旅客在這顆石頭上，居高臨下觀看前方有一大片的橘色黃金地毯，超級吸精，美不勝收。
+								<br><br>
+								在日治時期，赤科山以盛產赤科樹聞名，是當時日本人製作槍托的材料，隨著時間過去，從西部遷徙而來的漢人在此開墾，種植玉米、花生等作物後才改種金針，如今成為著名的觀光勝地。來到赤科山，不妨走訪赤科三景，欣賞坐落於金針花田的3顆黑色火成岩、造型奇特的千噸石龜這兩處天然地景，以及好幾十年歷史的汪家古厝。
+								<br><br>
+								每年八月中旬過後至九月中旬是花蓮赤柯山與六十石山金針花滿開的季節，平日造訪赤柯山也因為遊客較少，沿著赤柯山金針花園區的小徑前進，拍起來很舒適，讓人有整個赤柯山都是我的金針花園的錯覺。相較於六十石山，景觀較不多，上山的時間也會較長，但優點是山上有許多民宿及農家都有認真在經營觀光，有許多店舖及農產品可以買，更有許多可愛的景點布置。
+								<br><br>					
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-8101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>								  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-01.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-02.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-03.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-04.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="ffig/ECH-F11/ECH-8101-ChicoMountain-07.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-08.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-09.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="ffig/ECH-F11/ECH-8101-ChicoMountain-10.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-11.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-12.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-13.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-8101-ChicoMountain-14.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-8101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-8101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+									  
+				  
+				  <!-- Articla 910-->
+				  <div class="tab-pane " id="Article-910" role="tabpanel">
+					<article>
+					  <h3>六十石山</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>六十石山 - 富里鄕公所</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：富里鄉</li>
+								<li>電話：03-883-1111（富里鄕公所）</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣富里鄉竹田村台九缐293K東側轉入</li>
+								<li>開放時間：星期一-星期日 24小時開放</li>
+								<li>旅遊時間：</li>	
+								<li>賞花絕佳時間：每年8月至9月 雲隙光（耶穌光）絕佳時間：15:00-17:00</li>
+							</ul>
+							
+							<p>
+								六十石山、赤科山、太麻里山為花東縱谷三大金針栽植區，也是每年8月至9月賞金針花海的好去處。六十石山位在富里鄉竹田村東側海拔約800公尺的海岸山脈上，經過一段蜿蜒的山路後，眼前出現無邊無際的田野景致，幾座農舍、涼亭散落在金黃色的金針花田間，形成一幅樸質的田園畫作。每年7、8月是金針花的盛產期，來到六十石山，彷彿置身在一片金黃色的花海之中，雲煙飄渺，不禁讓人詠嘆大地之美。
+								<br><br>
+								金針花又名忘憂草，屬於百合花的一種。一朵花從日出開至日落最久只開一天，隔天即開上另一、二朵。金針花在照射到陽光後就會開花，而隨著照射時間越久，花就會越老，直到傍晚花就枯萎了。所以花農都得趁著清早時刻，趕緊採收含苞待放的金針花。
+								<br><br>
+								「六十石山」名稱來源有以下二種説法：
+								早在日治時期，一般水田每甲地的穀子收成大約只有四、五十石，而這一帶的稻田每一甲卻可生產六十石縠子，因此被稱做六十石（ㄉㄢˋ）山。
+								<br><br>
+								另外一種說法則在日治時期，這片山區本是一片繁茂的樟樹林，為了煉製樟腦而被砍伐一空。結果發現在空曠的山坡上，散佈著60塊巨大的石頭，所以這裡被命名為六十石（ㄕˊ）山。
+								<br><br>
+								六十石山除了金針花海，第二熱門的拍照打卡點就是位於山丘上「側睡在金針花海裡的小女孩」的畫作，一位法國知名藝術家柒先生的創作，雖然時隔多年已有些斑駁，但仍被網友認為是六十石山必拍點。
+								<br><br>
+								六十石山看金針花最佳時間是早晨與傍晚間，因為光線會與山脈、花搭配出不同的景緻。清晨的金針花的枝葉上都附著著水滴，一朵朵含苞待放的金針花正準備大放異彩。
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-9101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-9101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-9101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+							
+				  
+				  <!-- Articla 1010-->
+				  <div class="tab-pane " id="Article-1010" role="tabpanel">
+					<article>
+					  <h3>拉索埃湧泉生態園區</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>拉索埃湧泉生態園區</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 光復鄕</li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣光復鄕大進街15巷（光復糖場後方）</li>
+								<li>開放時間：9:00-17:00</li>
+								<li>旅遊時間：0.5-2.5小時</li>						
+							</ul>
+							
+							<p>
+								拉索埃湧泉生態園區，位於花蓮縣光復鄉大進村、大全村之間(光復糖廠後方)，是一處在觀光地圖上找不到的天然秘境，「拉索埃」在阿美族語代表的是「水質潔淨甘甜」之意。清澈潔淨的水質被當地人形容是上帝親吻過的清泉，這裡碧藍透徹的湧泉，有「藍色眼淚」之美名。
+								<br><br>
+								交織原始生態與阿美族神話故事的拉索埃湧泉，被選為2016年最美的秘境，隨著陽光變化折射出不同藍色的1號湧泉，有著藍色眼淚的美名，宛如臺灣版的九寨溝。
+
+								<br><br>
+								在花蓮光復糖廠的後方，有一處鮮為人知的小秘境，那就是拉索埃湧泉生態園區，園區中共有6處湧泉，每一處生態環境維持原始自然，湛藍清澈的泉水，像是被上帝調過的顏色，更孕育出臺灣瀕臨絕種的原生水生植物-小花石龍尾，如此絕美的景點，背後有著感人的阿美族神話。
+								<br><br>
+
+								相傳神鳥兜羅一直守護縱谷的居民，但牠卻被獵人所傷，幸而有拉索埃村民照料後而痊癒，然而好景不常，拉索埃村接二連三爆發乾旱與瘟疫，於是神鳥兜羅落下六滴眼淚幻化成湧泉，捨身解救村民，讓村民能夠世代豐饒、快樂的過生活。
+								<br><br>
+								上帝親吻過的清泉，鄉民極力推薦的一處隱藏版玩點，站立於石頭上跳躍，可享受湧泉氣泡跳跳樂。目前農場內規劃有農場目前可預約自然生態環境解說、農村體驗及手搖船、滑草樂、稀有雞種、可愛小動物、生態瓶DIY和客製化套裝行程，專頁裡有貼的通通可預約。		
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-1010" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-1010" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-1010" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>					  
+				  
+				  <!-- Articla xxx-->
+				  <div class="tab-pane " id="Article-xxx" role="tabpanel">
+					<article>
+					  <h3>Template</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>山</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: </li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-03-02" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-03-02" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-03-02" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+					
+				  <!-- Next Aritical -->
+
+			  
+
+				</div>
+
+			  </div>
+
+			</div>
+		
+	</main>
+</div>
+    <!-- InstanceEndEditable -->
+	
+	<footer id="main_footer">
+		<p id="p-footer">
+				&copy;TCW Smart Life 2020 智慧生活-花東旅遊
+		</p>
+
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- My Goto Tab JavaScript -->
+	
+
+    <!-- InstanceBeginEditable name="vue control program" -->
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		} 
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
+
+	<div>
+      <!-- Vue實例的程式碼 -->
+    </div>
+    <!-- InstanceEndEditable -->
+</body>
+
+<!-- InstanceEnd --></html>
