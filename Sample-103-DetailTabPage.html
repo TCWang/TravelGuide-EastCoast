@@ -18,8 +18,9 @@
   <!-- My CSS file -->
   <link rel="stylesheet" href="css/mycss.css">
   <!-- InstanceBeginEditable name="doctitle" -->
-  <title>花東旅遊 － 智慧導遊</title>
-  <meta name="description" content="Smart Travel Guide">
+
+	<title>Sample - Detail File for GoTo Specific Tab</title>
+  	<meta name="description" content="Sample File Test">
   <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -126,11 +127,11 @@
     <!-- Jumbotron-->
 
           <!-- InstanceBeginEditable name="jumbotron description " -->
-        <div class="jumbotron jumbotron-fluid jumbotron-bg1 d-flex align-items-end">
+        <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
         	<div class="container">        
 				<div class="bg-lighter p-1" style="width:300px">
-				  <h4 class="text-white" >花東旅遊網</h4>
-				  <p class="lead text-white">智慧導覽台灣東海岸</p>
+				  <h4 class="text-white" >Insert jumbotron title here</h4>
+				  <p class="lead text-white">Insert jumbotron description here</p>
 				</div>
 			</div>
 		</div>
@@ -139,37 +140,60 @@
 
 	<!-- Web Page Title -->
 	<!-- InstanceBeginEditable name="main_heading" -->
-	<h2 id="main_heading"> 花東旅遊網 </h2>
+	<h2 id="main_heading">Detail File </h2>
 	<!-- InstanceEndEditable -->
 	  
 	<!-- Vue實例的掛載點 -->
     <!-- InstanceBeginEditable name="main_content" -->
     <article> 
-		<div class="row">
-			<div class="col-md-12 col-lg-6">
-				<h3>智慧導遊 相關網站</h3>
-				  <ul>
-					<li>
-					  <a href="https://tcwang.github.io/TravelGuide-Islands/Index.html">離島旅遊網</a>
-					</li>
-					<li>
-					  <a href="https://tcwang.github.io/TravelGuide-EastCoast/index.html">花東旅遊網</a>
-					</li>
-					<li>
-					  <a href="https://tcwang.github.io/TravelGuide-Taoyuan/index.html">桃園旅遊網</a>
-					</li>				  
-				  </ul>			
-			</div>
-			<div class="col-md-12 col-lg-6">
-				掃描進入 智慧導遊-花東旅遊網 <br>
-				<img src="file/TGE-101-WebQRCode.png" style="width:150px">
-			
-			</div>			
-		</div>
-	  			  
+		<div class="container" style="margin-top:100px">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div>
 
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#tabone" aria-controls="tabone" role="tab" data-toggle="tab">Tab One</a></li>
+						<li role="presentation"><a href="#tabtwo" aria-controls="tabtwo" role="tab" data-toggle="tab">Tab Two</a></li>
+						<li role="presentation"><a href="#tabthree" aria-controls="tabthree" role="tab" data-toggle="tab">Tab Three</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="tabone">
+							<h4>Tab One </h4> 
+							<p>
+							 Detail s 
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="tabtwo">
+						  	<h4>Tab Two</h4>
+							<p>
+							jldfjldsfl . jlj
+							</p>
+						  
+						</div>
+						<div role="tabpanel" class="tab-pane" id="tabthree">
+							<h4>Tab Three</h4>  
+							<p>
+							 jldsj . fdslf . dsfkl lld . dfsjl
+							</p>
+						</div>
+					  </div>
+
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+
+	  
 	</article>  
-</div>
+
     <!-- InstanceEndEditable -->
 	
 	<footer id="main_footer">
@@ -198,7 +222,19 @@
 	<script src="js/GoTabJavaScript.js"></script>
 
     <!-- InstanceBeginEditable name="vue control program" -->
-    <div>
+    <script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+		} 
+
+		// Change hash for page-reload
+		$('.nav-tabs a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
+ 	<div>
       <!-- Vue實例的程式碼 -->
     </div>
     <!-- InstanceEndEditable -->
