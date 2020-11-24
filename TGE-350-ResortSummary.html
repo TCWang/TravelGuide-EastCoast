@@ -241,8 +241,8 @@
 												<ul id="il">
 													<li>1.太魯閣國家公園, 
 														<ul id="il">
-															<li>1.<a href="#A111">燕子口</a>, </li>
-															<li>2.<a href="#A112">九曲洞</a>, </li>
+															<li>1.<a href="#Article-111">燕子口</a>, </li>
+															<li>2.<a href="#Article-112">九曲洞</a>, </li>
 															<li>3.山月吊橋, </li>
 															<li>4.砂卡礑步道, </li>
 															<li>5.白楊步道, </li>
@@ -3276,9 +3276,21 @@
     <!-- Axios 的 CDN -->
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<!-- My Goto Tab JavaScript -->
-	<script src="js/GoTabJavaScript.js"></script>
+	
 
     <!-- InstanceBeginEditable name="vue control program" -->
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		} 
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
 
 	<div>
       <!-- Vue實例的程式碼 -->
