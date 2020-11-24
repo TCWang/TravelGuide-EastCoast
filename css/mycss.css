@@ -180,3 +180,12 @@ position:absolute;
 #il li {
 	display: inline;
 }
+
+.ellipsis {
+	overflow:hidden;
+	text-overflow:elipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	white-space:norma;
+}
