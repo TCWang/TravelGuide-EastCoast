@@ -189,3 +189,6 @@ position:absolute;
 	-webkit-box-orient:vertical;
 	white-space:norma;
 }
+.form-group {
+    margin: 0;
+}
