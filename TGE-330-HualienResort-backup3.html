@@ -215,26 +215,7 @@
 								  <img v-bind:src="post.Figure" class="img-fluid">
 									<br>
 									<p>
-										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									
-										  <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-											  <p class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												  展開說明
-												</a>
-											  </p>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											  <div class="panel-body">
-												<div v-html="post.Introduction"></div>					
-											  </div>
-											</div>
-										  </div>									
-										</div>												
-										
-										
-
+										<div  class="ellipsis" v-html="post.Introduction"></div>
 
 									</p>
 								  	<p  class="text-right">
