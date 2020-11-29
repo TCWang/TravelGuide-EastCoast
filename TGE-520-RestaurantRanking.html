@@ -289,9 +289,38 @@
 										</dl>
 										<img v-bind:src="post.Figure" class="img-fluid">
 										<br><br>										
-										<div v-html="post.Description"></div>
+										
 
 										</p>
+											<p>
+											<div class="panel-group" id="accordion" role="tablist"
+												aria-multiselectable="true">
+
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<p class="panel-title">
+															<a role="button" data-toggle="collapse"
+																data-parent="#accordion" href="#collapseOne"
+																aria-expanded="true" aria-controls="collapseOne">
+																展開說明
+															</a>
+														</p>
+													</div>
+													<div id="collapseOne" class="panel-collapse collapse in"
+														role="tabpanel" aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div v-html="post.DescriptionTF"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											</p>
+											<p class="text-right">
+												<a v-bind:href="post.Detail" target="_blank">閱讀全文</a>
+											</p>										
+									
 									</div>
 								</div>
 							</div>
@@ -325,6 +354,9 @@
 										<div v-html="post.Description"></div>
 
 										</p>
+									
+								
+									
 									</div>
 								</div>
 							</div>
@@ -373,7 +405,21 @@
 	
 
     <!-- InstanceBeginEditable name="vue control program" -->
-    <div>
+  
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		}
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
+
+	<div>
 		<!-- Vue實例的程式碼 -->
 		<script>
 			const posts = []
