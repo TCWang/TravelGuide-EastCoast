@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/TGE-01-Template03.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>花東導遊 - 餐廳匯總</title>
+  <meta name="description" content="Smart Travel Guide - East Coast">
+  <!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	<p style="color:white"> 花東導遊 </p>
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">旅遊準備</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">相關網站</a>
+              <a class="dropdown-item" href="TGT-120-Equipment.html">旅遊裝備</a>
+              <a class="dropdown-item" href="TGT-130-Insurance.html">旅遊保險</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="TGE-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="TGE-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="TGE-240-LocalTransit.html">當地交通</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區景點</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-310-SeasonalEvent.html">旅遊資訊</a>
+              <a class="dropdown-item" href="TGE-320-YilanResort.html">宜蘭景點</a>
+              <a class="dropdown-item" href="TGE-330-HualienResort.html">花蓮景點</a>
+              <a class="dropdown-item" href="TGE-340-TaitungResort.html">台東景點</a>
+              <a class="dropdown-item" href="TGE-350-ResortSummary.html">景點匯總</a>				
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="TGE-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="TGE-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="TGE-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="TGE-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="TGE-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="TGE-540-Souvenirs.html">伴手禮品</a>
+              <a class="dropdown-item" href="TGE-550-RestaurantSummary.html">餐廳匯總</a>				
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="TGE-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="TGE-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="TGE-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="TGE-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron-->
+
+          <!-- InstanceBeginEditable name="jumbotron description " -->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg5 d-flex align-items-end">
+        	<div class="container">        
+				<div class="bg-lighter p-1" style="width:300px">
+				  <h4 class="text-white" >花東美食饗宴</h4>
+				  <p class="lead text-white">想不到的鄉土美食</p>
+				</div>
+			</div>
+		</div>
+        <!-- InstanceEndEditable --> </div>
+
+
+	<!-- Web Page Title -->
+	<!-- InstanceBeginEditable name="main_heading" -->
+	<h2 id="main_heading">花東旅遊 餐廳匯總</h2>
+	<!-- InstanceEndEditable -->
+	  
+	<!-- Vue實例的掛載點 -->
+    <!-- InstanceBeginEditable name="main_content" -->
+	<main>
+				
+			<div class="row">
+			  <div class="col-md-3 col-lg-2">
+				<aside class="sidebar1">
+				  <h5>分類</h5>
+
+				  <div class="list-group" id="MenuList" role="tablist">
+					<a href="#Article-001" class="list-group-item list-group-item-action active" data-toggle="list">餐廳匯總</a>
+					<a href="#Article-101" class="list-group-item list-group-item-action" data-toggle="list">達基力部落屋</a>
+					<a href="#Article-102" class="list-group-item list-group-item-action" data-toggle="list">闔家歡餐館</a>
+					<a href="#Article-103" class="list-group-item list-group-item-action" data-toggle="list">賀松家無菜單料理</a>
+					<a href="#Article-104" class="list-group-item list-group-item-action" data-toggle="list">口福海鮮餐廳</a>					  
+					<a href="#Article-105" class="list-group-item list-group-item-action" data-toggle="list">樹屋餐廳</a>
+					<a href="#Article-106" class="list-group-item list-group-item-action" data-toggle="list">葛瑪蘭風味餐</a>
+					<a href="#Article-107" class="list-group-item list-group-item-action" data-toggle="list">屋銤海鮮餐廳</a>
+					<a href="#Article-108" class="list-group-item list-group-item-action" data-toggle="list">慕名私房料理</a>
+					<a href="#Article-109" class="list-group-item list-group-item-action" data-toggle="list">花蓮香扁食</a>					  
+				  </div>
+				  <br>
+				</aside>
+			  </div>
+			  <div class="col-md-9 col-lg-10">
+				<div class="tab-content">
+
+				  <!-- Articla 01-->
+				  <div class="tab-pane active" id="Article-001" role="tabpanel">
+					<article>
+						<h3>餐廳匯總</h3>
+						<div class="row">
+							<div class="col-md-12 col-lg-4">
+								<img src="fig/ECH-03-HualienMap-03.jpg" style="width:218px height:300px margin: auto; margin: 2px 0 2px 2px;" class=" img-fluid" >			
+							</div>
+							<div class="col-md-12 col-lg-8">
+								<h3>網路參考資料</h3>
+								<div class="row">
+									<ul style="list-style-type:none">
+										<li>官網
+											<ul id="il">
+												<li>
+													<a href="https://www.taiwan.net.tw">交通部觀光局, </a>
+												</li>
+												<li>
+													<a href="http://tour-hualien.hl.gov.tw">花蓮觀光資訊網, </a>
+												</li>
+												<li>
+													<a href="https://www.taroko.gov.tw">太魯閣國家公園, </a>
+												</li>
+												<li>
+													<a href="https://www.eastcoast-nsa.gov.tw/zh-tw">東部海岸國家風景區, </a>
+												</li>
+												<li>
+													<a href="https://twrolla.blogspot.com">必去景點</a>
+												</li>
+											</ul>
+										</li>
+										<li>部落格
+											<ul id="il">
+												<li>
+													<a href="https://twrolla.blogspot.com">旅行途中</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<h3>花蓮地區 推薦必去景點 2020年更新 </h3> 
+								</div>
+								<div class="row">	
+									<p>
+										
+											
+									</p>
+								
+								</div>
+
+							</div>
+
+						</div>						
+
+					</article>
+				  </div>
+					
+
+				  <!-- Articla 101-->
+				  <div class="tab-pane" id="Article-101" role="tabpanel">
+					<article> 
+					  <h3>達基力部落屋</h3>	
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>基本資訊</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 秀林鄉</li>
+								<li>電話: 03-862-1033</li>
+								<li>傳真: 03-862-1841</li>
+								<li>地址: 花蓮縣秀林鄉崇德村96號</li>
+								<li>營業時間: 11:30-14:30</li>
+								<li>網址: <a href="https://www.facebook.com/dageeli180.5/">Facebook</a></li>						
+							</ul>
+						
+							<p>
+								達基力部落屋Dajili Tribal House
+								<br><br>
+								達基力風味餐廳位於花蓮縣秀林鄉，它是一間文創餐廳，也是間工作室，提供多項美味的原住民料理美食和藝術文創的體驗。相鄰近太魯閣，位置在蘇花公路旁，車程只要10分鐘，所以是不少團體和自由行的旅客用餐休息之所。除了用餐之外，還有許多原住民的活動體驗與文創藝術可以參與。我們在旅程出發前，早已預訂此間餐廳，僅排在第二輪，13:30分才能入塲。可見餐廳訂位的踴躍。
+								<br><br>
+								聽說太魯閣族的老闆及老闆娘，從近二十年前開始在部落裡打造自己的夢想廚房。老闆娘專攻在太魯閣族傳統美食創意料理 ；而老闆則是致力於藝術創作。也因此這裡帶著自然的藝術風格，算是在崇德這裡別具一格的用餐場所
+								<br><br>
+								「達基力」是太魯閣族語「石頭很多」的意思，店家採複合式經營。太魯閣族的風味餐(無菜單料理，隨時會有菜色變動) ，餐廳內陳列有許多原創藝術雕刻藝術、檜木精油手工皂工作室、舞鎷咖啡館、編織教室及藝術展間。還可以提前預約手工皂DIY、編織手環、搗米、竹筒飯、香蕉糕與薰雞DIY等課程。我們進入餐廳，四處顕見強力的原住民風格，甚感好奇有趣。
+								<br><br>
+								餐廳服務非常迅速，我們被安排在包廂內用餐。四周環繞有很多木彫藝術品。一邊享用美食一邊觀賞藝術。原住民必吃的竹香竹筒飯，香氣十足，旁邊有提供石頭，要我們自己敲打才能吃到喔。感覺非常有趣味性。連隨餐附贈的飯都是雙色的黃色的飯裡面加入了薑黃，吃起來格外溫和特別。
+								<br><br>
+								原住民料理一定要吃的鹹豬肉，吃起來皮是酥的、烤雞的外皮烤至金黃油亮，整盤端上來，立馬一掃而空。馬格力香腸厥兒三拼由涼拌海蜇皮、秋葵與馬告香腸所組成。涼拌海蜇皮微辣，氽燙過的秋葵淋上醬油帶點鹹味，馬告香腸吃起來微甜帶點淡淡不明顯的馬告味。涼拌過貓、清炒高麗菜、青椒臘肉。自家醃製的臘肉佐以花蓮產物，寒帶甜青椒，色香味俱全。他們家的烤魚很特別的是魚腹會塞入野菜及調味料，一起放進去烤之後，整隻魚都會帶有香氣，非常好吃。最後是酥炸豆腐及炸芋頭，兩者都還蠻好吃的。
+								<br><br>
+								當日以每人350元套餐計價。菜色豐富，價錢合理。值得到此品嚐。						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5501-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>										  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-101" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-101" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>
+							<br>		
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+					
+				  <!-- Articla 102-->
+				  <div class="tab-pane" id="Article-102" role="tabpanel">
+					<article>
+					  <h3><a href="A112">闔家歡餐館</a></h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>基本資料</h5>  
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 花蓮市</li>
+								<li>電話: 03-833-4450</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣花蓮市中和街228號</li>
+								<li>營業時間：11:30~14:00、17:00~20:00</li>
+								<li>停車位置：「梅林婚紗」旁的小巷子開進去就是停車場，步行2-3分鐘可抵達餐廳。</li>						
+							</ul>	
+							
+							<p>
+								經阿姬及李宿民宿主人亞年特別強力推薦花蓮在地美食餐廳闔家歡，嘗試過上癮後成為每到花蓮必吃的美食。
+								<br><br>
+								「闔家歡」30年前從麵食館起家，至今已是花蓮首屈一指的合菜餐廳，Google評價破千且高達4.3分相當厲害。台北有鼎泰豐小籠包，花蓮則有闔家歡小籠包，每到此必點的美食之一。
+								<br><br>
+								 廚師出身的老闆江志忠，每天親自買菜，被攤商形容為「花蓮採買最龜毛」的人，堅持價值高於價格；同時他也親自接單、第一手掌握客人的需求，仔細詢問每桌客人的年齡、餐敘目的等，接大陸團客時，還會細問客人來自哪一省，調整菜色及口味。 令人意外的是，江志忠甚至將所有客人的用餐資料加以建檔，三年內客人吃過什麼菜通通一清二楚，避免下次菜色重複，如此貼心難怪成為花蓮人宴客的首選。
+								<br><br>
+								鎮江豬腳，這道菜看起來白白的，卻不油膩，豬皮咬下去也QQ的，顛覆一般對「豬腳」的看法。
+								豬腳肉香四溢、肥而不膩，肉質Q軟、入口即化，瘦肉軟嫩不柴，不敢吃肥豬肉的人，也可嘗試。
+								<br><br>
+								每次必點的招牌菜江浙名菜砂鍋芋頭鴨，選用鴨子為烤鴨的等級，鴨子夠肥，油脂豐厚才好吃，湯底用鴨骨、翅膀去熬，肉質蒸至軟嫩。芋頭則特別選用花蓮吉安鄉的檳榔芋，口感綿香、鬆軟；添加扁尖筍乾，則為湯頭提味添香。如果因人少推薦可改點另一道「芋茸香酥鴨」，吃起來香酥可口。清蒸石斑魚，很大一條魚很新鮮，闔家歡雖然不是主打海鮮的，但是他們家的海鮮類新鮮又好吃。
+								<br><br>
+								「上海小籠湯包」是每桌必點的明星點心。薄皮湯包，湯汁豐沛、鮮美不膩口。碢貼金黃酥脆的底，讓人直流口水。有別於常見的鍋貼餡料，用葫瓜來搭配鮮肉，餡料調味很棒，咬下去的時候還有些湯汁。蔥油餅吃起來像是千層餅一樣，麵皮與蔥花充份混合，咬下去層次分明，每一層都是酥脆，但又不失麵餅的那種軔性，有別一般路邊攤賣的蔥油餅，現點現作，新鮮度高。豆沙鍋餅飯後甜點，縂要留有一空胃，給甜食的位置，每餐必點的點心。
+								<br><br>
+								闔家歡提供各式各樣的菜色，種類繁多，
+								請看菜單（連結）自己找點選喜歡的美食吧！
+								<br><br>
+								貼心提醒：闔家歡經常客滿座無虛席，想到闔家歡，請先訂位囉！						
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+
+							<div id="carouselExampleIndicators-102" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>								  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-09.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5502-HualienRestaurantSummary-11.jpg" class="d-block w-100" alt="...">
+								</div>											  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-102" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-102" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>		
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+
+				  
+				  <!-- Articla 103-->
+				  <div class="tab-pane " id="Article-103" role="tabpanel">
+					<article>
+					  <h3>松賀家無菜單料理</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 花蓮市</li>
+								<li>電話:  03-8528688、0926668989</li>
+								<li>傳真:</li>
+								<li>地址：花蓮縣花蓮市中美路301-3號</li>
+								<li>營業時間： 週三～週日PM 18:00-21:00 （週一週二公休)</li>
+								<li>電話預約時間:週三至週日PM 12:00至PM 21:00（目前皆採預訂方式，四人以上可預約）</li>						
+							</ul>									
+							<br>
+							
+							<p>
+								陪同家人來到花蓮旅遊，經李宿民宿亞年特別推薦提早預約，我們在旅遊期間非常幸運的來到松賀家用餐。當天座無虛席。吃到美味的料理，感到幸福，早已忘記了旅遊行程的辛勞。特別向大家推薦松賀家值得您來品嚐的無菜單料理。
+								<br><br>
+								花蓮無菜單合菜料理松賀家，劉太太廚娘每日採買新鮮食材，僅採用燉煮方式，堅持不油炸、不微波、不燒烤，來提供原味自然健康有層次的餐點。並且不留隔夜菜。皆是廚娘堅持的健康環保原則。所以也只能提供晚餐時段，只出一輪餐，不超收客人，美味佳餚真的值得一訪再訪。目前松賀家只有美崙這一間，別無分號喔！
+								<br><br>
+								食材都是前一天確定好數量，當天一大早去市場購買，沒有隔夜菜、用餐時間是晚上六點開始，採電話預約制，基本人數要有四位大人以上才能預約。餐廳可容納人數大約130人左右，而且最慢一定要提前一天預約，不接受當天預定。
+								<br><br>
+								當天我們吃到的是紅色火龍果拌小黃瓜，蘋果片鋪底的水果拼盤，有水果味道非常爽口，沒有一般市面上沙拉的味道。蔥油雞招牌菜，是去骨的雞腿肉，沒骨頭又不會切太大塊，好咬斷又香，入口滿是油蔥香，大家努力挾食，停不下筷子。
+								什錦軟排煲，裡面有杏包菇、軟排，玉米，白菜，紅蘿蔔等等，湯汁用大骨湯熬煮很甘甜，排骨超多，清爽香甜可口好喝。新鮮大尾的小卷燉煮，可以吃到小卷的美味香甜。每隻小卷都非常豐碩大尾食材豐盛。大蝦下是用蕃茄燉煮的高麗菜，微酸中還可以吃到高麗菜的清甜。薑糖奶酪甜點是最驚豔的甜點之一。入口是黑糖的香和薑之略辣的香氣交錯，口感極為舒服，化開後糖的甜香隨之而來，底下的奶酪也好吃。好吃到居然甜點都忘記拍照了！
+								<br><br>
+								「松賀家」原本位於吉安黃昏市場旁巷內的小民宅，已經搬到下美崙區囉，新餐廳靠近花蓮賞鯨碼頭、從松賀家步行就可以到附近的85度C、米噹燒烤、福容飯店、美崙濱海公園、交通便利。
+								貼心叮嚀：想到松賀家用餐，須要提前預約喔！
+								<br>
+							</p>
+						
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							
+							<div id="carouselExampleIndicators-103" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5503-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-103" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-103" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>								
+								<br><br>	
+							
+							
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+
+				  
+				  
+				  <!-- Articla 104-->
+				  <div class="tab-pane " id="Article-104" role="tabpanel">
+					<article>
+					  <h3>口福海鮮餐廳</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 豐濱鄉</li>
+								<li>電話: 03-878-1041</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣豐濱鄉石梯灣80號</li>
+								<li>營業時間: 11:00-14:00、17:00-19:30</li>
+								<li>賞鯨專線：03-878-1236</li>					
+							</ul>
+							
+							<p>
+								旅遊行程下午打算遊玩石梯坪，原訂在葛瑪蘭用餐，可惜該店當日休息，改到石梯港漁港餐廳吃海鮮。
+								<br><br>
+								東海岸的石梯坪有湛藍的海景、豐富多樣的海產，口福海鮮餐廳就在花蓮南區最大的石梯港旁，餐廳門口水箱內看到有多種海產，龍蝦、鮑魚、蝦姑、螃蟹、各種魚類等當地新鮮海產。
+								<br><br>
+								用餐地點空間環境很大，我們到達時已經接近午間十一點，仍舊是高朋滿座，客人非常多。簡單點了幾道菜，味道相當不錯。
+								<br><br>
+								飯後到鄰近石梯漁港參觀。石梯漁港位於花蓮與台東的交界處石梯坪旁邊。前方可遠眺遼闊的太平洋，後方有秀麗的海岸山脈，依山傍海景色優美。特別值得推薦此處可以登上海鯨號賞鯨。海鯨號 於1997 成立，它是台灣第一艘賞鯨船。可說是賞鯨船的始祖。台灣東部海面是賞鯨豚的主要活動場域，石梯港海灣的賞鯨豚可見率高達90%，每年的4~10月是最推薦出海賞鯨豚的季節.
+							
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-104" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>	
+								<div class="carousel-item">
+								  <img src="fig/TGE-5504-HualienRestaurantSummary-09.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-104" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-104" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+
+					</article>
+				  </div>
+				  
+
+				  <!-- Articla 105-->
+				  <div class="tab-pane " id="Article-105" role="tabpanel">
+					<article>
+					  <h3>樹屋餐廳</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：03-864-1888、0955-996-777</li>
+								<li>傳真: </li>
+								<li>地址： : 花蓮縣壽豐鄉池南村環潭南路2號</li>
+								<li>營業時間：：每周二公休， 周一～周五：11:00～14:00、17:00～20:00， 週六、日：11:00～20:00</li>					
+							</ul>
+							
+							<p>
+								鯉魚潭是到訪花蓮必經的景點之一。多次來訪花蓮鯉魚潭，春夏秋冬四季均有不同的景象。因而再度造訪。環湖步道走完，來到樹屋餐廳。鯉魚潭附近的樹屋餐廳，是超熱門的餐廳。網路上很多人推薦，說來鯉魚潭遊玩，必吃的就是樹屋餐廳。上回來吃過印象非常好，記憶猶新再度推薦給家人，大家來吃看看吧！
+								<br><br>
+								桶仔雞和炭烤魚幾乎是每桌都有點的料理，
+								必須提前一小時預約，以利店家預備。碳烤活力魚採用的是吳郭魚，整個花東地區　幾乎都會使用的魚，在花蓮地區由於湧泉清澈，吳郭魚沒有臭土味，魚兒不去鱗，直接包鹽碳烤，撥開外皮　魚肉鮮美沒異味，故成為一道花東必點名菜。
+								<br><br>
+								松子野味，雖然菜名有松子二字，其實沒有添加松子，乃是取其珍貴之意，料理使用山豬皮、小黃瓜、番茄、檸檬、洋蔥與香菜調味而成，
+								是一道極為開胃的涼拌菜。
+								<br><br>
+								清炒枸杞葉，跟薑絲、枸杞一塊炒，枸杞葉吃起來甜甜的，口感像地瓜幼嫩的葉子。過貓是蕨類野菜，不用農藥就可以長很好，拌入薑絲、芝麻入菜，十分爽口。
+								<br><br>
+								咪咪飯是原住民的風味餐，最上層是酥香的芋頭，「咪咪」是阿美族「捏捏」，原本是原住民狩獵外出的捏捏飯糰，在餐廳就可以吃到。
+								<br><br>
+								具濃厚原民風的樹屋除了提供美食。阿美族人還利用過多的構樹樹幹　做成樹皮秀　有燈罩　筆記等，對生態十分環保。								
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<div id="carouselExampleIndicators-105" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5505-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-105" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-105" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>					  
+
+				  				  
+				  <!-- Articla 106-->
+				  <div class="tab-pane " id="Article-106" role="tabpanel">
+					<article>
+					  <h3>葛瑪蘭風味餐</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: 豐濱鄉</li>
+								<li>電話: 03 871 1339</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣豐濱鄉新社42號</li>
+								<li>營業時間：10:00-15:00丨16:30-20:00</li>
+							</ul>
+							
+							<p>
+							
+								<br>
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-106" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5506-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-106" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-106" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>
+				  <!-- Articla 107-->
+				  <div class="tab-pane " id="Article-107" role="tabpanel">
+					<article>
+					  <h3>屋銤海鮮餐廳</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：壽豐鄉</li>
+								<li>電話：0930 370 455</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣壽豐鄉大橋28-1號</li>
+								<li>營業時間：11:00-15:00、17:00-21:00 (週三公休)</li>				
+							</ul>
+							
+							<p>
+			·					Umi 屋銤海鮮，無論在景觀或是料理上都表現得不錯，是到花蓮旅遊可以來吃的鹽寮海鮮餐廳。
+								沒有什麼裝潢的海邊小屋，樸實的自然風格也是它的特色之一。造訪花蓮一個靠海且海產豐饒的城市時，想找的也許不是用餐環境優雅的大餐廳，而是擁有新鮮直送生猛海產的在地私房餐廳。通常這種類型的餐廳的室內空間都內空間都樸實無華，但他所擁有新鮮最無敵的各式海鮮，加上老闆豪邁的用料及料理方式，絕對是體驗當地海鮮美食的最佳選擇。
+								<br><br>
+								大家知道「U mi 」是甚麼意思嗎！？是日文海的意思，想要表達的是所提供的餐飲幾乎都是來自於大海，像是現撈的海膽及龍蝦等。餐點以海產為主，所有料理方式與價格，都一目了然寫在黑板上，結帳不會心驚膽跳。
+								<br><br>
+								炸小卷推薦必點，小卷好大隻，肉質肥厚彈牙，雖然裹粉下油鍋炸過，但依然保留著其嫩度及鮮甜口感，香酥美味。烤飛魚卵香腸，烤香腸的火候掌握的恰到好處，口口都是好味道。炒野菜 ，清爽的炒青菜，
+								<br><br>
+								用餐之前，大家利用空檔，搶著先在餐廳戶外的拍照裝置拍照，不亦樂乎！由於天氣晴朗，太陽高掛，碧海藍天拍照效果非常好。幾乎忘記用餐。									
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-107" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5507-HualienRestaurantSummary-10.jpg" class="d-block w-100" alt="...">
+								</div>										  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-107" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-107" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>		
+				  
+				  
+				  <!-- Articla 108-->
+				  <div class="tab-pane " id="Article-108" role="tabpanel">
+					<article>
+					  <h3>慕名私房料理</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：新城鄉</li>
+								<li>電話：03 823 9336</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣新城鄉明潭街 10 巷 23 號</li>
+								<li>營業時間：11:00-14:30，17:30-21:00</li>					
+							</ul>
+							
+							<p>
+					
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<div id="carouselExampleIndicators-108" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="03" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-06.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-07.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5508-HualienRestaurantSummary-08.jpg" class="d-block w-100" alt="...">
+								</div>									  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-108" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-108" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+				  
+				  <!-- Articla 109-->
+				  <div class="tab-pane " id="Article-109" role="tabpanel">
+					<article>
+					  <h3>花蓮香扁食</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>基本資料</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮：花蓮市</li>
+								<li>電話： 03-833-6166</li>
+								<li>傳真: </li>
+								<li>地址：花蓮縣花蓮市中山路347-1號</li>
+								<li>營業時間: 週一～週日 11:00-21:30(週三公休)</li>				
+							</ul>
+							
+							<p>
+								自從跟朋友一起來花蓮，享用了道地花蓮人的推薦之後，花蓮香扁食就是口袋名單了！此次陪同家人來到花蓮，第一站就先來這裡吃上一碗扁食滿足大家的胃口。
+								<br><br>
+								餡多 真材實料。有鮮蝦、翡翠、鮮肉 三種口味 。
+								鮮蝦口味強調選用當日人工現剝蝦肉結合新鮮豬肉，蝦子通透的色澤，吃起來口感新鮮，感受到鮮蝦的味道，輕薄的外皮，帶有皺褶卻又滑順。吃起就能顯見他的美妙存在不同的食材簡單調味，卻有著不簡單的風味。鮮肉口味，店家強調選用當日人工現剝蝦肉結合新鮮豬肉，口味相當不錯。翡翠扁食裏頭除了豬肉外，還有剁碎的韭菜新鮮的豬肉帶有一抹甜香與鹹度。另外還有他們家的紅油抄手，搭配店家特製辣醬，保證讓你吃得很過癮！除了扁食湯扁食麵之外，還有紅油抄手、肉燥飯、貢丸湯、各式小菜等。
+
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-109" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/TGE-5509-HualienRestaurantSummary-01.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/TGE-5509-HualienRestaurantSummary-02.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5509-HualienRestaurantSummary-03.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/TGE-5509-HualienRestaurantSummary-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/TGE-5509-HualienRestaurantSummary-05.jpg" class="d-block w-100" alt="...">
+								</div>											  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-109" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-109" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>	
+				  
+			  
+				  
+				  <!-- Articla xxx-->
+				  <div class="tab-pane " id="Article-xxx" role="tabpanel">
+					<article>
+					  <h3>Template</h3>
+					  <div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<h5>山</h5>
+							<ul style="list-style-type:none">
+								<li>鄉鎮: </li>
+								<li>電話: </li>
+								<li>傳真: </li>
+								<li>地址：</li>
+								<li>開放時間: </li>
+								<li>旅遊時間：</li>						
+							</ul>
+							
+							<p>
+						
+							</p>
+							<br>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+							<div id="carouselExampleIndicators-03-02" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="02"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="03"></li>									  
+								<li data-target="#carouselExampleIndicators" data-slide-to="04"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="05"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="06"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="07"></li>		
+								<li data-target="#carouselExampleIndicators" data-slide-to="08"></li>			
+								<li data-target="#carouselExampleIndicators" data-slide-to="09"></li>	
+								<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>									  
+							  </ol>
+								
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-03.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-04.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-05.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-06.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-07.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-08.jpg" class="d-block w-100" alt="...">
+								</div>		
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-09.jpg" class="d-block w-100" alt="...">
+								</div>			
+								<div class="carousel-item">
+								  <img src="fig/ECH-F11/ECH-9102-ShanyueBridge-10.jpg" class="d-block w-100" alt="...">
+								</div>								  
+
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-03-02" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-03-02" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>							
+							
+						</div>
+					  </div>
+					</article>
+				  </div>				
+					
+				  <!-- Next Aritical -->
+
+			  
+
+				</div>
+
+			  </div>
+
+			</div>
+		
+	</main>
+</div>
+    <!-- InstanceEndEditable -->
+	
+	<footer id="main_footer">
+		<p id="p-footer">
+				&copy;TCW Smart Life 2020 智慧生活-花東旅遊
+		</p>
+
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- My Goto Tab JavaScript -->
+	
+
+    <!-- InstanceBeginEditable name="vue control program" -->
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		} 
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
+
+	<div>
+      <!-- Vue實例的程式碼 -->
+    </div>
+    <!-- InstanceEndEditable -->
+</body>
+
+<!-- InstanceEnd --></html>
