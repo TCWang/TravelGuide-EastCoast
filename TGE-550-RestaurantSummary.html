@@ -179,40 +179,28 @@
 								<img src="fig/ECH-03-HualienMap-03.jpg" style="width:218px height:300px margin: auto; margin: 2px 0 2px 2px;" class=" img-fluid" >			
 							</div>
 							<div class="col-md-12 col-lg-8">
-								<h3>網路參考資料</h3>
-								<div class="row">
-									<ul style="list-style-type:none">
-										<li>官網
-											<ul id="il">
-												<li>
-													<a href="https://www.taiwan.net.tw">交通部觀光局, </a>
-												</li>
-												<li>
-													<a href="http://tour-hualien.hl.gov.tw">花蓮觀光資訊網, </a>
-												</li>
-												<li>
-													<a href="https://www.taroko.gov.tw">太魯閣國家公園, </a>
-												</li>
-												<li>
-													<a href="https://www.eastcoast-nsa.gov.tw/zh-tw">東部海岸國家風景區, </a>
-												</li>
-												<li>
-													<a href="https://twrolla.blogspot.com">必去景點</a>
-												</li>
-											</ul>
-										</li>
-										<li>部落格
-											<ul id="il">
-												<li>
-													<a href="https://twrolla.blogspot.com">旅行途中</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
+								<h5>推薦餐廳 - 花蓮</h5>
+								<div id="app1" class="row">
+								  <table class="table table-striped table-sm table-hover" style="width:100%">
+									<thead style="background-color:lightblue">
+									  <tr class="text-left">
+										<th>餐廳</th>
+										<th>區域</th>
+										<th>電話</th>
+										<th>地址</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr v-for="post in posts">
+										<td>{{ post.Name }}</td>
+										<td>{{ post.Type }}</td>
+										<td>{{ post.Tel }}</td>
+										<td>{{ post.Address }}</td>
+									  </tr>
+									</tbody>
+								  </table>
 								</div>
-								<div class="row">
-									<h3>花蓮地區 推薦必去景點 2020年更新 </h3> 
-								</div>
+
 								<div class="row">	
 									<p>
 										
@@ -247,7 +235,7 @@
 							<img src="fig/TGE-5501-HualienRestaurantSummary-03.jpg" class="img-fluid" style="width:600px">	
 							<br><br>
 							<p>
-								達基力部落屋Dajili Tribal House
+								<h5>達基力部落屋Dajili Tribal House</h5>
 								<br><br>
 								達基力風味餐廳位於花蓮縣秀林鄉，它是一間文創餐廳，也是間工作室，提供多項美味的原住民料理美食和藝術文創的體驗。相鄰近太魯閣，位置在蘇花公路旁，車程只要10分鐘，所以是不少團體和自由行的旅客用餐休息之所。除了用餐之外，還有許多原住民的活動體驗與文創藝術可以參與。我們在旅程出發前，早已預訂此間餐廳，僅排在第二輪，13:30分才能入塲。可見餐廳訂位的踴躍。
 								<br><br>
@@ -259,7 +247,7 @@
 								<br><br>
 								原住民料理一定要吃的鹹豬肉，吃起來皮是酥的、烤雞的外皮烤至金黃油亮，整盤端上來，立馬一掃而空。馬格力香腸厥兒三拼由涼拌海蜇皮、秋葵與馬告香腸所組成。涼拌海蜇皮微辣，氽燙過的秋葵淋上醬油帶點鹹味，馬告香腸吃起來微甜帶點淡淡不明顯的馬告味。涼拌過貓、清炒高麗菜、青椒臘肉。自家醃製的臘肉佐以花蓮產物，寒帶甜青椒，色香味俱全。他們家的烤魚很特別的是魚腹會塞入野菜及調味料，一起放進去烤之後，整隻魚都會帶有香氣，非常好吃。最後是酥炸豆腐及炸芋頭，兩者都還蠻好吃的。
 								<br><br>
-								當日以每人350元套餐計價。菜色豐富，價錢合理。值得到此品嚐。						
+														
 							</p>
 							<br>
 						</div>
@@ -267,7 +255,8 @@
 							<h5>菜單</h5>
 							<img src="fig/TGE-5501-HualienRestaurantSummary-12.jpg" class="img-fluid" style="width:600px">
 							<br><br>
-
+							<h5>範例</h5>
+							每人350元套餐: 菜色豐富，價錢合理。值得到此品嚐。
 							<div id="carouselExampleIndicators-101" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
 							  <ol class="carousel-indicators">
 
@@ -311,7 +300,20 @@
 							  </a>
 							</div>
 							<br>
-							<br>		
+							
+						<h5>相關資料</h5>
+							<ul>
+								<li> <a href="https://hsuaco.pixnet.net/blog/post/341980929-%E2%99%A5%E8%8A%B1%E8%93%AE%E7%BE%8E%E9%A3%9F%E2%99%A5%E3%80%90%E9%81%94%E5%9F%BA%E5%8A%9B%E9%83%A8%E8%90%BD%E5%B1%8B%E3%80%91%E5%8E%9F%E4%BD%8F%E6%B0%91%E9%A2%A8%E5%91%B3%E9%A4%90">痞客邦 2017/05/15: </a>
+								原住民風味餐，結合藝術.美食.觀光.文化！周六日現場演唱，歌聲中親手搗麻糬最好吃！
+								</li>
+								<li>
+									<a href="https://snowhy.tw/dageeli/">喫趣玩 2020/09/08: </a>達基力部落屋，太魯閣族風味餐！原住民舞蹈表演、各式部落體驗
+								</li>
+								<li>
+									<a href="https://lazyneco.tw/51750/%E9%81%94%E5%9F%BA%E5%8A%9B%E9%A4%90%E5%BB%B3-%E9%81%94%E5%9F%BA%E5%8A%9B%E9%83%A8%E8%90%BD%E5%B1%8B-%E8%8A%B1%E8%93%AE/">懶喵兒滴窩: </a>達基力部落屋 太魯閣族風味創意料理
+								</li>
+							</ul>
+							
 						</div>
 					  </div>
 
@@ -336,6 +338,7 @@
 							<img src="fig/TGE-5502-HualienRestaurantSummary-31.jpg" class="img-fluid" style="width:600px">
 							<br><br>
 							<p>
+								<h5>闔家歡餐館</h5>
 								經阿姬及李宿民宿主人亞年特別強力推薦花蓮在地美食餐廳闔家歡，嘗試過上癮後成為每到花蓮必吃的美食。
 								<br><br>
 								「闔家歡」30年前從麵食館起家，至今已是花蓮首屈一指的合菜餐廳，Google評價破千且高達4.3分相當厲害。台北有鼎泰豐小籠包，花蓮則有闔家歡小籠包，每到此必點的美食之一。
@@ -394,7 +397,8 @@
 							  </a>
 							</div>
 							<br>							
-
+							<h5>範例</h5>
+							本次消費 NT$2,750 (7人), 人均 $385
 							<div id="carouselExampleIndicators-102" class="carousel slide img-fluid" data-ride="carousel" style="width:600px">
 							  <ol class="carousel-indicators">
 								<li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
@@ -466,7 +470,21 @@
 								<span class="sr-only">Next</span>
 							  </a>
 							</div>
-							<br>		
+							<br>
+							<h5>相關資料</h5>
+							<ul>
+								<li>
+									<a href="https://kenalice.tw/blog/post/family-hlh">Ken &amp; Alice 玩樂誌 2019/07/14: </a> 「闔家歡」在地人氣第一的平價好滋味中餐館
+								</li>
+								<li>
+									<a href="https://margaret.tw/post-45098168/">瑪格。圖寫生活 2019/03/29: </a> 闔家歡餐廳 花蓮小籠包合菜｜超對味的砂鍋芋頭鴨
+								</li>
+								<li>
+									<a href="https://m9145304.pixnet.net/blog/post/445188458">痞客邦 2016/05/10: </a> 闔家歡桌菜，菜單分享
+								</li>
+							</ul>
+							
+							<br>
 						</div>
 					  </div>
 
@@ -1312,9 +1330,48 @@
 		})
 	</script>
 
-	<div>
-      <!-- Vue實例的程式碼 -->
-    </div>
+
+   <script>
+      const posts = []
+      const SECTIONS_HL = "花蓮"
+
+
+      new Vue({
+        el: '#app1',
+        data: {
+          posts,
+          // results: [],
+          sections: SECTIONS_HL.split(', '),
+          section: '花蓮'
+        },
+        filter: {
+          formatted(value) {
+            return ' 以下是 ${value} 類別的貼文 '
+          }
+        },
+
+        computed: {
+          results() {
+            let posts = this.posts
+              .slice()
+              .filter(post => post.Category === this.section)
+            let i, j, chunkedArray = [], chunk = 40;
+            for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+              chunkedArray[j] = posts.slice(i, i + chunk);
+            }
+            return chunkedArray
+          }
+        },
+
+        mounted() {
+          axios.get('file/TGE-522-HualienRestaurant.json').then((response) => {
+            this.posts = response.data;
+            this.getPostsByCategory(this.section)
+          }).catch(error => { console.log(error); });
+        }
+      });		
+	</script>
+
     <!-- InstanceEndEditable -->
 </body>
 
